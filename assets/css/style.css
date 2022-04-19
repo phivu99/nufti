@@ -14,7 +14,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "bootstrap.css";
 /**
   	* Reset Browsers
@@ -248,9 +248,10 @@ img {
 
 p {
     font-weight: 400;
-    font-size  : 18px;
-    line-height: 28px;
-    color      : #7A798A;
+    font-size  : 14px;
+    line-height: 30px;
+    color      : #706C83;
+    font-family: 'Open Sans', sans-serif;
 }
 
 strong,
@@ -736,20 +737,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight   : 400;
+    font-weight   : 500;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     font-size: 72px;
+    font-weight   : 400;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 h4 {
@@ -761,7 +763,7 @@ h5 {
 }
 
 h6 {
-    font-size: 15px;
+    font-size: 13px;
 }
 .fs-16 {
     font-size: 16px;
@@ -1040,6 +1042,8 @@ label.error { color: red; }
     padding-right: 50px;
 }
 
+
+
 .pad-t-23 {
     padding-top: 23px;
 }
@@ -1088,6 +1092,10 @@ label.error { color: red; }
 
 .pad-l-7 {
     padding-left: 7px;
+}
+
+.pad-l-10 {
+    padding-left: 10px;
 }
 
 .pad-0-15 {
@@ -1383,8 +1391,16 @@ a:focus {
     transition        : all 0.3s ease-in-out;
 }
 
-.text-style-3 {
-    color: var(--primary-color3);
+.text-color-1 {
+    color: #fff;
+}
+
+.text-color-2 {
+    color: #130518;
+}
+
+.text-color-3 {
+    color: #7759F3;
 }
 
 /* Root
@@ -1393,7 +1409,7 @@ a:focus {
 :root {
     /* color */
     --primary-color : #fff;
-    --primary-color2: #1F1F2C;
+    --primary-color2: #130518;
     --primary-color3: #7759F3;
     --primary-color4: #706C83;
     --primary-color5: #F8F8F8;
@@ -1405,9 +1421,10 @@ a:focus {
 }
 
 .is_dark {
-    --primary-color: #343444;
+    --primary-color: #130518;
     --primary-color2 : #fff;
-    --primary-color4: #EBEBEB;
+    --primary-color3: #7759F3;
+    --primary-color4: #706C83;
     --primary-color5: #030303;
     --primary-color6: #ffffff;
     --primary-color7: #343444;
@@ -2079,7 +2096,6 @@ header{
     display    : block;
     font-size  : 14px;
     line-height: 100px;
-    z-index: 9;
 }
 
 .opacity_0{
@@ -2152,7 +2168,7 @@ header{
 }
 
 .icon-fl-search-filled{
-    color: var(--primary-color2);
+    color: #fff;
 }
 
 /* Mobile Menu Button */

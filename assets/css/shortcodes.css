@@ -49,8 +49,8 @@
 	position           : absolute;
 	top                : 50%;
 	left               : 50%;
-	width              : 50px;
-	height             : 50px;
+	width              : 100px;
+	height             : 100px;
 	z-index            : 100;
 	margin             : -30px 0 0 -30px;
 	background: #ffffff;
@@ -71,7 +71,7 @@
 } 
 
 .tf-section {
-    padding: 80px 0;
+    padding: 120px 0;
     margin-bottom: 0 !important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -246,7 +246,7 @@
 .sc-button {
     display      : inline-block;
     border       : 2px solid var(--primary-color3);
-    color        : var(--primary-color3);
+    color        : #fff;
     background-color: var(--primary-color3);
     box-sizing   : border-box;
     padding      : 10.5px 35px;
@@ -282,7 +282,7 @@
 .is_dark .sc-button.style-1:hover,
 .sc-button.fl-button:hover{
     border: 2px solid #fff;
-    background-color: var(--primary-color2);
+    background-color: #fff;
     
 }
 
@@ -591,17 +591,19 @@
 /* sc card article 
 --------------------------------------------------*/
 .sc-card-article {
-    background        : var(--primary-color);
-    box-shadow        : 0px 3px 16px rgba(47, 83, 109, 0.12);
-    padding           : 24px;
-    border-radius     : 12px;
-    margin-bottom     : 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(19, 5, 24, 0.07);
+    box-sizing: border-box;
+    padding           : 20px 19px 29px;
+    border-radius     : 5px;
+    margin-top    : 2px;
+    margin-bottom    : -2px;
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transition        : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sc-card-article .card-media{
-    border-radius: 12px;
+    border-radius: 8px;
     overflow     : hidden;
     margin-bottom: 20px;
 }
@@ -639,41 +641,52 @@
 
 .sc-card-article .meta-info .author .avatar,
 .sc-card-product .meta-info .author .avatar {
-    width        : 44px;
-    height       : 44px;
+    width        : 35px;
+    height       : 35px;
     border-radius: 15px;
     overflow     : hidden;
-    margin-right : 12px;
+    margin-right : 8.5px;
     flex-shrink  : 0;
 }
 
-.sc-card-article .meta-info .author .info span,
+.sc-card-article .meta-info .author .info .date,
 .sc-card-product .meta-info .author .info span,
 .sc-card-product .price span {
     color      : var(--primary-color4);
     font-size  : 13px;
-    line-height: 21px;
+    line-height: 20px;
+}
+
+.sc-card-article .meta-info .author .info span {
+    color      : var(--primary-color2);
+    font-weight: 300;
 }
 
 .sc-card-article .meta-info .author .info h6,
 .sc-card-product .meta-info .author .info h6 {
-    line-height: 22px;
+    line-height: 20px;
+    margin-top: 1px;
+    color      : var(--primary-color4);
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 
 .sc-card-article .text-article {
-    margin-top   : 19px;
-    margin-bottom: 23px;
+    margin-top   : 27px;
+    margin-bottom: 17px;
+    padding-left: 9.5px;
 }
 
 .sc-card-article .text-article h3 {
     text-transform: capitalize;
-    margin-bottom : 16px;
+    margin-bottom : 18px;
 }
 
-.sc-card-article .text-article p {
-    font-size  : 14px;
-    line-height: 22px;
-}
+/* .swiper-container-multirow>.swiper-wrapper {
+    flex-wrap: wrap;
+} */
+
+
 
 .sc-card-article:hover {
     -webkit-transform: translateY(-5px);
@@ -1925,9 +1938,35 @@
 
 .mark-page {
     position: absolute;
-    top:0;
-    right:0;
-    z-index: -1;
+    top     : 0;
+    right   : -6px;   
+}
+
+.mark-page2 {
+    position: absolute;
+    left    : 3.7%;
+    bottom  : 38.3%;
+    animation: move4 5s infinite linear;
+}
+
+.mark-page3 {
+    position: absolute;
+    left: 38.8%;
+    top: 22.6%;
+    animation: move3 8s infinite linear;
+}
+
+.mark-page4 {
+    position: absolute;
+    right: 9%;
+    bottom: 24%;
+    animation: move5 8s infinite linear;
+}
+
+.mark-page5 {
+    position: absolute;
+    top     : 10px;
+    left   : 2px;   
 }
 
 /* breadcrumbs */
