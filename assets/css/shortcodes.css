@@ -72,7 +72,6 @@
 
 .tf-section {
     padding: 120px 0;
-    margin-bottom: 0 !important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -2479,17 +2478,24 @@ section.today-picks {
     margin-bottom: 30px;
 }
 .title-help {
-    border-left: solid 10px var(--primary-color3);
-    padding: 0 30px;
+   
+    padding: 0 38.5px;
+    position: relative;
+}
+.title-help::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 70px;
+    left: 0;
+    top: 3px;
+    background-color:  var(--primary-color3);
     border-radius: 5px;
-    margin-top: -2px;
 }
 .title-help h2 {
-    line-height: 38px;
+    line-height: 38.7px;
+    margin-top: -3px;
 }
- .fl-blog {
-     
- }
 
 
 
@@ -2497,6 +2503,13 @@ section.today-picks {
 /* help */
 .flat-help {
     background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
+    padding-top: 120px;
+}
+
+.flat-help .help-row {
+    padding-bottom: 57px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    position: relative;
 }
 
 .icon-down {
