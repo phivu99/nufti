@@ -737,13 +737,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight   : 500;
+    font-weight   : 400;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     font-size: 72px;
-    font-weight   : 400;
+    
 }
 
 h2 {
@@ -752,10 +752,11 @@ h2 {
 
 h3 {
     font-size: 16px;
+    font-weight   : 500;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 h5 {
@@ -886,6 +887,11 @@ label.error { color: red; }
 .mg-bt-60 {
     margin-bottom: 60px;
 }
+
+.mg-bt-75 {
+    margin-bottom: 75px;
+}
+
 
 .mg-bt-62 {
     margin-bottom: 62px;
@@ -2331,7 +2337,7 @@ header{
 
 /* Pagination
 -------------------------------------------------------------- */
-.themesflat-pagination {
+/* .themesflat-pagination {
     margin: 32px 30px;
 }
 
@@ -2377,6 +2383,44 @@ header{
 .themesflat-pagination ul li .next:hover,
 .themesflat-pagination ul li .prev:hover {
     color: var(--primary-color);
+} */
+
+/* flat pagination */
+.themesflat-pagination {
+    margin-top: 0px;
+}
+
+.themesflat-pagination ul {
+    margin-left: 2px;
+    position: relative;
+}
+
+.themesflat-pagination ul li {
+    display     : inline-block;
+    margin-right: 6.8px;
+}
+
+.themesflat-pagination ul li .page-numbers {
+    display      : inline-block;
+    font-family  : 'Open Sans';
+    font-size    : 14px;
+    font-weight  : 600;
+    color        : #706C83;
+    background: rgba(255, 255, 255, 0.03);
+    text-align   : center;
+    width        : 50px;
+    height       : 40px;
+    border-radius: 5px;
+    border       : 1px solid #FFFFFF12;
+    line-height  : 40px;
+    object-fit   : cover;
+}
+
+.themesflat-pagination ul li .page-numbers:hover,
+.themesflat-pagination ul li .page-numbers.current {
+    background-color: var(--primary-color3);
+    color           : #fff;
+    border-color    : var(--primary-color3);
 }
 
 /* Footer
@@ -2754,10 +2798,7 @@ header{
 }
 
 /* widget-subcribe */
-.widget-subcribe {
-    padding-top : 17px;
-    padding-left: 20px;
-}
+
 
 .widget-subcribe .title-widget {
     margin-bottom: 25px;
@@ -2776,7 +2817,7 @@ header{
     border-radius: 10px;
     background: #F8F8F8;
     width: 100%;
-    padding: 13px 50px 12px 22px;
+    padding: 20px 50px 20px 29px;
     font-size: 14px;
     border: 1px solid rgba(138, 138, 160, 0.3);
 }
@@ -2801,35 +2842,20 @@ header{
 }
 
 .widget-subcribe .form-subcribe button {
-    border-top-right-radius   : 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 5px;
     position: absolute;
     top: 0;
     right: 0;
     background-color: var(--primary-color3) ;
     font-size: 21px;
-    padding: 15px 18px 14px 19px;
+    padding: 25px 24px 19px 20px;
+
     color: var(--primary-color);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-}
-
-.widget-subcribe .form-subcribe button .icon-fl-send {
-    color: #ffffff;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.widget-subcribe .form-subcribe button:hover .icon-fl-send{
-    color: #fff;
 }
 
 .widget-subcribe .form-subcribe button:hover {
@@ -3393,3 +3419,5 @@ header{
 .fl-item3 {
     display: none;
 }
+
+
