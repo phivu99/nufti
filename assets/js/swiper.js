@@ -465,13 +465,48 @@ var swiper =  new Swiper(".carousel11", {
     },
 });
 
+// var swiper =  new Swiper(".carousel-blog", {
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false,
+//         },
+//     loop:false,
+//     slidesPerView: 3,
+//     slidesPerColumn: 2,
+//     slidesPerColumnFill: 'row',
+//     spaceBetween: 30,
+//     navigation: {
+//         clickable: true,
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//     breakpoints: {
+//         500: {
+//             slidesPerView: 1,
+//             slidesPerColumn: 2,
+//             spaceBetween: 30,
+//         },
+//         768: {
+//             slidesPerView: 2,
+//             slidesPerColumn: 2,
+//             spaceBetween: 30,
+//         },
+//         1024: {
+//             slidesPerView: 3,
+//             slidesPerColumn: 2,
+//             spaceBetween: 30,
+//         },
+//     },
+// });
+
+
 var swiper =  new Swiper(".carousel-blog", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
         },
     loop:false,
-    slidesPerView: 3,
+    slidesPerView: 1,
     slidesPerColumn: 2,
     slidesPerColumnFill: 'row',
     spaceBetween: 30,

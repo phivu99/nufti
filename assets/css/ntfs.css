@@ -10,9 +10,9 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-pro"], [class*=" icon-pro"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'nfts' !important;
+  font-family: 'nfts' ;
   speak: never;
   font-style: normal;
   font-weight: normal;

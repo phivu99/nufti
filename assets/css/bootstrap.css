@@ -5089,6 +5089,10 @@ a.badge:focus, a.badge:hover {
           align-items: flex-start;
 }
 
+.media img {
+  border-radius: 6px;
+}
+
 .media-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0%;

@@ -1,5 +1,5 @@
 /**
-  * Name: Axies | NFT Marketplace HTML Template
+  * Name: Nufti
   * Version: 1.0.3
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -11,8 +11,6 @@
 @import "jquery.fancybox.min.css";
 @import "font-awesome.css";
 @import "swiper-bundle.min.css";
-/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "bootstrap.css";
@@ -892,6 +890,22 @@ label.error { color: red; }
     padding-left: 68px;
 }
 
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-36 {
+    margin-bottom: 36px;
+}
+
+.mb-38 {
+    margin-bottom: 38px;
+}
+
+.mb-18 {
+    margin-bottom: 18px;
+}
+
 #wrapper{
     position: relative;
     overflow: hidden;
@@ -903,13 +917,27 @@ label.error { color: red; }
     background: linear-gradient(150.57deg, #1E0426 2.97%, #100C3A 25.62%, #130517 51.04%, #050130 72.12%, #0A0426 91.18%);
 }
 
-  .color-popup{
+.color-popup{
       color: var(--primary-color2);
-  }
+}
 
 .font {
     font-family: 'Open Sans', sans-serif;
 }
+
+.font-20 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.font-20-600 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
 
 /* link style
 -------------------------------------------------------------- */
@@ -981,6 +1009,28 @@ a:focus {
     transition        : all 0.3s ease-in-out;
 }
 
+.link-style-2 a {
+    text-decoration   : none;
+    color             : var(--primary-color4);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.link-style-2 a:hover,
+.link-style-2 a:focus {
+    color             : var(--primary-color3);
+    text-decoration   : none;
+    outline           : 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
 .text-color-1 {
     color: #fff;
 }
@@ -993,6 +1043,10 @@ a:focus {
     color: #7759F3;
 }
 
+.text-color-4 {
+    color: #706C83;
+}
+
 /* Root
 -------------------------------------------------------------- */
 
@@ -1003,8 +1057,8 @@ a:focus {
     --primary-color3: #7759F3;
     --primary-color4: #706C83;
     --primary-color5: #F8F8F8;
-    --primary-color6: #14141F;
-    --primary-color7: #F8F8F8;
+    --primary-color6: #13051812;
+    --primary-color7: ;
     --bg-section : #fff;
     --bg-section2 : #f8f8f8;
     --primary-color8: #7A798A;
@@ -1015,12 +1069,15 @@ a:focus {
     --primary-color2 : #fff;
     --primary-color3: #7759F3;
     --primary-color4: #706C83;
-    --primary-color5: #030303;
-    --primary-color6: #ffffff;
+    --primary-color5: #FFFFFF08;
+    --primary-color6: #FFFFFF12;
     --primary-color7: #343444;
     --bg-section: #14141F;
     --bg-section2 : #14141F;
     --primary-color8: #fff;
+
+
+
 }
 
 /* Header
@@ -2156,7 +2213,21 @@ header{
 .widget-social.style-1 ul li a {
     font-size      : 19px;
     color: #FFFFFF4D;
+}
 
+/* widget style blog */
+.widget-social.style-1.icon-blog {
+    align-self: center;
+    margin-top: 5px;
+}
+
+.widget-social.style-1.icon-blog ul li {
+    margin-left: 42.5px;
+    margin-right: 0;
+}
+
+.widget-social.style-1.icon-blog ul li a {
+    font-size: 14px;
 }
 
 
@@ -2912,15 +2983,18 @@ header{
 .widget-social-footer .widget ul {
     display: flex;
 }
+
 .widget-social-footer .widget-menu ul li {
     margin-right: 44.3px;
 }
+
 .widget-social-footer .widget-menu ul li a {
     font-size: 14px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     line-height: 28px;
 }
+
 .widget-social-footer .title-bottom {
     text-align: end;
     margin-top: 8px;
