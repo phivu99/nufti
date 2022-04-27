@@ -602,18 +602,18 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-    border: 1px solid rgba(138,138,160,0.3);
+    border: 1px solid var(--primary-color6);
     outline           : 0;
     -webkit-box-shadow: none;
     -moz-box-shadow   : none;
     box-shadow        : none;
-    font-size  : 18px;
-    line-height: 28px;
-    border-radius: 4px;
-    padding: 13px 15px;
+    font-size         : 16px;
+    line-height       : 28px;
+    border-radius     : 4px;
+    padding           : 6px 15px 7px 19px;
     width: 100%;
-    background: transparent;
-    color: #8A8AA0;
+    background-color: var(--primary-color5);
+    color: var(--primary-color4);
 }
 
 /* Input focus */
@@ -654,10 +654,12 @@ input[type="url"]::placeholder,
 input[type="search"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="color"]::placeholder {
-    font-size  : 18px;
-    font-weight: 400;
-    line-height: 28px;
-    color      : #8A8AA0;
+    font-size     : 14px;
+    font-weight   : 400;
+    line-height   : 24px;
+    font-family   : 'Open Sans';
+    color         :  #706C83;
+
 }
 
 /* Button */
@@ -665,15 +667,16 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    font-weight       : 700;
-    font-size         : 15px;
-    line-height       : 22px;
-    background-color  : var(--primary-color3);
-    color             : #fff;
-    border-radius     : 30px;
-    padding           : 15px 39px;
-    border            : 1px solid var(--primary-color3);
-    display           : inline-block;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: var(--primary-color3);
+    color: #fff;
+    border-radius: 5px;
+    padding: 23.5px 53px;
+    border: 1px solid var(--primary-color3);
+    display: inline-block;
     -webkit-appearance: none;
     -webkit-transition: all ease 0.3s;
     -moz-transition   : all ease 0.3s;
@@ -690,7 +693,8 @@ input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
     outline: 0;
-    border: 1px solid var(--primary-color3);
+    border: 1px solid var(--primary-color2);
+    background-color: var(--primary-color2);
     color: var(--primary-color3);
     /* background: transparent; */
 }
@@ -906,6 +910,10 @@ label.error { color: red; }
     margin-bottom: 18px;
 }
 
+.mb-44 {
+    margin-bottom: 44px;
+}
+
 #wrapper{
     position: relative;
     overflow: hidden;
@@ -1075,8 +1083,6 @@ a:focus {
     --bg-section: #14141F;
     --bg-section2 : #14141F;
     --primary-color8: #fff;
-
-
 
 }
 
@@ -1772,7 +1778,7 @@ header{
     right: 4px;
     font-size: 16px;
     background: var(--primary-color3);
-    color: #14141F;
+    color: #fff;
     -webkit-transition: all ease .3s;
     -moz-transition: all ease .3s;
     transition: all ease .3s;
@@ -1805,8 +1811,8 @@ header{
     width        : 100%;
     border       : 1px solid #FFFFFF12;
     border-radius: 5px;
-    line-height  : 23px;
-    padding      : 12px 50px 13px 19px;
+    line-height  : 24px;
+    padding      : 12px 50px 11px 19px;
 }
 
 .search-form .search-field::placeholder {
