@@ -402,7 +402,6 @@
     outline: 0 none;
 }
 
-
 /* icon button extraclasses */
 .sc-button.style.rocket span::before {
     content: "\e91d";
@@ -1086,7 +1085,6 @@
     content         : "";
     position        : absolute;
     background-color: #8A8AA0;
-    ;
     width    : 1px;
     height   : 14px;
     bottom   : 4px;

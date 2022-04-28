@@ -1734,3 +1734,20 @@
 360deg);
 }
 }
+
+/* new */
+.watermark-animate {
+  -webkit-animation: watermark-animate 8s infinite;
+  animation: watermark-animate 8s infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@keyframes watermark-animate {
+  0% {
+      left: 0;
+  }
+  100% {
+      left: 90%;
+  }
+}

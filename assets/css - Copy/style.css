@@ -1899,7 +1899,6 @@ header{
     top: 0;
     opacity: 1;
     visibility: visible;
-
 } 
 
 #header_admin.is-fixed {
@@ -2060,7 +2059,6 @@ header{
 /* Widget
 -------------------------------------------------------------- */
 
-
 .fl-dark .widget p,
 .fl-dark .widget .title-widget {
     color: var(--primary-color);
@@ -2082,10 +2080,6 @@ header{
 
 #side-bar .widget {
     margin-bottom: 40px;
-}
-
-#side-bar .widget.mgbt-24 {
-    margin-bottom: 24px;
 }
 
 .sc-widget.style-1 {
@@ -2153,7 +2147,6 @@ header{
 .widget-social.style-1 a:hover {
     color: var(--primary-color3);
 }
-
 
 .widget-social.style-1 ul li {
     margin-right: 35.5px;
@@ -2282,10 +2275,6 @@ header{
     line-height: 46px;
     /* color      : #706C83; */
     position   : relative;
-}
-
-.widget-menu ul li a:hover {
-
 }
 
 .widget-menu ul li a::after {
