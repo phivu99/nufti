@@ -96,7 +96,6 @@
   position: absolute;
   left: 3.7%;
   bottom: 38.3%;
-  animation: move4 5s infinite linear;
 }
 
 .mark-page3 {
@@ -136,12 +135,12 @@
   -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.sc-card-article:hover {
+.sc-card-article.blog-article:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   box-shadow: 1px -3px 16px rgba(47, 83, 109, 0.12);
 }
+
 .sc-card-article .card-media {
   border-radius: 8px;
   overflow: hidden;
@@ -307,7 +306,7 @@
 }
 
 .flat-help .help-row {
-  padding-bottom: 57px;
+  padding-bottom: 56px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   position: relative;
 }
@@ -498,26 +497,16 @@
 #comments .comment-form textarea {
   padding: 7px 19px 17px;
 }
-#comments .comment-form #comment-message {
-  padding: 0;
-}
 #comments .comment-form .text-call {
   text-transform: capitalize;
   margin-top: 21px;
   margin-bottom: 50px;
+  padding-right: 200px;
 }
 #comments .comment-form .text-call::before {
   content: "*";
   color: #B14233;
   margin-left: 1px;
 }
-
-/* #contactform button#comment-reply {
-    padding       : 15.9px 30px;   
-} */
-/* .comment-form */
-/* #comments .comment-form textarea {
-    padding: 15px 15px 13px;
-} */
 
 /*# sourceMappingURL=shortcodes.css.map */
