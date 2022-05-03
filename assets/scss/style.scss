@@ -838,6 +838,10 @@ label.error { color: red; }
     font-family: 'Open Sans', sans-serif;
 }
 
+.font-2 {
+    font-family: 'Inter', sans-serif;
+}
+
 .font-20 {
     font-size: 20px;
     font-weight: 500;
@@ -2101,6 +2105,29 @@ header{
 .widget.widget-categories li.active .number {
     background-color: var(--primary-color2);
     color: var(--primary-color);
+}
+
+// hover 
+.flat-img {
+    // position: relative;
+}
+
+.flat-img img:hover {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.flat-img .img-1,
+.flat-img .img-2 {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.flat-img img {
+    -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
 
