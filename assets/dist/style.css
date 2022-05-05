@@ -786,6 +786,20 @@ label.error {
   position: absolute;
 }
 
+.text-t {
+  text-transform: capitalize;
+}
+
+.show-slider {
+  margin-top: -100px !important;
+  padding-top: 100px !important;
+}
+
+.show-shadow {
+  margin: -15px !important;
+  padding: 15px !important;
+}
+
 .pad-l-10 {
   padding-left: 10px;
 }
@@ -820,6 +834,18 @@ label.error {
 
 .mb-44 {
   margin-bottom: 44px;
+}
+
+.mt-2 {
+  margin-top: -2px;
+}
+
+.mt-58 {
+  margin-top: 58px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 #wrapper {
@@ -859,6 +885,24 @@ label.error {
 
 .fs-16 {
   font-size: 16px;
+  font-weight: 400;
+}
+
+.fs-24 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-4 {
   font-weight: 400;
 }
 
@@ -1979,6 +2023,12 @@ header {
   color: var(--primary-color);
 }
 
+.live-auctions .sc-card-product:hover {
+  box-shadow: 0 0 16px 0 rgba(157, 26, 218, 0.5);
+}
+
+.sc-card-product:hover .img-item,
+.wrap-seller:hover .img-author img,
 .flat-img img:hover {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
@@ -1986,11 +2036,16 @@ header {
   transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.flat-img .img-author {
-  overflow: hidden;
-  border-radius: 50px;
+.sc-card-product:hover a img {
+  transition: all 0.4s ease;
 }
 
+.flat-img .img-author {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.flat-img .images,
 .flat-img .img-1,
 .flat-img .img-2 {
   overflow: hidden;
@@ -2000,6 +2055,12 @@ header {
 .flat-img img {
   -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
   transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.flat-img a img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

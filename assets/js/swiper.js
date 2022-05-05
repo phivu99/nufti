@@ -50,16 +50,13 @@ var swiper =  new Swiper(".carousel", {
 });
 
 
-var swiper =  new Swiper(".carousel-overflow", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
+var swiper =  new Swiper(".carousel-1", {
+
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: true,
+    loop: false,
     navigation: {
-        clickable: true,
+        clickable: false,
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
@@ -77,7 +74,7 @@ var swiper =  new Swiper(".carousel-overflow", {
             spaceBetween: 30,
         },
         1300: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
     },
@@ -299,69 +296,8 @@ var swiper =  new Swiper(".carousel6", {
     },
 });
 
-var swiper =  new Swiper(".carousel7", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
-    slidesPerView: 1,
-    loop: false, 
-    spaceBetween: 30,
-    navigation: {
-        clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    spaceBetween: 30,
-    breakpoints: {
-        600: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-        1200: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-        },
-    },
-});
 
-var swiper =  new Swiper(".carousel8", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
-    slidesPerView: 1,
-    loop: false, 
-    spaceBetween: 30,
-    navigation: {
-        clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    spaceBetween: 30,
-    breakpoints: {
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    },
-});
+
 
 var swiper =  new Swiper(".carousel9", {
     // autoplay: {
