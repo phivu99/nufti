@@ -157,6 +157,11 @@
   transform: translateY(-5px);
   box-shadow: 1px -3px 16px rgba(47, 83, 109, 0.12);
 }
+.sc-card-article.blog-article.style-article:hover {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  box-shadow: none;
+}
 
 .sc-card-article .card-media {
   border-radius: 8px;
@@ -432,11 +437,6 @@
   position: relative;
 }
 
-.icon-down {
-  content: "\e2e1";
-  font-family: "Font Awesome 6";
-}
-
 /* animation slider */
 .flat-slider .flat-bt-slider,
 .flat-slider .sub-heading,
@@ -704,19 +704,21 @@
   padding: 20px 27px 20px 30px;
   justify-content: space-between;
   margin-bottom: 30px;
-  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 .flat-cetagories .wrap-cetagories .cetagories:hover {
-  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
   background: var(--primary-color3);
+  box-shadow: 0 0 200px 0 rgba(156, 13, 223, 0.5);
 }
 .flat-cetagories .wrap-cetagories .cetagories:hover a,
 .flat-cetagories .wrap-cetagories .cetagories:hover p {
   color: var(--primary-color2);
-  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
-  transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.flat-cetagories .wrap-cetagories .cetagories:hover img {
+  filter: drop-shadow(0px 0px 7px white);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flat-cetagories .wrap-cetagories .cetagories .content {
   padding: 22px 0 0 0;
@@ -733,8 +735,6 @@
   padding: 19px 22px;
 }
 
-/* flat auctions
--------------------------------------------------------------- */
 .flat-auctions.live-auctions {
   padding-bottom: 120px;
 }
@@ -796,68 +796,6 @@
   margin: 0 4.3px;
 }
 
-.flat-explore .sc-card-product {
-  margin-bottom: 30px;
-}
-.flat-explore .sc-card-product .content .meta-price {
-  padding: 0;
-  margin: 0 0 2px 0;
-  border: 0;
-}
-
-.heading-section {
-  padding: 0 280px;
-  margin-bottom: 50px;
-  margin-top: -2px;
-}
-.heading-section h2 {
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-.heading-section p {
-  margin-left: 3px;
-}
-
-.heading-section2 {
-  padding: 0 100px 0 0;
-  margin-bottom: 47px;
-}
-.heading-section2 h2 {
-  font-weight: 500;
-  margin-bottom: 16px;
-  margin-left: -1px;
-}
-.heading-section2 p {
-  margin-left: 1px;
-}
-
-.flat-collection {
-  padding: 100px 0;
-}
-.flat-collection .img-item-1 {
-  width: 100%;
-  margin-right: 20px;
-}
-.flat-collection .img-item-2 {
-  width: 34.5%;
-}
-.flat-collection .img-item-2 img {
-  margin-bottom: 11px;
-}
-.flat-collection .img-item-2 img:last-child {
-  margin: 0;
-}
-.flat-collection .post {
-  padding: 28px 10px 0;
-}
-.flat-collection .post .text-article {
-  margin-bottom: 25px;
-}
-.flat-collection .post .item-nft .img-nft {
-  margin-right: 4px;
-  margin-top: -1px;
-}
-
 .flat-top-seller {
   background: rgba(119, 89, 243, 0.0705882353);
   padding-bottom: 117px;
@@ -917,18 +855,26 @@
 .flat-top-seller .wrap-seller .content .button-follow a span {
   font-size: 13px;
 }
-
-.wrap-seller:hover .img-box::before {
+.flat-top-seller .wrap-seller:hover .img-box::before {
   opacity: 1;
   z-index: 9;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flat-explore .sc-card-product {
+  margin-bottom: 30px;
+}
+.flat-explore .sc-card-product .content .meta-price {
+  padding: 0;
+  margin: 0 0 2px 0;
+  border: 0;
 }
 
 .wrap-friendly {
   background: url(./../../assets/images/backgroup-secsion/bg-friendly.jpg) center center no-repeat;
   border-radius: 28px;
 }
-.wrap-friendly .img-1 {
+.wrap-friendly .box-img {
   margin: 13px 0 0px 12px;
 }
 .wrap-friendly ul {
@@ -962,12 +908,51 @@
   margin-bottom: 25px;
   transition: all 0.8s ease;
 }
+.wrap-friendly ul li:hover img {
+  transform: rotateY(360deg);
+}
 .wrap-friendly ul li .title-friendly {
   font-size: 24;
 }
 
-.wrap-friendly ul li:hover img {
-  transform: rotateY(360deg);
+.flat-collection {
+  padding: 100px 0 0;
+}
+.flat-collection .img-item-1 {
+  width: 100%;
+  margin-right: 20px;
+}
+.flat-collection .img-item-2 {
+  width: 34.5%;
+}
+.flat-collection .img-item-2 img {
+  margin-bottom: 11px;
+}
+.flat-collection .img-item-2 img:last-child {
+  margin: 0;
+}
+.flat-collection .post {
+  padding: 28px 10px 0;
+}
+.flat-collection .post .text-article {
+  margin-bottom: 25px;
+}
+.flat-collection .post .item-nft .img-nft {
+  margin-right: 4px;
+  margin-top: -1px;
+}
+
+.flat-brand {
+  padding: 65px 0 97px;
+}
+.flat-brand .brand-slider {
+  padding: 0px 22px 0 37px;
+}
+.flat-brand .brand-slider .slogan-logo {
+  filter: contrast(0.4);
+}
+.flat-brand .brand-slider .slogan-logo:hover {
+  filter: none;
 }
 
 /*# sourceMappingURL=shortcodes.css.map */

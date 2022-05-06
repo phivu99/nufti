@@ -790,6 +790,10 @@ label.error {
   text-transform: capitalize;
 }
 
+.align {
+  align-items: center;
+}
+
 .show-slider {
   margin-top: -100px !important;
   padding-top: 100px !important;
@@ -1838,7 +1842,7 @@ header {
   right: 0;
   background-color: var(--primary-color3);
   font-size: 21px;
-  padding: 25px 24px 19px 20px;
+  padding: 25px 24px 17px 20px;
   color: var(--primary-color);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1847,8 +1851,13 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .widget-subcribe .form-subcribe button:hover {
-  opacity: 0.8;
-  border: 1px solid var(--primary-color3);
+  background: #fff;
+  border: 1px solid var(--primary-color2);
+  transition: all 0.3s ease-in-out;
+}
+.widget-subcribe .form-subcribe button:hover g {
+  filter: invert(1);
+  transition: all 0.3s ease-in-out;
 }
 
 .is_dark .widget-subcribe .form-subcribe input {
@@ -1987,7 +1996,7 @@ header {
   margin: 2px;
 }
 
-/* categories */
+/*widget categories */
 .widget.widget-categories li {
   position: relative;
   margin-bottom: 34px;
@@ -2021,6 +2030,32 @@ header {
 .widget.widget-categories li.active .number {
   background-color: var(--primary-color2);
   color: var(--primary-color);
+}
+
+.heading-section {
+  padding: 0 25%;
+  margin-bottom: 50px;
+  margin-top: -2px;
+}
+.heading-section h2 {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.heading-section p {
+  margin-left: 3px;
+}
+
+.heading-section2 {
+  padding: 0 100px 0 0;
+  margin-bottom: 47px;
+}
+.heading-section2 h2 {
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-left: -1px;
+}
+.heading-section2 p {
+  margin-left: 1px;
 }
 
 .live-auctions .sc-card-product:hover {
