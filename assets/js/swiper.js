@@ -88,22 +88,14 @@ var swiper =  new Swiper(".carousel-2", {
     //     delay: 5000,
     //     disableOnInteraction: false,
     //     },
-    slidesPerView: 6,
+    slidesPerView: 2,
     loop: true, 
-    spaceBetween: 92,
+    spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
         clickable: false,
       },
     breakpoints: {
-       500: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        },
-        640: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
         768: {
             slidesPerView: 4,
             spaceBetween: 30,

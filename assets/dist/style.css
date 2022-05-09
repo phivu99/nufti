@@ -799,6 +799,11 @@ label.error {
   padding-top: 100px !important;
 }
 
+.show-slider2 {
+  padding-bottom: 115px !important;
+  margin-bottom: -115px !important;
+}
+
 .show-shadow {
   margin: -15px !important;
   padding: 15px !important;
@@ -974,6 +979,26 @@ a:hover, a:focus {
 }
 .link-style-2 a:focus, .link-style-2 a:hover {
   color: var(--primary-color3);
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-style-3 {
+  text-decoration: none;
+  color: var(--primary-color3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.link-style-3:focus, .link-style-3:hover {
+  color: #8E2AC3;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
