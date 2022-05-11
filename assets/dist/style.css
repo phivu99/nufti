@@ -820,6 +820,10 @@ label.error {
   padding-left: 10px;
 }
 
+.pb-120 {
+  padding-bottom: 120px;
+}
+
 .pl-68 {
   padding-left: 68px;
 }
@@ -854,10 +858,6 @@ label.error {
 
 .mb-44 {
   margin-bottom: 44px;
-}
-
-.mb-120 {
-  margin-bottom: 120px;
 }
 
 .mt-2 {
@@ -1731,12 +1731,15 @@ header {
   position: relative;
 }
 
+#footer.home2 {
+  padding: 118px 0 103px;
+}
+
 .is_dark #footer {
   background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
 }
 
 .is_dark #footer.home2 {
-  padding: 118px 0 103px;
   background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
   background-size: cover;
 }
@@ -2123,11 +2126,12 @@ header {
   margin-left: 1px;
 }
 
+.flat-blog .sc-card-article:hover,
 .live-auctions .sc-card-product:hover {
   box-shadow: 0 0 16px 0 rgba(157, 26, 218, 0.5);
 }
 
-.sc-card-product:hover .img-item,
+.sc-card-article:hover .img-item,
 .wrap-seller:hover .img-author img,
 .flat-img img:hover {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
@@ -2136,7 +2140,7 @@ header {
   transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.sc-card-product:hover a img {
+.sc-card-article:hover a img {
   transition: all 0.4s ease;
 }
 

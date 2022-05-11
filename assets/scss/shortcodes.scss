@@ -437,6 +437,7 @@
 }
 
 .slider {
+    cursor:e-resize;
     position: relative;
     overflow: hidden;
     background: none;
@@ -480,13 +481,16 @@
     }
 }
 
+// slider home2
 .slider {
     &.style-home2 {
+        overflow: unset;
         padding: 139px 0 119px;
         .flat-wrap {
             padding: 27px;
             border: 3px dashed rgba(255, 255, 255, 0.07);
             border-radius: 10px;
+            z-index: 5;
             .wrap-heading  {
                 background-color: #AAADEC;
                 border-radius: 10px;
@@ -553,24 +557,28 @@
             left: 0.8%;
         }
         .mark-page2 {
-            top: 29.1%;
+            top: 34.5%;
             left: 8%;
             z-index: 9;
+        }
+        .mark-page3 {
+            left: 37.9%;
+            top: 23%;
+            z-index: 9;
+        }
+        .mark-page4 {
+            bottom: 9.5%;
         }
         .mark-page5 {
             z-index: 2;
         }
-        .mark-page3 {
-            left: 37.9%;
-            top: 19.5%;
-            z-index: 9;
-        }
         .mark-page9 {
-            bottom: 8.5%;
+            bottom: -5%;
         }
         .mark-slider-02 {  
-            top: 13%;
+            top: 15%;
             right: 7.7%;
+            z-index: 1;
         }
     }
 }
@@ -969,6 +977,7 @@
                 transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 img {
                     border-radius: 6px;
+                    width: 100%;
                 }  
             }
             .content {
@@ -1154,7 +1163,7 @@
             padding-bottom: 118px;
         }
         .wrap-seller {
-            padding: 0 0 29px 49px;
+            padding: 0 0 29px 18%;
             .img-box {
                 margin-top: -61px;
                 margin-left: 0;
@@ -1245,6 +1254,7 @@
     &.home2 {
         .wrap-friendly {
             background: url(./../../assets/images/backgroup-secsion/bg-user-friendly.jpg) center center no-repeat;
+            background-size: cover;
             .box-img {
                 top: 13px;
                 right: 0px;
