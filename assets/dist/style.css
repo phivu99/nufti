@@ -884,6 +884,10 @@ label.error {
 }
 
 .wrapper-style {
+  background: #FAF8FF;
+}
+
+.is_dark .wrapper-style {
   background: linear-gradient(150.57deg, #1E0426 2.97%, #100C3A 25.62%, #130517 51.04%, #050130 72.12%, #0A0426 91.18%);
 }
 
@@ -1162,11 +1166,11 @@ header {
   line-height: 20px;
   font-weight: 600;
   display: block;
-  color: #fff;
+  color: var(--primary-color2);
   padding-right: 15.5px;
 }
 #main-nav > ul > li > a:hover {
-  color: #fff;
+  color: var(--primary-color3);
 }
 #main-nav > .menu > li.menu-item-has-children > a::after {
   content: "\f107";
@@ -1242,10 +1246,6 @@ header {
 #main-nav .sub-menu li.current-item a,
 #main-nav .sub-menu li a:hover {
   color: var(--primary-color3);
-}
-
-#main-nav > ul > li > a:hover {
-  color: #fff;
 }
 
 #main-nav > ul > li .sub-menu li {
@@ -1574,7 +1574,7 @@ header {
   width: 100%;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
   z-index: 9999;
-  background: linear-gradient(227.3deg, #8A208C 0%, #181B81 100.84%);
+  background: linear-gradient(180deg, #3AFCC2 0%, #7759F3 100%);
   border: none;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
@@ -1582,6 +1582,9 @@ header {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.header_1.is-fixed #main-nav > ul > li > a {
+  color: #fff;
 }
 .header_1.is-fixed .mode_switcher {
   display: none;
@@ -1734,6 +1737,9 @@ header {
 #footer.home2 {
   padding: 118px 0 103px;
 }
+#footer.home3 {
+  padding: 120px 0 103px;
+}
 
 .is_dark #footer {
   background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
@@ -1742,6 +1748,9 @@ header {
 .is_dark #footer.home2 {
   background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
   background-size: cover;
+}
+.is_dark #footer.home3 {
+  background: linear-gradient(180deg, #08032C 0%, rgba(8, 3, 43, 0.93) 54.62%);
 }
 
 .overlay {
@@ -1949,6 +1958,9 @@ header {
   font-size: 14px;
   font-weight: 600;
 }
+.widget-social-footer.home3 {
+  background-color: var(--primary-color2);
+}
 
 /* PreLoad
 -------------------------------------------------------------- */
@@ -2108,6 +2120,11 @@ header {
 }
 .heading-section p {
   margin-left: 3px;
+}
+.heading-section.style {
+  margin-top: -3px;
+  margin-bottom: 49px;
+  padding: 0 30%;
 }
 
 .heading-section2 {
