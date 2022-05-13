@@ -510,11 +510,11 @@
 }
 
 .slider {
-    // background: linear-gradient(79.57deg, rgba(119, 89, 243, 0) 10.75%, rgba(255, 255, 255, 0.3) 50.17%, rgba(119, 89, 243, 0) 106.55%);
     cursor:e-resize;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(79.57deg, rgba(119, 89, 243, 0) 10.75%, rgba(255, 255, 255, 0.3) 50.17%, rgba(119, 89, 243, 0) 106.55%);
+    // background: linear-gradient(79.57deg, rgba(119, 89, 243, 0) 10.75%, rgba(255, 255, 255, 0.3) 50.17%, rgba(119, 89, 243, 0) 106.55%);
+    background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
     padding: 101px 0 284px;
     .wrap-heading {
         .content {
@@ -1462,38 +1462,38 @@
 }
 
 // flat featured
-// .flat-featured {
-//     padding-bottom: 87px;
-//     .wrap-featured {
-//         .box-img {
-//             background: linear-gradient(180deg, rgba(95, 58, 252, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
-//             padding: 15px;
-//             border-radius: 50%;
-//             width: 100px;
-//             margin: 0 auto; 
-//             img {
-//                 transition: all 0.8s ease;
-//             }  
-//         }
-//         .content {
-//             padding: 31px 48px 20px 49px;
-//             h3 {
-//                 margin-bottom: 20px;
-//             }
-//         }
-//         &:hover {
-//             img {
-//                 transform: rotateY(360deg);
-//             }
-//         }
-//     }
-// }
+.flat-featured {
+    padding-bottom: 87px;
+    .wrap-featured {
+        .box-img {
+            background: linear-gradient(180deg, rgba(95, 58, 252, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+            padding: 15px;
+            border-radius: 50%;
+            width: 100px;
+            margin: 0 auto; 
+            img {
+                transition: all 0.8s ease;
+            }  
+        }
+        .content {
+            padding: 31px 48px 20px 49px;
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+        &:hover {
+            img {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}
 
-// .flat-featured {
-//     &.home3 {
-//         padding: 90px 0;
-//     }
-// }
+.flat-featured {
+    &.home3 {
+        padding: 90px 0;
+    }
+}
 
 
 // /* switch mode */

@@ -479,7 +479,7 @@
   cursor: e-resize;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(79.57deg, rgba(119, 89, 243, 0) 10.75%, rgba(255, 255, 255, 0.3) 50.17%, rgba(119, 89, 243, 0) 106.55%);
+  background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
   padding: 101px 0 284px;
 }
 .slider .wrap-heading .content {
@@ -1296,6 +1296,33 @@
 
 .flat-brand.home2 {
   padding: 67px 0 97px;
+}
+
+.flat-featured {
+  padding-bottom: 87px;
+}
+.flat-featured .wrap-featured .box-img {
+  background: linear-gradient(180deg, rgba(95, 58, 252, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+  padding: 15px;
+  border-radius: 50%;
+  width: 100px;
+  margin: 0 auto;
+}
+.flat-featured .wrap-featured .box-img img {
+  transition: all 0.8s ease;
+}
+.flat-featured .wrap-featured .content {
+  padding: 31px 48px 20px 49px;
+}
+.flat-featured .wrap-featured .content h3 {
+  margin-bottom: 20px;
+}
+.flat-featured .wrap-featured:hover img {
+  transform: rotateY(360deg);
+}
+
+.flat-featured.home3 {
+  padding: 90px 0;
 }
 
 /*# sourceMappingURL=shortcodes.css.map */
