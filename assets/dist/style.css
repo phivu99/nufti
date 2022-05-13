@@ -796,6 +796,11 @@ label.error {
   align-items: center;
 }
 
+.show-boder {
+  padding-bottom: 10px !important;
+  margin-bottom: -10px !important;
+}
+
 .show-slider {
   margin-top: -100px !important;
   padding-top: 100px !important;
@@ -1044,7 +1049,11 @@ a:hover, a:focus {
 }
 
 .text-color-4 {
-  color: #706C83;
+  color: #706C83 !important;
+}
+
+.text-color-5 {
+  color: var(--primary-color8);
 }
 
 /* Root
@@ -1055,12 +1064,12 @@ a:hover, a:focus {
   --primary-color2: #130518;
   --primary-color3: #7759F3;
   --primary-color4: #706C83;
-  --primary-color5: #F8F8F8;
+  --primary-color5: #13051808;
   --primary-color6: #13051812;
-  --primary-color7: ;
+  --primary-color7: #fff;
   --bg-section: #fff;
-  --bg-section2: #f8f8f8;
-  --primary-color8: #7A798A;
+  --bg-section2: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
+  --primary-color8: #706C83;
 }
 
 .is_dark {
@@ -1070,9 +1079,9 @@ a:hover, a:focus {
   --primary-color4: #706C83;
   --primary-color5: #FFFFFF08;
   --primary-color6: #FFFFFF12;
-  --primary-color7: #343444;
+  --primary-color7: #13051808;
   --bg-section: #14141F;
-  --bg-section2: #14141F;
+  --bg-section2: linear-gradient(79.57deg, rgba(31, 17, 85, 0) 10.75%, #130518 50.17%, rgba(31, 17, 85, 0) 106.55%);
   --primary-color8: #fff;
 }
 
@@ -1459,7 +1468,7 @@ header {
   background: var(--primary-color5);
   color: #fff;
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.0705882353);
+  border: 1px solid var(--primary-color6);
   border-radius: 5px;
   line-height: 24px;
   padding: 12px 50px 11px 19px;
@@ -1574,7 +1583,7 @@ header {
   width: 100%;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
   z-index: 9999;
-  background: linear-gradient(180deg, #3AFCC2 0%, #7759F3 100%);
+  background: #edeaf6;
   border: none;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
@@ -1584,7 +1593,7 @@ header {
   transition: all 0.5s ease;
 }
 .header_1.is-fixed #main-nav > ul > li > a {
-  color: #fff;
+  color: var(--primary-color2);
 }
 .header_1.is-fixed .mode_switcher {
   display: none;
@@ -1730,19 +1739,14 @@ header {
 -------------------------------------------------------------- */
 #footer {
   padding: 118px 0 42px;
-  background-color: #fff;
+  background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
   position: relative;
 }
-
 #footer.home2 {
   padding: 118px 0 103px;
 }
 #footer.home3 {
   padding: 120px 0 103px;
-}
-
-.is_dark #footer {
-  background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
 }
 
 .is_dark #footer.home2 {
@@ -1779,7 +1783,7 @@ header {
 }
 .widget-logo p {
   padding-bottom: 21px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid var(--primary-color6);
   font-weight: 600;
   margin-right: 100px;
   margin-bottom: 29px;
@@ -1809,6 +1813,10 @@ header {
 
 .widget-social.style-1 ul li a {
   font-size: 19px;
+  color: rgba(19, 5, 24, 0.3019607843);
+}
+
+.is_dark .widget-social.style-1 ul li a {
   color: rgba(255, 255, 255, 0.3019607843);
 }
 
@@ -1852,6 +1860,7 @@ header {
 }
 .widget-menu .title-widget {
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .widget-menu ul li a {
   font-family: "Open Sans", sans-serif;
@@ -1894,11 +1903,11 @@ header {
 }
 .widget-subcribe .form-subcribe input {
   border-radius: 10px;
-  background: #F8F8F8;
+  background: var(--primary-color5);
   width: 100%;
   padding: 20px 50px 20px 29px;
   font-size: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.0705882353);
+  border: 1px solid var(--primary-color6);
 }
 .widget-subcribe .form-subcribe input:focus {
   border: 1px solid #5142FC;
@@ -1925,8 +1934,8 @@ header {
   transition: all 0.3s ease;
 }
 .widget-subcribe .form-subcribe button:hover {
-  background: #fff;
-  border: 1px solid var(--primary-color2);
+  background: #8E2AC3;
+  border: 1px solid #8E2AC3;
   transition: all 0.3s ease-in-out;
 }
 .widget-subcribe .form-subcribe button:hover g {
@@ -1934,14 +1943,20 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.is_dark .widget-subcribe .form-subcribe input {
-  background: rgba(255, 255, 255, 0.03);
+.is_dark .widget-subcribe .form-subcribe button g {
+  filter: invert(1);
+}
+.is_dark .widget-subcribe .form-subcribe button:hover {
+  background: #fff;
+}
+.is_dark .widget-subcribe .form-subcribe button:hover g {
+  filter: unset;
 }
 
 /* widget social footer */
 .widget-social-footer {
   padding: 15px 0 16px;
-  background-color: var(--primary-color);
+  background-color: #130518;
 }
 .widget-social-footer ul li {
   margin-right: 44.3px;
@@ -1957,6 +1972,7 @@ header {
   margin-top: 8px;
   font-size: 14px;
   font-weight: 600;
+  color: #fff;
 }
 .widget-social-footer.home3 {
   background-color: var(--primary-color2);

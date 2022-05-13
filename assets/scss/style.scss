@@ -810,6 +810,10 @@ label.error {
     align-items: center;
 }
 
+.show-boder {
+    padding-bottom: 10px !important;
+    margin-bottom: -10px !important;
+}
 
 .show-slider {
     margin-top: -100px !important;
@@ -899,7 +903,7 @@ label.error {
 }
 
 .wrapper-style {
-    background:  #FAF8FF;;
+    background:  #FAF8FF;
 }
 
 .is_dark .wrapper-style {
@@ -1025,7 +1029,6 @@ a {
     }
 }
 
-
 .text-color-1 {
     color: #fff;
 }
@@ -1039,7 +1042,11 @@ a {
 }
 
 .text-color-4 {
-    color: #706C83;
+    color: #706C83 !important;
+}
+
+.text-color-5 {
+    color: var(--primary-color8);
 }
 
 // background-color: #8E2AC3;
@@ -1053,25 +1060,24 @@ a {
     --primary-color2: #130518;
     --primary-color3: #7759F3;
     --primary-color4: #706C83;
-    --primary-color5: #F8F8F8;
+    --primary-color5: #13051808;
     --primary-color6: #13051812;
-    --primary-color7: ;
+    --primary-color7: #fff;
     --bg-section: #fff;
-    --bg-section2: #f8f8f8;
-    --primary-color8: #7A798A;
+    --bg-section2: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
+    --primary-color8: #706C83;
 }
 
 .is_dark {
     --primary-color: #130518;
-    ;
     --primary-color2: #fff;
     --primary-color3: #7759F3;
     --primary-color4: #706C83;
     --primary-color5: #FFFFFF08;
     --primary-color6: #FFFFFF12;
-    --primary-color7: #343444;
+    --primary-color7: #13051808;
     --bg-section: #14141F;
-    --bg-section2: #14141F;
+    --bg-section2: linear-gradient(79.57deg, rgba(31, 17, 85, 0) 10.75%, #130518 50.17%, rgba(31, 17, 85, 0) 106.55%);
     --primary-color8: #fff;
 }
 
@@ -1431,7 +1437,6 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-
 #main-nav-mobi .menu-item-has-children .arrow.active {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1529,12 +1534,11 @@ header {
 
 .search-form {
     position: relative;
-
     .search-field {
         background: var(--primary-color5);
         color: #fff;
         width: 100%;
-        border: 1px solid #FFFFFF12;
+        border: 1px solid var(--primary-color6);
         border-radius: 5px;
         line-height: 24px;
         padding: 12px 50px 11px 19px;
@@ -1666,12 +1670,12 @@ header {
         width: 100%;
         box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
         z-index: 9999;
-        background: linear-gradient(180deg, #3AFCC2 0%, #7759F3 100%);
+        background: #edeaf6;
         border: none;
         opacity: 0;
         @include transition5;
         #main-nav > ul > li > a {
-            color: #fff;
+            color: var(--primary-color2);
         }
         .mode_switcher {
             display: none;
@@ -1828,13 +1832,11 @@ header {
 
 /* Footer
 -------------------------------------------------------------- */
-#footer {
-    padding: 118px 0 42px;
-    background-color: #fff;
-    position: relative;
-}
 
 #footer {
+    padding: 118px 0 42px;
+    background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
+    position: relative;
     &.home2 {
         padding: 118px 0 103px;
     }
@@ -1846,16 +1848,9 @@ header {
 
 .is_dark {
     #footer {
-        background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
-    }
-}
-
-.is_dark {
-    #footer {
         &.home2 {
             background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
-            background-size: cover;
-            
+            background-size: cover;  
         }
         &.home3 {
             background: linear-gradient(180deg, #08032C 0%, rgba(8, 3, 43, 0.93) 54.62%);
@@ -1893,7 +1888,7 @@ header {
 
     p {
         padding-bottom: 21px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        border-bottom: 1px solid var(--primary-color6);
         font-weight: 600;
         margin-right: 100px;
         margin-bottom: 29px;
@@ -1924,6 +1919,9 @@ header {
 
 .widget-social.style-1 ul li a {
     font-size: 19px;
+    color: #1305184D;
+}
+.is_dark .widget-social.style-1 ul li a {
     color: #FFFFFF4D;
 }
 
@@ -1966,9 +1964,9 @@ header {
 
 .widget-menu {
     padding-left: 0.9px;
-
     .title-widget {
         margin-bottom: 10px;
+        font-weight: 600;
     }
     ul {
         li {
@@ -2015,12 +2013,12 @@ header {
 
         input {
             border-radius: 10px;
-            background: #F8F8F8;
+            background:  var(--primary-color5);
             width: 100%;
             padding: 20px 50px 20px 29px;
             font-size: 14px;
             // border: 1px solid rgba(138, 138, 160, 0.3);
-            border: 1px solid #FFFFFF12;
+            border: 1px solid var(--primary-color6);
 
             &:focus {
                 border: 1px solid #5142FC;
@@ -2046,8 +2044,8 @@ header {
             @include transition3;
 
             &:hover {
-                background: #fff;
-                border: 1px solid var(--primary-color2);
+                background: #8E2AC3;
+                border: 1px solid #8E2AC3;
                 transition: all 0.3s ease-in-out;
 
                 g {
@@ -2059,14 +2057,28 @@ header {
     }
 }
 
-.is_dark .widget-subcribe .form-subcribe input {
-    background: rgba(255, 255, 255, 0.03);
+.is_dark {
+    .widget-subcribe {
+        .form-subcribe {
+            button {
+                g {
+                    filter: invert(1);
+                }
+                &:hover {
+                    background: #fff;
+                    g {
+                        filter: unset;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* widget social footer */
 .widget-social-footer {
     padding: 15px 0 16px;
-    background-color: var(--primary-color);
+    background-color: #130518;
     ul {
         li {
             margin-right: 44.3px;
@@ -2084,6 +2096,7 @@ header {
         margin-top: 8px;
         font-size: 14px;
         font-weight: 600;
+        color: #fff;
     }
     &.home3 {
         background-color: var(--primary-color2);

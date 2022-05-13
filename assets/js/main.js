@@ -142,8 +142,8 @@
         $(".light").addClass("is_active")
         $(".dark").removeClass("is_active")
 
-        $(".tf-text").addClass("style")
-        $(".tf-text").removeClass("s1")
+        // $(".tf-text").addClass("style")
+        // $(".tf-text").removeClass("s1")
         document.getElementById("logo_header").src = "assets/images/logo/logo.png";
         document.getElementById("logo_footer").src = "assets/images/logo/logo2.png";
     });

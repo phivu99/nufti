@@ -1,5 +1,5 @@
 
-// @use './' as *;
+@use './abstracts/' as *;
 .themes-container {
     position     : relative;
     margin-left  : auto;
@@ -315,7 +315,7 @@
     }
     .help-row {
         padding-bottom: 56px; 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        border-bottom: 1px solid var(--primary-color6);
         position: relative;
     }
 }
@@ -481,7 +481,7 @@
         z-index: -1;
     }
     .img-slider {
-        border: 3px dashed rgba(255, 255, 255, 0.07);
+        border: 3px dashed var(--primary-color6);
         box-sizing: border-box;
         border-radius: 10px;
         // transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -513,7 +513,6 @@
     cursor:e-resize;
     position: relative;
     overflow: hidden;
-    // background: linear-gradient(79.57deg, rgba(119, 89, 243, 0) 10.75%, rgba(255, 255, 255, 0.3) 50.17%, rgba(119, 89, 243, 0) 106.55%);
     background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
     padding: 101px 0 284px;
     .wrap-heading {
@@ -525,9 +524,11 @@
                 text-transform: capitalize;
                 line-height: 87px;
                 margin-bottom: 7px;
+                color: #7759F3;
                 .s1 {
                     background: linear-gradient(91.5deg, #7759F3 41.52%, #8E2AC3 96.58%);
-                    color: #130518;
+                    // color: #130518;
+                    color:  var(--primary-color);
                     background-size: 200% 200%;
                     -webkit-background-clip: text;
                     -webkit-text-stroke: 3px transparent; 
@@ -537,8 +538,7 @@
                     position: relative;
                     box-sizing: border-box;
                     margin-left: -1px;
-                    color: #FFF;
-                    background: #0E1B3E;
+                    background: #edeaf6;
                     background-clip: padding-box; 
                     border: solid 2x transparent; 
                     border-radius: 1em;
@@ -578,6 +578,21 @@
     }
 }
 
+.is_dark {
+    .slider {
+        .wrap-heading {
+            .content {
+                h1 {
+                    color: #fff;
+                    .s2 {
+                        background: #130518;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // slider home 02
 .slider {
     &.style-home2 {
@@ -599,6 +614,7 @@
                     position: relative;
                     z-index: 99999;
                     h1 {
+                        color: #fff;
                         .s1 {
                             background: unset;
                             color: var(--primary-color3);
@@ -1004,9 +1020,10 @@
             &:hover {
                 transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
                 background:  var(--primary-color3);
+                
                 a,
                 p {
-                    color: var(--primary-color2);
+                    color: #fff;
                     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
                 }
                 img {
@@ -1170,7 +1187,7 @@
     padding-bottom: 117px;
     padding-top: 110px;
     .wrap-seller {
-        background: var(--primary-color5);
+        background: var(--primary-color7);
         border: 1px solid var(--primary-color6);
         padding: 29px 0 29px ;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1383,20 +1400,20 @@
 
 .flat-friendly {
     &.home3 {
-            ul {
-                border-bottom: 1px solid var(--primary-color6) ;
-                padding: 120px 0 51px 46px;
-                li {
-                    max-width: 15.85%;
-                }
-                .style {
-                    &::after {
-                        transform: rotateX(180deg);
-                        top:0;
-                    }
+        ul {
+            border-bottom: 1px solid var(--primary-color6) ;
+            padding: 120px 0 51px 46px;
+            li {
+                max-width: 15.85%;
+            }
+            .style {
+                &::after {
+                    transform: rotateX(180deg);
+                    top:0;
                 }
             }
         }
+    }
 }
 
 // flat collection
@@ -1494,7 +1511,6 @@
         padding: 90px 0;
     }
 }
-
 
 // /* switch mode */
 

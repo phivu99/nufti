@@ -1,17 +1,51 @@
+@use './abstracts/' as *;
+
 /* Media Queries
 -------------------------------------------------------------- */
-@media only screen and (max-width: 1600px) {
-    .slider .wrap-heading .content {
-      padding-left: 8.05%;
-      width: 48%;
+
+  @media only screen and (max-width: 1818px) {
+    .header_1 #main-nav {
+      left: 12% ;
     }
-    .themes-container2 {
-        &.themes-slider {
-            width: 1300px;
-        }
+    .flat-search-btn {
+      right: 11% ;
     }
   }
+
+  @media only screen and (max-width: 1600px) {
+      .slider .wrap-heading .content {
+        padding-left: 8.05%;
+        width: 48%;
+      }
+      .themes-container2 {
+          &.themes-slider {
+              width: 1300px;
+          }
+      }
+      .slider.style-home2 .flat-wrap .wrap-heading .content {
+        padding-left: 7%;
+        padding-right: 15px;
+        width: 50%;
+        margin-top: 11.1%;
+      }
+      .slider.style-home2 .mark-page2 {
+        display: none;
+      }
+      
+  }
+
   @media only screen and (max-width: 1366px) {
+    .header_1 #main-nav {
+      left: 10%;
+    }
+    #main-nav > ul > li {
+      padding: 20px 10px 26px 13px;
+    }
+    .header-search {
+      margin-right: 15px;
+    }
+    .slider.style-home2 .mark-page2,
+    .slider.style-home3 .mark-page8,
     .swiper-button-next,
     .swiper-button-prev,
     .seller .swiper-button-next.btn-slide-next,
@@ -42,6 +76,10 @@
   }
 
   @media only screen and (max-width: 1199px) {
+
+    .header_1 #main-nav {
+      left: 20% ;
+    }
     .slider.style-home2 .mark-page2,
     .slider .mark-page8,
     .slider .mark-slider-02,
@@ -68,19 +106,24 @@
   }
   
   @media (max-width: 991px) and (min-width: 767px) {
-    .themes-container2 {
-        &.themes-slider {
-            width: 750px;
-        }
-    }
+    
   }
   
   @media only screen and (max-width: 991px) {
+    .themes-container2 {
+      &.themes-slider {
+          width: 750px;
+      }
+    }
+    #footer.home3 {
+      padding: 0 0 85px;
+    }
     #footer.home2 {
         padding: 100px 0 90px;
     }
-    .slider.style-home2,
-    .flat-friendly.home2 .wrap-friendly ul,
+    .flat-collection.home3,
+    .flat-top-seller.home3 .style-container,
+    .flat-friendly.home2 ul,
     .tf-section {
       padding: 100px 0;
     }
@@ -91,11 +134,19 @@
       padding-bottom: 100px;
     }
 
+    .flat-cetagories2.home3 .style-container {
+      padding: 100px 0 70px;
+    }
+    .flat-featured.home3 {
+      padding: 70px 0 90px;
+    }
+
+    .flat-friendly.home3 ul li::after,
     .mark-page2,
-    .flat-friendly .wrap-friendly .box-img,
+    .flat-friendly  .box-img,
     .slider .mark-page4,
     .col-mobi,
-    .flat-friendly.home2 .wrap-friendly .img,
+    .flat-friendly.home2 .img,
     .slider.style-home2 .mark-page3,
     .mode_switcher {
       display: none;
@@ -109,26 +160,83 @@
         margin-bottom: 0px;
     }
 
-    .slider.style-home2 .mark-page9 {
-        bottom: 0;
+    .slider {
+      padding: 70px 0 100px;
+      .wrap-heading {
+        .image {
+            padding: 0 15px;
+            .img-slider {
+              margin-top: 10px;            
+            }
+          }      
+        .content {
+            margin-top: 10%;
+            padding: 0;
+            width: 70%;
+            h1 {
+              font-size: 60px;
+              line-height: 72px;
+              margin-bottom: 15px;
+            }
+          }
+      }
+      .img-slider {
+        border: unset;
+      }
     }
 
     .flat-brand.home2 {
         padding: 67px 0 97px;
     }
-    
-    .slider.style-home2 .flat-wrap .wrap-heading .content {
-        width: 70.85%;
-        padding-left: 30px;
-        margin: 50px 0 60px;
+
+    .slider {
+      &.style-home2 {
+        padding: 100px 0 80px;
+        .flat-wrap {
+          .wrap-heading {
+            .content {
+              width: 60%;
+              padding-left: 30px;
+              margin: 45px 0 60px;
+              padding-left: 15px;
+            }
+            .image {
+              margin-top: 50px;
+              width: 40%;
+            }
+          }
+          .mark-page9 {
+            bottom: 0;
+          }
+        }
+      }
+        
+    }
+
+    .slider {
+      &.style-home3 {
+        padding: 110px 0 100px;
+        .flat-wrap {
+          .wrap-heading {
+            .content {
+              padding-left: 0 !important;
+              margin: 0;
+            }
+            .img-slider {
+              padding: 50px 30px 0px 0px;
+              width: 40%;
+              .image {
+                width: unset;
+              }
+            }
+          }
+        } 
+      }
     }
 
     .flat-top-seller .wrap-seller,
     .slider .wrap-heading .content p {
         margin-bottom: 30px;
-    }
-    .slider.style-home2 .flat-wrap .wrap-heading .image {
-        margin-top: 50px;
     }
 
     .header_1,
@@ -188,20 +296,6 @@
         padding: 30px 0px 0px 0px;
     }
 
-    .slider {
-      padding: 101px 0 150px;
-      .wrap-heading {
-        .image {
-            padding: 0 15px;
-          }      
-        .content {
-            margin-top: 10%;
-            padding: 0;
-            width: 70%;
-          }
-      }
-    }
-  
     .flat-brand {
       padding: 70px 0;
       .brand-slider {
@@ -221,6 +315,7 @@
       padding-left: 30px;
     }
   
+    .heading-section.style,
     .heading-section {
       padding: 0px 50px;
     }
@@ -236,13 +331,30 @@
     .flat-friendly {
         .wrap-friendly {
             border-radius: 0;
-            ul {
-                justify-content: center;
-                padding: 100px 0 95px;
-                li {
-                    max-width: 23%;
-                }
+        }
+        ul {
+            justify-content: center;
+            padding: 100px 0 95px;
+            li {
+                max-width: 23%;
             }
+        }
+    }
+
+    .flat-friendly.home3 ul li {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    .flat-friendly.home3 ul {
+      padding: 100px 0 41px 0px;
+    }
+
+    .flat-cetagories2 {
+      &.home2 {
+          .wrap-cetagories {
+              margin-bottom: 20px
+          }
         }
     }
 
@@ -255,12 +367,15 @@
       font-size: 38px;
       line-height: 48px;
     }
-    
+    .flat-collection.home3,
+    .flat-top-seller.home3 .style-container,
     .flat-friendly .wrap-friendly,
     .tf-section {
       padding: 80px 0;
     }
   
+   
+    .flat-friendly.home3,
     .flat-help,
     .flat-collection {
       padding-top: 80px;
@@ -302,11 +417,12 @@
     }
 
     .flat-top-seller .wrap-seller .content .price,
-    .flat-friendly .wrap-friendly ul li img {
+    .flat-friendly ul li img {
       margin-bottom: 20px;
     }
   
-    .flat-friendly .wrap-friendly ul li::after,
+    .slider.style-home3 .flat-wrap .wrap-heading .img-slider,
+    .flat-friendly ul li::after,
     .slider .wrap-heading .image {
       display: none;
     }
@@ -330,30 +446,41 @@
       margin-top: 20px;
     }
   
-    .slider .wrap-heading .content {
-      width: 93%;
-      margin-top: 14%;
-    }
-  
-    .heading-section2 h2,
-    .heading-section h2 {
-        margin-bottom: 10px;
-        line-height: 38px;
-    }
-
-    .slider .wrap-heading .content h1 {
-      font-size: 60px;
-      line-height: 74px;
-      margin-bottom: 20px;
+    .slider {
+      .wrap-heading {
+        .content {
+          width: 93%;
+          margin-top: 14%;
+          h1 {
+            line-height: 74px;
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
 
     .slider.style-home2 .flat-wrap .wrap-heading .content .sc-button.style-1 {
-        margin-left: 0;
-        padding: 19px 20px;
+      margin-left: 0;
+      padding: 19px 20px;
     }
 
     .slider.style-home2 .flat-wrap .wrap-heading .content .sc-button.style-2 {
         padding: 19px 26px;
+    }
+
+    .slider.style-home2 .flat-wrap .wrap-heading .content {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    .slider.style-home3 .flat-wrap {
+      padding: 0 15px 0 0 ;
+    }
+
+    .heading-section2 h2,
+    .heading-section h2 {
+        margin-bottom: 10px;
+        line-height: 38px;
     }
   
     .widget-social-footer .widget ul {
@@ -363,8 +490,8 @@
     .widget-social-footer ul li {
       margin: 0 7px;
     }
-    
-    .flat-friendly .wrap-friendly ul,
+
+    .flat-friendly ul,
     .flat-blog-details .post .img-box {
       display: unset;
     }
@@ -412,19 +539,20 @@
     #comments .title-comment {
       margin-bottom: 15px;
     }
-  
+
     #comments .comment-form .style-text {
       float: unset;
       width: 100%;
     }
 
+    .flat-cetagories2.home2.home3,
     .themes-container2.themes-slider,
     #comments .comment-form .text-call,
     #comments .comment-form .phone-wrap,
     #comments .comment-form .name-wrap,
     #comments .comment-form .email-wrap, 
     #comments .comment-form .site-wrap {
-      padding: 0px;
+      padding: 0;
     }
   
     .side-bar .widget.style,
@@ -499,13 +627,14 @@
       padding-bottom: 70px;
     }
 
+    .heading-section.style,
     .heading-section2,
     .heading-section  {
       margin-bottom: 30px;
       padding: 0;
     }
   
-    .flat-friendly .wrap-friendly ul li {
+    .flat-friendly ul li {
       max-width: 100%;
       margin-bottom: 30px;
     }
@@ -522,19 +651,21 @@
         padding: 0 15px;
         border: unset;
     }
-    .slider.style-home2 .flat-wrap .wrap-heading .content {
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .flat-friendly.home2 .wrap-friendly ul li {
+    
+    .flat-friendly.home2 ul li {
         max-width: 100%;
+    }
+    
+    .flat-cetagories2.home3 .style-container {
+      padding: 80px 0 50px;
+    }
+    .flat-featured.home3 {
+      padding: 50px 0 45px;
     }
 
     .flat-cetagories2 {
         &.home2 {
             .wrap-cetagories {
-                margin-bottom: 20px;
                 .img-cetagories {
                     border-bottom-right-radius: 20px;
                     border-bottom-left-radius: 18px;
@@ -579,11 +710,11 @@
       margin-bottom: 12px;
     }
   
-    .slider {
-      padding: 101px 0 130px;
-    }
+    // .slider {
+    //   padding: 101px 0 130px;
+    // }
   
-    .flat-friendly .wrap-friendly ul li img {
+    .flat-friendly ul li img {
       padding: 0;
     }
   

@@ -292,7 +292,7 @@
 }
 .flat-help .help-row {
   padding-bottom: 56px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid var(--primary-color6);
   position: relative;
 }
 
@@ -449,7 +449,7 @@
   z-index: -1;
 }
 .slider .img-slider {
-  border: 3px dashed rgba(255, 255, 255, 0.07);
+  border: 3px dashed var(--primary-color6);
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 57px;
@@ -491,10 +491,11 @@
   text-transform: capitalize;
   line-height: 87px;
   margin-bottom: 7px;
+  color: #7759F3;
 }
 .slider .wrap-heading .content h1 .s1 {
   background: linear-gradient(91.5deg, #7759F3 41.52%, #8E2AC3 96.58%);
-  color: #130518;
+  color: var(--primary-color);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-stroke: 3px transparent;
@@ -504,8 +505,7 @@
   position: relative;
   box-sizing: border-box;
   margin-left: -1px;
-  color: #FFF;
-  background: #0E1B3E;
+  background: #edeaf6;
   background-clip: padding-box;
   border: solid 2x transparent;
   border-radius: 1em;
@@ -543,6 +543,13 @@
   padding: 19px 29px;
 }
 
+.is_dark .slider .wrap-heading .content h1 {
+  color: #fff;
+}
+.is_dark .slider .wrap-heading .content h1 .s2 {
+  background: #130518;
+}
+
 .slider.style-home2 {
   overflow: unset;
   padding: 139px 0 119px;
@@ -564,6 +571,9 @@
   margin-bottom: 9.5%;
   position: relative;
   z-index: 99999;
+}
+.slider.style-home2 .flat-wrap .wrap-heading .content h1 {
+  color: #fff;
 }
 .slider.style-home2 .flat-wrap .wrap-heading .content h1 .s1 {
   background: unset;
@@ -928,7 +938,7 @@
 }
 .flat-cetagories .wrap-cetagories .cetagories:hover a,
 .flat-cetagories .wrap-cetagories .cetagories:hover p {
-  color: var(--primary-color2);
+  color: #fff;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flat-cetagories .wrap-cetagories .cetagories:hover img {
@@ -1061,7 +1071,7 @@
   padding-top: 110px;
 }
 .flat-top-seller .wrap-seller {
-  background: var(--primary-color5);
+  background: var(--primary-color7);
   border: 1px solid var(--primary-color6);
   padding: 29px 0 29px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
