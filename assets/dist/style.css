@@ -998,7 +998,7 @@ a:hover, a:focus {
 
 .link-style-2 a {
   text-decoration: none;
-  color: var(--primary-color2);
+  color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1744,15 +1744,13 @@ header {
 }
 #footer.home2 {
   padding: 118px 0 103px;
+  background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
+  background-size: cover;
 }
 #footer.home3 {
   padding: 120px 0 103px;
 }
 
-.is_dark #footer.home2 {
-  background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
-  background-size: cover;
-}
 .is_dark #footer.home3 {
   background: linear-gradient(180deg, #08032C 0%, rgba(8, 3, 43, 0.93) 54.62%);
 }
@@ -1763,8 +1761,12 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, #07032E 0%, rgba(9, 4, 42, 0.9) 54.62%);
+  background: linear-gradient(180deg, #FAF8FF 0%, rgba(255, 255, 255, 0.93) 54.62%);
   mix-blend-mode: normal;
+}
+
+.is_dark .overlay {
+  background: linear-gradient(180deg, #07032E 0%, rgba(9, 4, 42, 0.9) 54.62%);
 }
 
 /* Widget
@@ -1972,10 +1974,16 @@ header {
   margin-top: 8px;
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+}
+.widget-social-footer.home2 {
+  background-color: #fff;
 }
 .widget-social-footer.home3 {
   background-color: var(--primary-color2);
+}
+
+.is_dark .widget-social-footer.home2 {
+  background-color: #130518;
 }
 
 /* PreLoad

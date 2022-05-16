@@ -1,4 +1,5 @@
 @use './abstracts/' as *;
+
 @import "ntfs.css";
 @import "shortcodes.css";
 @import "responsive.css";
@@ -1003,9 +1004,8 @@ a {
 
 .link-style-2 a {
     text-decoration: none;
-    color: var(--primary-color2);
+    color: #fff;
     @include transition3;
-
     &:focus,
     &:hover {
         color: var(--primary-color3);
@@ -1019,7 +1019,6 @@ a {
     text-decoration: none;
     color: var(--primary-color3);
     @include transition3;
-
     &:focus,
     &:hover {
         color: #8E2AC3;
@@ -1839,6 +1838,8 @@ header {
     position: relative;
     &.home2 {
         padding: 118px 0 103px;
+        background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
+        background-size: cover;  
     }
     &.home3 {
         padding: 120px 0 103px;
@@ -1849,8 +1850,8 @@ header {
 .is_dark {
     #footer {
         &.home2 {
-            background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
-            background-size: cover;  
+            // background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
+            // background-size: cover;  
         }
         &.home3 {
             background: linear-gradient(180deg, #08032C 0%, rgba(8, 3, 43, 0.93) 54.62%);
@@ -1864,8 +1865,14 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, #07032E 0%, rgba(9, 4, 42, 0.9) 54.62%);
+    background: linear-gradient(180deg, #FAF8FF 0%, rgba(255, 255, 255, 0.93) 54.62%);
     mix-blend-mode: normal;
+}
+
+.is_dark {
+    .overlay {
+        background: linear-gradient(180deg, #07032E 0%, rgba(9, 4, 42, 0.9) 54.62%);
+    }
 }
 
 /* Widget
@@ -2088,6 +2095,7 @@ header {
                 font-weight: 500;
                 font-family: 'Inter', sans-serif;
                 line-height: 28px;
+                
             }
         }
     }
@@ -2096,10 +2104,21 @@ header {
         margin-top: 8px;
         font-size: 14px;
         font-weight: 600;
-        color: #fff;
+        // color: #fff;
+    }
+    &.home2 {
+        background-color: #fff;
     }
     &.home3 {
         background-color: var(--primary-color2);
+    }
+}
+
+.is_dark {
+    .widget-social-footer {
+        &.home2  {
+            background-color: #130518;
+        }
     }
 }
 
