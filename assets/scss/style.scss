@@ -591,6 +591,12 @@ input[type="color"] {
     color: var(--primary-color4);
 }
 
+// .is_dark {
+//     input[type="email"] {
+//         color: var(--primary-color4);
+//     }
+// }
+
 /* Input focus */
 textarea:focus,
 input[type="text"]:focus,
@@ -1028,6 +1034,19 @@ a {
     }
 }
 
+.link-style-4 a{
+    text-decoration: none;
+    color: var(--primary-color8);
+    @include transition3;
+    &:focus,
+    &:hover {
+        color: var(--primary-color3);
+        text-decoration: none;
+        outline: 0;
+        @include transition3;
+    }
+}
+
 .text-color-1 {
     color: #fff;
 }
@@ -1045,10 +1064,12 @@ a {
 }
 
 .text-color-5 {
-    color: var(--primary-color8);
+    color: var(--primary-color8) !important;
 }
 
-// background-color: #8E2AC3;
+.text-color-6 {
+    color: var(--primary-color2) !important;
+}
 
 /* Root
 -------------------------------------------------------------- */
@@ -1062,9 +1083,10 @@ a {
     --primary-color5: #13051808;
     --primary-color6: #13051812;
     --primary-color7: #fff;
-    --bg-section: #fff;
-    --bg-section2: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
+    // --bg-section: #fff;
+    // --bg-section2: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
     --primary-color8: #706C83;
+    --primary-color9: #130518;
 }
 
 .is_dark {
@@ -1075,9 +1097,10 @@ a {
     --primary-color5: #FFFFFF08;
     --primary-color6: #FFFFFF12;
     --primary-color7: #13051808;
-    --bg-section: #14141F;
-    --bg-section2: linear-gradient(79.57deg, rgba(31, 17, 85, 0) 10.75%, #130518 50.17%, rgba(31, 17, 85, 0) 106.55%);
+    // --bg-section: #14141F;
+    // --bg-section2: linear-gradient(79.57deg, rgba(31, 17, 85, 0) 10.75%, #130518 50.17%, rgba(31, 17, 85, 0) 106.55%);
     --primary-color8: #fff;
+    --primary-color9: #706C83;
 }
 
 /* Header
@@ -1560,6 +1583,26 @@ header {
     }
 }
 
+
+.search-form {
+    &.home3 {
+        .search-field {
+            background: #fff;
+        }
+    }
+}
+
+.is_dark {
+    .search-form {
+        &.home3 {
+            .search-field {
+                background: #FFFFFF08;
+            }
+        }
+    }
+}
+
+
 .icon-fl-search-filled {
     color: #fff;
     transition: all 0.3s ease-in-out;
@@ -1582,7 +1625,7 @@ header {
     &::before,
     &::after,
     span {
-        background-color: #ffffff;
+        background-color: var(--primary-color2);
         -webkit-transition: all ease 0.3s;
         -moz-transition: all ease 0.3s;
         transition: all ease 0.3s;
@@ -1643,6 +1686,14 @@ header {
     }
 
 }
+
+// .is_dark.mobile-button {
+//     &::before,
+//     &::after,
+//     span {
+//         background-color: #000ffffff;
+//     }
+// }
 
 .tf-button-submit {
     &:hover {
@@ -1843,16 +1894,13 @@ header {
     }
     &.home3 {
         padding: 120px 0 103px;
+        background: unset;
     }
 }
 
 
 .is_dark {
     #footer {
-        &.home2 {
-            // background: url(./../../assets/images/backgroup-secsion/bg-footer.jpg) center center no-repeat;
-            // background-size: cover;  
-        }
         &.home3 {
             background: linear-gradient(180deg, #08032C 0%, rgba(8, 3, 43, 0.93) 54.62%);
         }
@@ -1926,11 +1974,12 @@ header {
 
 .widget-social.style-1 ul li a {
     font-size: 19px;
-    color: #1305184D;
+    // color: #1305184D;
+    color: #706C83;
 }
-.is_dark .widget-social.style-1 ul li a {
-    color: #FFFFFF4D;
-}
+// .is_dark .widget-social.style-1 ul li a {
+//     color: #FFFFFF4D;
+// }
 
 /* widget style blog */
 .widget-social.style-1.icon-blog {
@@ -2036,6 +2085,9 @@ header {
                 white-space: nowrap;
                 max-width: 70%;
                 overflow: hidden;
+                color: var(--primary-color4);
+                // color: rgba(19, 5, 24, 0.3);
+                // color: #FFFFFF4D;
             }
         }
 
@@ -2049,12 +2101,10 @@ header {
             padding: 25px 24px 17px 20px;
             color: var(--primary-color);
             @include transition3;
-
             &:hover {
                 background: #8E2AC3;
                 border: 1px solid #8E2AC3;
                 transition: all 0.3s ease-in-out;
-
                 g {
                     filter: invert(1);
                     transition: all 0.3s ease-in-out;
@@ -2062,6 +2112,24 @@ header {
             }
         }
     }
+}
+
+.widget-subcribe {
+    &.home2 {
+        .form-subcribe {
+            input {
+                background: #fff;
+            }
+            button {
+                g {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+.is_dark .widget-subcribe.home2 .form-subcribe input {
+    background: #FFFFFF08;
 }
 
 .is_dark {
@@ -2110,7 +2178,7 @@ header {
         background-color: #fff;
     }
     &.home3 {
-        background-color: var(--primary-color2);
+        background-color: #fff;
     }
 }
 

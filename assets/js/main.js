@@ -130,10 +130,12 @@
         $(".light").removeClass("is_active")
         $(".dark").addClass("is_active")
 
-        $(".tf-text").removeClass("style")
-        $(".tf-text").addClass("s1")
+        // $(".tf-text").removeClass("style")
+        // $(".tf-text").addClass("s1")
+        // $('#avatar-01').attr('src','assets/images/avatar/avt-01.png');
         document.getElementById("logo_header").src = "assets/images/logo/logo_dark.png";
         document.getElementById("logo_footer").src = "assets/images/logo/logo_dark.png";
+        // document.getElementById("avatar-01").src = "assets/images/avatar/avt-01.png";
     });
 
     $(".light").on('click', function (e) {
@@ -144,8 +146,17 @@
 
         // $(".tf-text").addClass("style")
         // $(".tf-text").removeClass("s1")
+        // $('#avatar-01').attr('src','assets/images/avatar/avt-1.jpg');
         document.getElementById("logo_header").src = "assets/images/logo/logo.png";
         document.getElementById("logo_footer").src = "assets/images/logo/logo2.png";
+        // document.getElementById("avatar-01").src = "assets/images/avatar/avt-1.jpg";
+        // document.getElementById("avatar-01").src = "assets/images/avatar/avt-02.png";
+    });
+
+    $('.light').on({
+        'click': function(){
+            $('#avatar-01').attr('assets/images/avatar/','avt.jpg');
+        }
     });
 
     // Header Connect
