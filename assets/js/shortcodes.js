@@ -525,8 +525,8 @@
         flatAccordions();
         no_link();
         dropdown('#item_category');
-        dropdown('#buy');
-        dropdown('#all-items');
+        dropdown('#view');
+        dropdown('#new-items');
         dropdown('#artworks');
         dropdown('#sort-by');
         dropdown('#sort-by2');

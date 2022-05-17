@@ -24,3 +24,16 @@
     transform        : translateY(-50%);
 }
 
+@mixin  transitionY3 (){
+    -webkit-transform : translateY(30px);
+    -ms-transform     : translateY(30px);
+    -o-transform      : translateY(30px);
+    transform         : translateY(30px);
+}
+
+@mixin  transitionY0 (){
+    -webkit-transform : translateY(0);
+    -ms-transform     : translateY(0);
+    -o-transform      : translateY(0);
+    transform         : translateY(0);
+}

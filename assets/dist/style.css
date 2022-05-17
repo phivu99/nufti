@@ -821,16 +821,8 @@ label.error {
   padding: 15px !important;
 }
 
-.pad-l-10 {
-  padding-left: 10px;
-}
-
 .pb-120 {
   padding-bottom: 120px;
-}
-
-.pl-68 {
-  padding-left: 68px;
 }
 
 .mb-17 {
@@ -847,6 +839,10 @@ label.error {
 
 .mb-60 {
   margin-bottom: 60px;
+}
+
+.mb-30 {
+  margin-bottom: 29px;
 }
 
 .mb-36 {
@@ -1946,7 +1942,7 @@ header {
   white-space: nowrap;
   max-width: 70%;
   overflow: hidden;
-  color: var(--primary-color4);
+  color: rgba(19, 5, 24, 0.3019607843);
 }
 .widget-subcribe .form-subcribe button {
   border-radius: 5px;
@@ -1992,6 +1988,9 @@ header {
 }
 .is_dark .widget-subcribe .form-subcribe button:hover g {
   filter: unset;
+}
+.is_dark .widget-subcribe .form-subcribe input::placeholder {
+  color: rgba(255, 255, 255, 0.3019607843);
 }
 
 /* widget social footer */
