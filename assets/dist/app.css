@@ -3965,4 +3965,161 @@ header {
   color: unset;
 }
 
+.flat-auctions-details .wrap-img .img-detail {
+  background: var(--primary-color5);
+  border: 1px solid var(--primary-color6);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 28px;
+  display: inline-block;
+  position: relative;
+}
+.flat-auctions-details .wrap-img .img-detail h6 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 9px 8px;
+  background-color: var(--primary-color3);
+  color: #fff;
+}
+.flat-auctions-details .post h2 {
+  margin-bottom: 16px;
+}
+.flat-auctions-details .post .box-price {
+  margin-bottom: 15px;
+}
+.flat-auctions-details .post .box-price .price {
+  margin-right: 28px;
+}
+.flat-auctions-details .post .box-price p {
+  margin-right: 9px;
+}
+.flat-auctions-details .post .box-price .star {
+  align-self: center;
+}
+.flat-auctions-details .post .box-price .star i {
+  font-size: 9px;
+  margin-right: 0px;
+  color: #FCC65D;
+}
+.flat-auctions-details .post .texts {
+  margin-bottom: 19px;
+}
+.flat-auctions-details .post .information {
+  margin-bottom: 47px;
+}
+.flat-auctions-details .post .information .column {
+  float: left;
+  width: 50%;
+}
+.flat-auctions-details .post .information .column.column-2 {
+  padding-left: 15px;
+}
+.flat-auctions-details .post .information span {
+  color: var(--primary-color2);
+}
+.flat-auctions-details .post .information .title-1 {
+  margin-bottom: 16px;
+}
+.flat-auctions-details .post .featured-countdown {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 18px 0;
+  margin-bottom: 29px;
+}
+.flat-auctions-details .post .featured-countdown .title-countdown {
+  margin-right: 5px;
+  color: var(--primary-color4);
+  font-weight: 700;
+}
+.flat-auctions-details .post .featured-countdown .js-countdown {
+  color: var(--primary-color3);
+  font-weight: 700;
+}
+.flat-auctions-details .post .featured-countdown .js-countdown .countdown__label {
+  margin: 0 4.3px;
+}
+.flat-auctions-details .post .button-place-bid {
+  margin-bottom: 38px;
+}
+.flat-auctions-details .post .button-place-bid a {
+  padding: 19px 49px;
+}
+.flat-auctions-details .post .button-social {
+  margin-top: 4px;
+}
+.flat-auctions-details .post .button-social .sc-button {
+  padding: 17px 32px 16px 30px;
+  background: #5142FD;
+  border: 1px solid rgba(19, 5, 24, 0.07);
+  margin-right: 7px;
+}
+.flat-auctions-details .post .button-social .sc-button span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.flat-auctions-details .post .button-social .sc-button i {
+  font-size: 12px;
+  margin-right: 7px;
+}
+.flat-auctions-details .post .button-social .sc-button.style-2 {
+  background: #E94235;
+  padding: 17px 38px 16px 33px;
+}
+.flat-auctions-details .post .button-social .sc-button.style-3 {
+  background: #1C93E4;
+}
+.flat-auctions-details .post .button-social .sc-button.style-4 {
+  background: #9342B3;
+}
+.flat-auctions-details .post .button-social .sc-button:last-child {
+  margin: 0;
+}
+
+.flat-price .price {
+  align-items: center;
+}
+.flat-price .price img {
+  margin-right: 6px;
+}
+.flat-price .price .title-price {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.flat-auctions-details .flat-tabs .tab-title {
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+  margin-bottom: 12px;
+  margin-right: 62px;
+}
+.flat-auctions-details .flat-tabs .tab-title li {
+  position: relative;
+  line-height: 24px;
+  margin-right: 42px;
+  cursor: pointer;
+}
+.flat-auctions-details .flat-tabs .tab-title li.active {
+  color: var(--primary-color3);
+}
+.flat-auctions-details .flat-tabs .content {
+  margin-bottom: 23px;
+}
+.flat-auctions-details .flat-tabs .content .meta-info {
+  padding-bottom: 28.5px;
+  border-bottom: 1px solid var(--primary-color6);
+}
+.flat-auctions-details .flat-tabs .content .meta-info .title-price p {
+  line-height: unset;
+  margin-top: 6px;
+}
+.flat-auctions-details .flat-tabs .content .meta-info.style {
+  border: unset;
+}
+
 /*# sourceMappingURL=app.css.map */
