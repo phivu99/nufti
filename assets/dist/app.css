@@ -817,6 +817,11 @@ label.error {
   padding: 100px 15px 0 !important;
 }
 
+.show-slider4 {
+  margin: -5px !important;
+  padding: 5px !important;
+}
+
 .show-shadow {
   margin: -15px !important;
   padding: 15px !important;
@@ -2612,6 +2617,9 @@ header {
   border-bottom: 1px solid var(--primary-color6);
   position: relative;
 }
+.flat-help.page-style {
+  background: unset;
+}
 
 .flat-help.home2 {
   background: unset;
@@ -2636,6 +2644,10 @@ header {
 }
 .flat-help.page {
   background: unset;
+}
+
+.is_dark .flat-help.page-style {
+  background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
 }
 
 /* swiper button */
@@ -2714,11 +2726,20 @@ header {
   top: 98%;
 }
 
-.flat-auctions.dark-style.seller.style2 .swiper-button-prev.btn-slide-prev,
 .seller.style2 .swiper-button-prev.btn-slide-prev {
   right: 100px;
   top: 98%;
   left: auto;
+}
+
+.flat-auctions.dark-style.seller.style2 .swiper-button-next.btn-slide-next {
+  right: 15px;
+  top: 97%;
+}
+
+.flat-auctions.dark-style.seller.style2 .swiper-button-prev.btn-slide-prev {
+  right: 115px;
+  top: 97%;
 }
 
 .flat-auctions.seller.style2 .swiper-button-next.btn-slide-next {
@@ -3916,7 +3937,7 @@ header {
   font-weight: 500;
 }
 
-.flat-explore .search-form .search-field {
+.flat-auctions .search-form .search-field {
   background: var(--primary-color5);
   color: #fff;
   width: 100%;
@@ -3924,23 +3945,23 @@ header {
   line-height: 20px;
   padding: 9px 50px 11px 24px;
 }
-.flat-explore .search-form .search-field:focus {
+.flat-auctions .search-form .search-field:focus {
   color: var(--primary-color2);
   line-height: 20px;
   padding: 9px 50px 11px 24px;
 }
 
-.flat-explore .search .search-submit {
+.flat-auctions .search .search-submit {
   top: 3px;
   right: 15px;
   color: #fff;
   padding: 9px 14.5px;
 }
-.flat-explore .search .search-submit:hover {
+.flat-auctions .search .search-submit:hover {
   background: unset;
   color: var(--primary-color3);
 }
-.flat-explore .search .search-submit.search-icon::after {
+.flat-auctions .search .search-submit.search-icon::after {
   color: unset;
 }
 

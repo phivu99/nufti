@@ -816,6 +816,11 @@ label.error {
   padding: 100px 15px 0 !important;
 }
 
+.show-slider4 {
+  margin: -5px !important;
+  padding: 5px !important;
+}
+
 .show-shadow {
   margin: -15px !important;
   padding: 15px !important;

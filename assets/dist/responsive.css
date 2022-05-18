@@ -375,11 +375,11 @@
     margin-bottom: 20px;
   }
 
-  .flat-explore .search .search-submit {
+  .flat-auctions .search .search-submit {
     right: 5px;
   }
 
-  .flat-explore .wrap-box {
+  .flat-auctions .wrap-box {
     align-items: end;
   }
 
@@ -398,7 +398,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .flat-explore .wrap-box {
+  .flat-auctions .wrap-box {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
@@ -433,7 +433,7 @@
     padding-top: 80px;
   }
 
-  .flat-explore.dark-style {
+  .flat-auctions.dark-style {
     padding-bottom: 0;
   }
 
