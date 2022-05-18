@@ -1917,6 +1917,8 @@
 
 // live auctions details
 .flat-auctions-details {
+    padding-bottom: 0;
+    margin-bottom: -4px;
     .wrap-img {
         // padding-right: 68px;
         .img-detail {
@@ -1927,6 +1929,9 @@
             margin-bottom: 28px;
             display: inline-block;
             position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
             h6 {
                 position: absolute;
                 top: 30px;
@@ -1939,7 +1944,6 @@
                 color: #fff;
             }   
         }
-
     } 
     .post {
         h2 {
@@ -2010,14 +2014,24 @@
             }
         }
         .button-social {
-            margin-top: 4px;
-
+            
             .sc-button {
-                padding: 17px 32px 16px 30px;
+                padding: 18px 33px 17px 31px;
                 background: #5142FD;
-                // border: 1px solid #5142FD;
-                border: 1px solid rgba(19, 5, 24, 0.07);
-                margin-right: 7px;
+                border: unset;
+                margin-right: 8px;
+                margin-top: 4px;
+                &.style-2:hover,
+                &.style-3:hover,
+                &.style-4:hover, 
+                &:hover {
+                    border: unset;
+                    background: linear-gradient(90deg, #7759F3 50%,#3AFCC2 100%);
+                    @include transition3;
+                    i {
+                        color: #fff;
+                    }
+                }
                 span {
                     font-size: 14px;
                     font-weight: 400; 
@@ -2025,17 +2039,27 @@
                 }
                 i {
                     font-size: 12px;
-                    margin-right: 7px;               
+                    margin-right: 7px;
+                    color: #fff;               
                 }
                 &.style-2 {
                     background: #E94235;
-                    padding: 17px 38px 16px 33px;
+                    padding: 18px 39px 17px 36px;
+                    i {
+                        margin-right: 5px;
+                        font-size: 11px;
+                    }
                 }
                 &.style-3 {
                     background: #1C93E4;
+                    padding: 18px 32px 17px 26px;
+                    i {
+                        margin-right: 5px;
+                    }
                 }
                 &.style-4 {
                     background: #9342B3;
+                    padding: 18px 29.7px 17px 23px;
                 }
                 &:last-child {
                     margin: 0;
@@ -2087,11 +2111,15 @@
                         margin-top : 6px;
                     }
                 }
-                &.style {
-                    border: unset;
-                }  
             }  
-
+        }
+        .provenance {
+            p {
+                margin-bottom: 50px;
+            }
+        }
+        li:last-child .content .meta-info {
+            border: none;
         }
     }   
 }
