@@ -334,6 +334,7 @@
                 font-size  : 13px;
                 line-height: 20px;
                 font-weight: 500;
+                letter-spacing: -0.1px;
                 span {
                     color  : var(--primary-color8);
                 }
@@ -1547,7 +1548,7 @@
     &.home3 {
         ul {
             border-bottom: 1px solid var(--primary-color6) ;
-            padding: 120px 0 51px 46px;
+            padding: 122px 0 51px 46px;
             li {
                 max-width: 15.85%;
                 &::after {
@@ -1606,23 +1607,28 @@
             }
         }
     }
+    .sc-card-article.blog-article {
+        border: 1px solid  var(--primary-color6);
+        padding: 20px 19px 26px;
+    }
 }
 
 .flat-collection {
     &.home2 {
-        padding: 0 0 120px;
+        padding: 0 0 123px;
+    }
+    &.home3 {
+        padding: 117px 0 122px;
+    }
+    &.page {
+        padding: 120px 0;
     }
 }
 
-.flat-collection {
-    &.home3 {
-        padding: 117px 0 119px;
-    }
-}
 
 // flat brand 
 .flat-brand {
-    padding: 95px 0 97px;
+    padding: 98px 0 97px;
     .brand-slider {
         padding: 0px 22px 0 37px;
         .slogan-logo {
@@ -1916,13 +1922,21 @@
 }
 
 // live auctions details
+.is_dark {
+    .flat-auctions-details {
+        .wrap-img {
+            .img-detail {
+                background: #FFFFFF08;
+            }
+        }
+    }
+}
 .flat-auctions-details {
     padding-bottom: 0;
     margin-bottom: -4px;
     .wrap-img {
-        // padding-right: 68px;
         .img-detail {
-            background   : var(--primary-color5);
+            background   : #fff;
             border       : 1px solid var(--primary-color6);
             padding      : 20px;
             border-radius: 5px;
@@ -1983,7 +1997,6 @@
             }
             span {
                 color: var(--primary-color2);
-                // font-weight: 400;
             }
             .title-1 {
                 margin-bottom: 16px;
@@ -2014,23 +2027,18 @@
             }
         }
         .button-social {
-            
             .sc-button {
                 padding: 18px 33px 17px 31px;
                 background: #5142FD;
                 border: unset;
                 margin-right: 8px;
-                margin-top: 4px;
                 &.style-2:hover,
                 &.style-3:hover,
                 &.style-4:hover, 
                 &:hover {
                     border: unset;
-                    background: linear-gradient(90deg, #7759F3 50%,#3AFCC2 100%);
+                    background: var(--primary-color3);
                     @include transition3;
-                    i {
-                        color: #fff;
-                    }
                 }
                 span {
                     font-size: 14px;
@@ -2084,12 +2092,13 @@
 
 .flat-auctions-details {
     .flat-tabs {
+        margin-bottom: 4px;
         .tab-title {
             display      : flex;
             align-items  : center;
             padding      : 7px 0;
             margin-bottom: 12px;
-            margin-right: 62px;
+            margin-right : 62px;
             li {
                 position    : relative;
                 line-height : 24px;
@@ -2115,7 +2124,7 @@
         }
         .provenance {
             p {
-                margin-bottom: 50px;
+                margin-bottom: 45px;
             }
         }
         li:last-child .content .meta-info {

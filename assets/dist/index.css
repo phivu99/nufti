@@ -7,6 +7,7 @@
 @import "font-awesome.css";
 @import "swiper-bundle.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 @import "bootstrap.css";
 html,
 body,
@@ -849,6 +850,10 @@ label.error {
 
 .mb-30 {
   margin-bottom: 29px;
+}
+
+.mb-26 {
+  margin-bottom: 26px;
 }
 
 .mb-36 {
@@ -1783,9 +1788,15 @@ header {
   padding: 120px 0 103px;
   background: unset;
 }
+#footer.page {
+  background: unset;
+}
 
 .is_dark #footer.home3 {
   background: linear-gradient(180deg, #08032C 0%, rgba(8, 3, 43, 0.93) 54.62%);
+}
+.is_dark #footer.page {
+  background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
 }
 
 .overlay {
@@ -2575,6 +2586,7 @@ header {
   font-size: 13px;
   line-height: 20px;
   font-weight: 500;
+  letter-spacing: -0.1px;
 }
 .meta-info .author .info .date span {
   color: var(--primary-color8);
@@ -3639,7 +3651,7 @@ header {
 
 .flat-friendly.home3 ul {
   border-bottom: 1px solid var(--primary-color6);
-  padding: 120px 0 51px 46px;
+  padding: 122px 0 51px 46px;
 }
 .flat-friendly.home3 ul li {
   max-width: 15.85%;
@@ -3682,17 +3694,23 @@ header {
   margin-right: 4px;
   margin-top: -1px;
 }
-
-.flat-collection.home2 {
-  padding: 0 0 120px;
+.flat-collection .sc-card-article.blog-article {
+  border: 1px solid var(--primary-color6);
+  padding: 20px 19px 26px;
 }
 
+.flat-collection.home2 {
+  padding: 0 0 123px;
+}
 .flat-collection.home3 {
-  padding: 117px 0 119px;
+  padding: 117px 0 122px;
+}
+.flat-collection.page {
+  padding: 120px 0;
 }
 
 .flat-brand {
-  padding: 95px 0 97px;
+  padding: 98px 0 97px;
 }
 .flat-brand .brand-slider {
   padding: 0px 22px 0 37px;
@@ -3965,12 +3983,16 @@ header {
   color: unset;
 }
 
+.is_dark .flat-auctions-details .wrap-img .img-detail {
+  background: rgba(255, 255, 255, 0.031372549);
+}
+
 .flat-auctions-details {
   padding-bottom: 0;
   margin-bottom: -4px;
 }
 .flat-auctions-details .wrap-img .img-detail {
-  background: var(--primary-color5);
+  background: #fff;
   border: 1px solid var(--primary-color6);
   padding: 20px;
   border-radius: 5px;
@@ -4060,19 +4082,15 @@ header {
   background: #5142FD;
   border: unset;
   margin-right: 8px;
-  margin-top: 4px;
 }
 .flat-auctions-details .post .button-social .sc-button.style-2:hover, .flat-auctions-details .post .button-social .sc-button.style-3:hover, .flat-auctions-details .post .button-social .sc-button.style-4:hover, .flat-auctions-details .post .button-social .sc-button:hover {
   border: unset;
-  background: linear-gradient(90deg, #7759F3 50%, #3AFCC2 100%);
+  background: var(--primary-color3);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.flat-auctions-details .post .button-social .sc-button.style-2:hover i, .flat-auctions-details .post .button-social .sc-button.style-3:hover i, .flat-auctions-details .post .button-social .sc-button.style-4:hover i, .flat-auctions-details .post .button-social .sc-button:hover i {
-  color: #fff;
 }
 .flat-auctions-details .post .button-social .sc-button span {
   font-size: 14px;
@@ -4118,6 +4136,9 @@ header {
   font-size: 16px;
 }
 
+.flat-auctions-details .flat-tabs {
+  margin-bottom: 4px;
+}
 .flat-auctions-details .flat-tabs .tab-title {
   display: flex;
   align-items: center;
@@ -4146,7 +4167,7 @@ header {
   margin-top: 6px;
 }
 .flat-auctions-details .flat-tabs .provenance p {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 .flat-auctions-details .flat-tabs li:last-child .content .meta-info {
   border: none;
