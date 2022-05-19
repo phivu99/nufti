@@ -512,6 +512,11 @@
     top: 97%;
 }
 
+.flat-collection.dark-style.seller.style2  .swiper-button-next.btn-slide-next,
+.flat-collection.dark-style.seller.style2  .swiper-button-prev.btn-slide-prev {
+    top: 96.5%;
+}
+
 .flat-auctions.seller.style2 .swiper-button-next.btn-slide-next {
     right: 15px;
 }
@@ -1622,6 +1627,9 @@
     }
     &.page {
         padding: 120px 0;
+        .sc-card-article.blog-article {
+            margin: 0;
+        }
     }
 }
 
@@ -2090,7 +2098,7 @@
     }
 }
 
-.flat-auctions-details {
+
     .flat-tabs {
         margin-bottom: 4px;
         .tab-title {
@@ -2131,9 +2139,187 @@
             border: none;
         }
     }   
+
+
+// flat about
+.flat-about {
+    padding-bottom: 107px;
+    .post {
+        padding: 28px 0 28px 69px;
+        .sub-title {
+            margin-bottom: 20px;
+            margin-left: 1px;
+        }
+        .title-about {
+            font-size: 45px;
+            line-height: 54px;
+            margin-bottom: 12px;
+        }
+        .title-text {
+            line-height: 30px;
+            margin-bottom: 31px;
+        }
+        .text-1 {
+            margin-bottom: 20px;
+        }
+        .box {
+            padding-left: 1px;
+            .img-1 {
+                border-radius: 50%;
+            }
+            .img-2 {
+                align-self: center;
+                margin-left: 23px;
+            }
+        }
+    }
 }
 
+/* count */
+.flat-counter {
+    padding: 0px 0 47px;
+    .row-counter {
+        padding-bottom: 42px;
+        border-bottom: 1px solid var(--primary-color6) ;
+    }
+    .wrap {
+        padding-left: 1px;
+        padding-right: 70px;
+        h2 {
+            font-size: 52px;
+            line-height: 70px;
+        }
+    }
+    .counter-box {
+        position      : relative;
+        padding-top   : 24px;
+        padding-left: 1px;
+        p {
+            line-height: 24px;
+        }
+        &.box-1 {
+            padding-right: 80px;
+        }
+        .number {
+            color        : var(--primary-color2);
+            font-size    : 48px;
+            font-weight  : 400;
+            margin-bottom: 9px;
+        }
+    }
+}
 
+@property --v2 {
+    syntax: "<integer>";
+    initial-value: 2;
+    inherits: true;
+}
+
+@property --v3 {
+    syntax: "<integer>";
+    initial-value: 3;
+    inherits: true;
+}
+
+.flat-counter .counter-box .number-one {
+  counter-reset: v2 var(--v2);
+}
+.flat-counter .counter-box .number-two {
+    counter-reset: v3 var(--v3);
+}
+.flat-counter .counter-box .number-one::after {
+    content:  "." counter(v2) "K";
+}
+.flat-counter .counter-box .number-two::after {
+    content:  "." counter(v3) "M";
+}
+
+.flat-about2 {
+    padding-bottom: 21px;
+    .flat-tabs {
+        .tab-title {
+            margin-bottom: 8px;
+            li {
+                margin-right: 15.5px;
+            }
+        }
+        .provenance {
+            p {
+                margin-bottom: 29px;
+            }
+        }
+    }
+}
+
+// flat video
+.flat-video {
+    .post-video {
+        position: relative;
+        img {
+            border-radius: 30px;
+        }
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 224px;
+            &:hover {
+                background: rgba(119, 89, 243, 1);
+                span {
+                    path {
+                        fill:#fff;
+                        @include transition3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ripple::before,
+.ripple::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.849);
+    -o-box-shadow: 0 0px 0 0px rgba(255, 255, 255, 0.883);
+    box-shadow: 0px 0px 0px 30px rgb(255 255 255 / 10%);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+
+.ripple::before {
+    content: "";
+    position: absolute;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.ripple::after {
+    content: "";
+    position: absolute;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.flat-blog.page {
+    padding-bottom: 0;
+}
 
 
 
