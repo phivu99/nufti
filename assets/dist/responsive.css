@@ -162,11 +162,16 @@
     padding: 100px 0 90px;
   }
 
-  .flat-collection.home3,
+  .flat-top-seller.page,
+.flat-collection.home3,
 .flat-top-seller.home3 .style-container,
 .flat-friendly.home2 ul,
 .tf-section {
     padding: 100px 0;
+  }
+
+  .flat-about {
+    padding-bottom: 85px;
   }
 
   .pb-120,
@@ -311,7 +316,8 @@
     padding: 25px 0;
   }
 
-  .widget-social-footer .title-bottom {
+  .themesflat-pagination,
+.widget-social-footer .title-bottom {
     text-align: center;
   }
 
@@ -419,8 +425,21 @@
     margin-right: 15px;
   }
 
-  .flat-about .post {
+  .flat-counter .wrap,
+.flat-about .post {
     padding: 0;
+  }
+
+  .flat-about .post .title-text {
+    margin-bottom: 20px;
+  }
+
+  .flat-about .post .sub-title {
+    margin-bottom: 12px;
+  }
+
+  .flat-about2 .flat-tabs .provenance p {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -447,7 +466,8 @@
     line-height: 48px;
   }
 
-  .flat-collection.home3,
+  .flat-top-seller.page,
+.flat-collection.home3,
 .flat-friendly .wrap-friendly,
 .tf-section {
     padding: 80px 0;
@@ -611,7 +631,8 @@
     padding-bottom: 15px;
   }
 
-  #comments .comment-form fieldset,
+  .flat-about .post .title-text,
+#comments .comment-form fieldset,
 #comments .title-comment2,
 #comments .title-comment {
     margin-bottom: 15px;
@@ -695,15 +716,14 @@
     margin: 0;
   }
 
-  .flat-auctions-details .post .button-place-bid,
-.themesflat-pagination {
+  .flat-auctions-details .post .button-place-bid {
     text-align: center;
   }
 
   .flat-auctions-details .post .button-social {
     text-align: center;
   }
-  .flat-auctions-details .post .button-social a:nth-child(n+3) {
+  .flat-auctions-details .post .button-social a:nth-child(n+4) {
     margin-bottom: 0;
   }
 
@@ -712,7 +732,8 @@
     width: calc(100% - 30px);
   }
 
-  .flat-cetagories.style {
+  .flat-about,
+.flat-cetagories.style {
     padding-bottom: 70px;
   }
 
@@ -729,11 +750,11 @@
   }
 
   .flat-brand {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .flat-brand.home2 {
-    padding: 30px 0 60px;
+    padding: 30px 0 50px;
   }
 
   .slider.style-home2 .flat-wrap {
@@ -778,6 +799,39 @@
   .flat-about .wrap-img {
     margin-bottom: 30px;
   }
+
+  .flat-video .post-video a {
+    width: 140px;
+    height: 140px;
+    line-height: 170px;
+  }
+  .flat-video .post-video a .ripple::before,
+.flat-video .post-video a .ripple::after {
+    width: 140px;
+    height: 140px;
+  }
+
+  .flat-auctions-details .post .information {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .flat-auctions-details .post .information .column.column-1 {
+    margin-bottom: 15px;
+  }
+  .flat-auctions-details .post .information .column.column-2 {
+    padding: 0;
+  }
+
+  .flat-counter {
+    padding: 0px 0 35px;
+  }
+
+  .flat-counter .wrap h2 {
+    font-size: 48px;
+    line-height: 56px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+  }
 }
 @media only screen and (max-width: 520px) {
   .seclect-box.style-2 .title-item {
@@ -812,6 +866,11 @@
 
   .flat-collection .post {
     padding: 28px 0px 0;
+  }
+
+  .flat-about2 .flat-tabs .tab-title {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 310px) {

@@ -151,64 +151,65 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="page-title-heading">
-                                <h1 class="heading">Explore Work<span class="text-color-3">.</span></h1>
+                                <h1 class="heading">Author Profile<span class="text-color-3">.</span></h1>
                             </div>                        
                         </div>
                     </div>
                 </div>                    
             </section>
 
-            <div class="tf-section flat-explore flat-auctions dark-style seller style2 ">
+            <div class="tf-section flat-author-profile flat-explore flat-auctions ">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="wrap-box explore-1 flex-one mb-30">
-                                <div class="seclect-box style-1 flex text-t font">
-                                    <div id="item_category" class="dropdown">
-                                        <a href="#" class="btn-selector nolink ">All categories</a>
-                                        <ul >
-                                            <li><span>Art</span></li>
-                                            <li class="active"><span>Music</span></li>
-                                            <li><span>Domain Names</span></li>
-                                            <li><span>Virtual World</span></li>
-                                            <li><span>Trading Cards</span></li>
-                                            <li><span>Sports</span></li>
-                                            <li><span>Utility</span></li>
-                                        </ul>
-                                    </div>
-                                    <div id="view" class="dropdown">
-                                        <a href="#" class="btn-selector nolink">Short View</a>
-                                        <ul >
-                                            <li><span>On Auction</span></li>
-                                            <li><span>Has Offers</span></li>
-                                        </ul>
-                                    </div>
-                                    <div id="new-items" class="dropdown">
-                                        <a href="#" class="btn-selector nolink">New Items</a>
-                                        <ul >
-                                            <li><span>Single Items</span></li>
-                                            <li><span>Bundles</span></li>
-                                        </ul>
-                                    </div>
+                    <div class="flat-tabs tab-author">
+                        <div class="author-profile flex"> 
+                            <div class="feature-profile flex">
+                                <div class="img-box">
+                                    <img class="avatar" src="assets/images/box-item/author-profile.jpg" alt="">
+                                    <img class="check absolute" src="assets/images/icon/icon-check.svg" alt="">
+                                </div>                
+                                <div class="infor">
+                                    <h3 class="fs-24">Liam Olivia Ovi</h3>
+                                    <div class="box-price flat-price">                                              
+                                         <div class="price flex">
+                                             <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                             <div class="title-price"> 2.39 ETH</div>
+                                         </div> 
+                                     </div>
+                                 </div>
+                            </div>
+                            
+                            <div class="button-profile flex">
+                                <h3 class="">12,03 Followers</h3>
+                                <div class="button-follow">
+                                    <a href="#" class="sc-button btn-6 style-1"><span>Follow</span></a>
                                 </div>
-                                <div class="seclect-box style-2 box-right flex">
-                                    <div class="title-item btn-selector nolink fw-6 font fs-16"><span class="text-color-3">95</span> Explore Work Found</div>
-                                    <div class="widget search">
-                                        <form action="#" method="get" role="search" class="search-form">
-                                            <input type="search" class="search-field"
-                                                placeholder="Project Name..." value="" name="s"
-                                                title="Search for" required="">
-                                            <button class="search-icon search-submit" type="submit" title="Search"></button>
-                                        </form>
-                                    </div> 
+                                <div class="button-edit">
+                                    <a href="#" class="sc-button btn-5 style-2"><span>Edit Profile</span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="swiper-container carousel-6 show-shadow">
-                                <div class="swiper-wrapper slider-style">                               
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                        <ul class="menu-tab tab-title">
+                            <li class="item-title  active">
+                                <h3 class="inner">All</h3>
+                            </li>
+                            <li class="item-title">
+                                <h3 class="inner"> Art </h3>
+                            </li>
+                            <li class="item-title">
+                                <h3 class="inner">Music</h3>
+                            </li>
+                            <li class="item-title">
+                                <h3 class="inner">Collectibles</h3>
+                            </li>
+                            <li class="item-title">
+                                <h3 class="inner">Sports</h3>
+                            </li>
+                        </ul>
+                        <div class="content-tab">
+                            <div class="content-inner tab-content">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-5.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -222,7 +223,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -233,14 +234,14 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
                                                 </div>   
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-6.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -254,7 +255,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -265,14 +266,15 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
-                                                </div>                              
+                                                </div>
+                                               
                                             </div> 
-                                        </div>
+                                        </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-3.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -297,14 +299,14 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
                                                 </div>                              
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-7.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -318,7 +320,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -329,14 +331,14 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
-                                                </div>                                            
+                                                </div>                                           
                                             </div> 
-                                        </div>
+                                        </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-8.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -350,7 +352,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -361,15 +363,14 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
-                                                </div>
-                                                
+                                                </div>                                            
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-9.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -383,7 +384,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -394,14 +395,14 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
                                                 </div>                                
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-10.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -415,7 +416,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -426,14 +427,14 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
                                                 </div>
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-11.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -447,7 +448,7 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -458,78 +459,26 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
                                                 </div>
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
-                                            <div class="card-media flat-img">
-                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-8.jpg" alt="Image"></a>                                                                                                                                                                                                     
-                                            </div>  
-                                            <div class="content">
-                                                <h6 class="tags">6 in stock</h6>  
-                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
-                                                <div class="meta-info mb-17">
-                                                    <div class="author">
-                                                        <div class="avatar">
-                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
-                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
-                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
-                                                        </div>
-                                                    </div>                                  
-                                                </div>  
-                                                <div class="meta-price flex-one">                                              
-                                                    <div class="price flex">
-                                                        <img id="avatar-01" class="" src="assets/images/icon/icon-diamond.svg" alt="">
-                                                        <div class="title-price"> 2.39 ETH</div>
-                                                    </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </div> 
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
-                                            <div class="card-media flat-img">
-                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-9.jpg" alt="Image"></a>                                                                                                                                                                                                     
-                                            </div>  
-                                            <div class="content">
-                                                <h6 class="tags">4 in stock</h6>  
-                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
-                                                <div class="meta-info mb-17">
-                                                    <div class="author">
-                                                        <div class="avatar">
-                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
-                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
-                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
-                                                        </div>
-                                                    </div>                                  
-                                                </div>  
-                                                <div class="meta-price flex-one">                                              
-                                                    <div class="price flex">
-                                                        <img id="avatar-01" class="" src="assets/images/icon/icon-diamond.svg" alt="">
-                                                        <div class="title-price"> 2.39 ETH</div>
-                                                    </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </div> 
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                </div>
+                                <div class="themesflat-pagination clearfix mt-2">
+                                    <ul>
+                                        <li><a href="#" class="page-numbers">01</a></li>
+                                        <li><a href="#" class="page-numbers current">02</a></li>
+                                        <li><a href="#" class="page-numbers">03</a></li>
+                                        <li><a href="#" class="page-numbers">04</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content-inner tab-content">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-5.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
@@ -543,27 +492,60 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
                                                 </div>  
                                                 <div class="meta-price flex-one">                                              
                                                     <div class="price flex">
-                                                        <img id="avatar-01" class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
-                                                </div>
+                                                </div>   
                                             </div> 
                                         </div> 
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sc-card-product sc-card-article blog-article style">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
                                             <div class="card-media flat-img">
                                                 <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-6.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">6 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-3.jpg" alt="Image"></a>                                                                                                                                                                                                     
                                             </div>  
                                             <div class="content">
                                                 <h6 class="tags">5 in stock</h6>  
@@ -575,7 +557,71 @@
                                                             <img class="check" src="assets/images/icon/author-check.svg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <h5> By<a class="text-color-3" href="author02.html"> Creativemela</a> </h5>
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>                              
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-7.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">4 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>                                           
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-11.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">4 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
                                                             <div class="date"> In <span> @ 3d Models</span></div>                                           
                                                         </div>
                                                     </div>                                  
@@ -586,16 +632,373 @@
                                                         <div class="title-price"> 2.39 ETH</div>
                                                     </div>
                                                     <div class="button-place-bid">
-                                                        <a href="#" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
                                                     </div>
                                                 </div>
                                             </div> 
                                         </div> 
                                     </div>
                                 </div>
-                                <div class="swiper-button-next btn-slide-next active"></div>
-                                <div class="swiper-button-prev btn-slide-prev"></div>
-                                <div class="themesflat-pagination clearfix mt-2">
+                                <div class="themesflat-pagination clearfix">
+                                    <ul>
+                                        <li><a href="#" class="page-numbers">01</a></li>
+                                        <li><a href="#" class="page-numbers current">02</a></li>
+                                        <li><a href="#" class="page-numbers">03</a></li>
+                                        <li><a href="#" class="page-numbers">04</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content-inner tab-content">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-5.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">6 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>   
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-6.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">6 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-3.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">5 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>                              
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-7.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">4 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>                                           
+                                            </div> 
+                                        </div> 
+                                    </div>                                
+                                </div>
+                                <div class="themesflat-pagination clearfix">
+                                    <ul>
+                                        <li><a href="#" class="page-numbers">01</a></li>
+                                        <li><a href="#" class="page-numbers current">02</a></li>
+                                        <li><a href="#" class="page-numbers">03</a></li>
+                                        <li><a href="#" class="page-numbers">04</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content-inner tab-content">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-5.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">6 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>   
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    
+                                </div>
+                                <div class="themesflat-pagination clearfix">
+                                    <ul>
+                                        <li><a href="#" class="page-numbers">01</a></li>
+                                        <li><a href="#" class="page-numbers current">02</a></li>
+                                        <li><a href="#" class="page-numbers">03</a></li>
+                                        <li><a href="#" class="page-numbers">04</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content-inner tab-content">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-5.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">6 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>   
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-6.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">6 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-3.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">5 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>                              
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-7.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">4 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>                                           
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="sc-card-product sc-card-article blog-article">
+                                            <div class="card-media flat-img">
+                                                <a class="images" href="live-auctions-details.html"><img class="img-item" src="assets/images/box-item/auctions-11.jpg" alt="Image"></a>                                                                                                                                                                                                     
+                                            </div>  
+                                            <div class="content">
+                                                <h6 class="tags">4 in stock</h6>  
+                                                <h3><a href="live-auctions-details.html"> Axtronic Electronics VS-10 </a></h3> 
+                                                <div class="meta-info mb-17">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img id="avatar-01" src="assets/images/avatar/avt-01.png" alt="">
+                                                            <img class="check" src="assets/images/icon/author-check.svg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                            <div class="date"> In <span> @ 3d Models</span></div>                                           
+                                                        </div>
+                                                    </div>                                  
+                                                </div>  
+                                                <div class="meta-price flex-one">                                              
+                                                    <div class="price flex">
+                                                        <img id="avatar-01" class="" src="assets/images/icon/icon-diamond.svg" alt="">
+                                                        <div class="title-price"> 2.39 ETH</div>
+                                                    </div>
+                                                    <div class="button-place-bid">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button btn-3"><span>Place Bid</span></a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="themesflat-pagination clearfix">
                                     <ul>
                                         <li><a href="#" class="page-numbers">01</a></li>
                                         <li><a href="#" class="page-numbers current">02</a></li>
@@ -741,6 +1144,51 @@
         <!-- /#page -->
     </div>
     <!-- /#wrapper -->
+
+        <!-- Modal Popup Bid -->
+        <div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body space-y-20 pd-40">
+                        <h2 class="text-center">Your Bidding
+                            Successfuly Added</h2>
+                        <p class="text-center">your bid <span class="price color-popup">(5.23ETH) </span> has been listing
+                            to our database</p>
+                        <a href="#" class="btn btn-primary"> Watch the listings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade popup" id="popup_bid" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body space-y-20 pd-40">
+                        <h2>Place a Bid</h2>
+                        <p class="text-center">You must bid at least <span class="price color-popup">5.23 ETH</span>
+                        </p>
+                        <input type="text" class="form-control" placeholder="00.00 ETH">
+                        <p>Enter quantity. <span class="color-popup">1 available</span>
+                        </p>
+                        <input type="text" class="form-control quantity" value="1">
+                        <div class="hr"></div>
+                        
+                        <div class="d-flex justify-content-between">
+                            <p> Current Bid</p>
+                            <p class="text-right price color-popup"> 5.23 ETH </p>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#popup_bid_success"
+                            data-dismiss="modal" aria-label="Close"> Place a bid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
 
     <a id="scroll-top"></a>
 

@@ -162,6 +162,7 @@
   }
   
   @media only screen and (max-width: 991px) {
+    
     .themes-container2 {
       &.themes-slider {
           width: 750px;
@@ -173,13 +174,19 @@
     #footer.home2 {
         padding: 100px 0 90px;
     }
+
+    .flat-top-seller.page,
     .flat-collection.home3,
     .flat-top-seller.home3 .style-container,
     .flat-friendly.home2 ul,
     .tf-section {
       padding: 100px 0;
     }
-  
+
+    .flat-about {
+      padding-bottom: 85px;
+    }
+
     .pb-120,
     .flat-collection.home2,
     .flat-auctions.live-auctions {
@@ -289,7 +296,7 @@
         } 
       }
     }
-
+  
     .flat-top-seller .wrap-seller,
     .slider .wrap-heading .content p {
         margin-bottom: 30px;
@@ -334,7 +341,8 @@
     .widget-social-footer {
       padding: 25px 0;
     }
-  
+    
+    .themesflat-pagination,
     .widget-social-footer .title-bottom {
       text-align: center; 
     }
@@ -446,9 +454,22 @@
     .seclect-box #item_category {
       margin-right: 15px;
     }
+    .flat-counter .wrap,
     .flat-about .post {
       padding: 0;
     }
+
+    .flat-about .post .title-text {
+      margin-bottom: 20px;
+    }
+    .flat-about .post .sub-title {
+      margin-bottom: 12px;
+    }
+    .flat-about2 .flat-tabs .provenance p {
+      margin-bottom: 20px;
+    }
+
+
 
    
   }
@@ -458,7 +479,6 @@
     .flat-auctions .wrap-box {
       flex-direction: column-reverse;
       align-items: flex-start;
-      
     }
     .seclect-box.style-2 {
       margin-left: 0;
@@ -476,6 +496,8 @@
       font-size: 38px;
       line-height: 48px;
     }
+
+    .flat-top-seller.page,
     .flat-collection.home3,
     .flat-friendly .wrap-friendly,
     .tf-section {
@@ -493,6 +515,7 @@
     .flat-auctions.dark-style {
       padding-bottom: 0;
     }
+  
     .flat-auctions.live-auctions {
       padding-bottom: 80px;
     }
@@ -646,7 +669,8 @@
     #comments .comment-list .comment-content .comment-text {
       padding-bottom: 15px;
     }
-  
+
+    .flat-about .post .title-text,
     #comments .comment-form fieldset,
     #comments .title-comment2,
     #comments .title-comment {
@@ -732,15 +756,14 @@
       margin: 0;
     }
 
-    .flat-auctions-details .post .button-place-bid,
-    .themesflat-pagination {
+    .flat-auctions-details .post .button-place-bid {
       text-align: center;
     }
 
     .flat-auctions-details .post .button-social {
       text-align: center;
       a {
-        &:nth-child(n+3) {
+        &:nth-child(n+4) {
           margin-bottom: 0;
         }
       }
@@ -751,7 +774,7 @@
       padding: 20px 20px 20px 25px;
       width: calc(100% - 30px);
     }
-  
+    .flat-about,
     .flat-cetagories.style {
       padding-bottom: 70px;
     }
@@ -769,11 +792,11 @@
     }
   
     .flat-brand {
-      padding: 60px 0;
+      padding: 50px 0;
     }
 
     .flat-brand.home2 {
-        padding: 30px 0 60px;
+        padding: 30px 0 50px;
     }
     
     .slider.style-home2 .flat-wrap {
@@ -788,6 +811,7 @@
     .flat-cetagories2.home3 .style-container {
       padding: 80px 0 50px;
     }
+
     .flat-featured.home3 {
       padding: 50px 0 45px;
     }
@@ -823,6 +847,39 @@
       margin-bottom: 30px;
     }
 
+    .flat-video .post-video a {
+      width: 140px;
+      height: 140px;
+      line-height: 170px;
+      .ripple::before,
+      .ripple::after {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    .flat-auctions-details .post .information {
+      display: block;
+      margin-bottom: 30px;
+      .column {
+        &.column-1 {
+          margin-bottom: 15px;
+        }
+        &.column-2 {
+          padding:  0;
+        }
+      }
+    }
+
+    .flat-counter {
+        padding: 0px 0 35px;
+    }
+    .flat-counter .wrap h2 {
+      font-size: 48px;
+      line-height: 56px;
+      word-wrap: break-word;
+      margin-bottom: 10px;
+    }
+     
   
   }
   @media only screen and (max-width: 520px) {
@@ -867,8 +924,11 @@
     .flat-collection .post {
       padding: 28px 0px 0;
     }
+    .flat-about2 .flat-tabs .tab-title {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
-     
   }
 
   @media only screen and (max-width: 310px) {
