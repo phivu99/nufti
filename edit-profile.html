@@ -76,6 +76,8 @@
                                                     <li class="menu-item"><a href="about.html">About</a></li>
                                                     <li class="menu-item"><a href="author.html">Author</a></li>
                                                     <li class="menu-item"><a href="author-profile.html">Author Profile</a></li>
+                                                    <li class="menu-item"><a href="edit-profile.html">Edit Profile</a></li>
+                                                    <li class="menu-item"><a href="connect-wallet.html">Connect Wallet</a></li>
                                                 </ul>
                                             </li>
                                             
@@ -158,10 +160,10 @@
                 </div>                    
             </section>
 
-            <div class="tf-section flat-explore flat-edit-profile">
+            <div class="tf-section flat-explore flat-edit-profile flat-auctions-details ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-xl-3 col-lg-4">
                             <div class="author-profile"> 
                                 <div class="feature-profile center">
                                     <div class="wrap-img flex j-content">
@@ -181,9 +183,9 @@
                                 </div>                   
                             </div> 
                         </div>  
-                        <div class="col-lg-9">
-                            <div class="form-profile"> 
-                                <h3 class="fw-6">Choice Your Cover Image</h3> 
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="form-upload-profile post"> 
+                                <h3 class="title-one fw-6">Choice Your Cover Image</h3> 
                                 <div class="option-profile flex">                                 
                                     <form action="#">
                                         <label class="uploadFile">                                       
@@ -196,7 +198,60 @@
                                         </div>                                                                                                                                       
                                     </div>
                                 </div> 
-                                <h3 class="fw-6">Update Your Information</h3>               
+                                
+                                <h3 class="title-two fw-6">Update Your Information</h3> 
+                                <form action="#" class="form-profile">                     
+                                    <div class="form-infor-profile">
+                                        <div class="form-infor flex">
+                                            <div class="info-account">                              
+                                                <fieldset>
+                                                    <p class="title-infor-account">User Name</p>
+                                                    <input type="text" placeholder="Enter Your Name" required>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <p class="title-infor-account">Gmail</p>
+                                                    <input type="email" placeholder="info@gmail.com" required>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <p class="title-infor-account">Custom URL</p>
+                                                    <input type="text" placeholder="infomela.com" required>
+                                                </fieldset>                                                                           
+                                            </div>
+                                            <div class="info-social">                                 
+                                                <fieldset>
+                                                    <p class="title-infor-account">Phone</p>
+                                                    <input type="tel" placeholder="+55 12333 444 55" required>                                             
+                                                </fieldset>
+                                                <fieldset>
+                                                    <p class="title-infor-account">Address</p>
+                                                    <input type="password" placeholder="Your Address Create" required>
+                                            
+                                                </fieldset>
+                                                <fieldset>
+                                                    <p class="title-infor-account">Password</p>
+                                                    <input type="password" placeholder="****************" required>                                              
+                                                </fieldset>
+                                            </div>  
+                                        </div> 
+                                        <fieldset class="message">
+                                            <p class="title-infor-account">Bio</p>
+                                            <textarea tabindex="4" rows="3" required></textarea>
+                                        </fieldset>                                                              
+                                    </div>
+                                
+                                    <h3 class="title-three fw-6">Your Social Media</h3>
+                                    <p class="text-social text-t">Proin massa dui, maximus vitae massa in, ullamcorper euismod justo.</p>
+                                    <div class="button-social">                            
+                                        <a href="#" class="sc-button"><i class="fab fa-facebook-f"></i><span class="font">Connect To Facebook</span></a>
+                                        <a href="#" class="sc-button style-2"><i class="fab fa-google-plus-g"></i><span class="font">Connect To Google</span></a>
+                                        <a href="#" class="sc-button style-3"><i class="fab fa-twitter"></i><span class="font">Connect To Twitter</span></a>
+                                        <a href="#" class="sc-button style-4"><i class="fab fa-instagram"></i><span class="font">Connect To Instagram</span></a>
+                                        <a href="#" class="sc-button style-5"><i class="fab fa-skype"></i><span class="font">Connect To Skype</span></a>
+                                    </div>
+                                    <button class="tf-button-submit mg-t-15" type="submit">
+                                        Save & Update Information
+                                    </button>           
+                                </form>              
                             </div> 
                         </div>     
                     </div>           

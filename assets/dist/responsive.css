@@ -129,6 +129,10 @@
   .flat-auctions-details .post .button-social .sc-button {
     margin-bottom: 12px;
   }
+
+  .flat-edit-profile .form-upload-profile {
+    padding: 0;
+  }
 }
 @media (max-width: 991px) and (min-width: 767px) {
   .flat-blog.home3 .sc-card-article.blog-article {
@@ -198,6 +202,10 @@
 .slider.style-home2 .mark-page3,
 .mode_switcher {
     display: none;
+  }
+
+  .flat-connect-wallet {
+    padding-bottom: 70px;
   }
 
   .flat-top-seller.home2 .wrap-seller {
@@ -430,16 +438,13 @@
     padding: 0;
   }
 
-  .flat-about .post .title-text {
+  .flat-about2 .flat-tabs .provenance p,
+.flat-about .post .title-text {
     margin-bottom: 20px;
   }
 
   .flat-about .post .sub-title {
     margin-bottom: 12px;
-  }
-
-  .flat-about2 .flat-tabs .provenance p {
-    margin-bottom: 20px;
   }
 
   .flat-author-profile .tab-author .author-profile {
@@ -463,13 +468,24 @@
   .flat-author-profile .tab-author .author-profile .button-profile a.style-1 {
     margin-right: 10px;
   }
-}
-@media only screen and (max-width: 767px) {
-  .flat-auctions .wrap-box {
-    flex-direction: column-reverse;
-    align-items: flex-start;
+
+  .flat-edit-profile .author-profile {
+    margin-bottom: 50px;
   }
 
+  .flat-edit-profile .form-upload-profile .text-social {
+    margin-bottom: 25px;
+  }
+
+  .flat-edit-profile .form-upload-profile .button-social .sc-button {
+    margin-bottom: 20px;
+  }
+
+  .flat-connect-wallet .wrap-connect {
+    padding: 50px 32px 43px;
+  }
+}
+@media only screen and (max-width: 767px) {
   .seclect-box.style-2 {
     margin-left: 0;
     margin-bottom: 15px;
@@ -477,6 +493,10 @@
   }
   .seclect-box.style-2 .title-item {
     margin: auto 15px auto 0;
+  }
+
+  .flat-edit-profile .form-upload-profile .option-profile .img-box {
+    width: 100%;
   }
 
   .seclect-box.style-1 {
@@ -506,7 +526,8 @@
     padding-bottom: 0;
   }
 
-  .flat-auctions.live-auctions {
+  .flat-edit-profile.flat-auctions-details,
+.flat-auctions.live-auctions {
     padding-bottom: 80px;
   }
 
@@ -893,6 +914,42 @@
   }
   .flat-author-profile .tab-author .tab-title li:last-child {
     margin-right: 0;
+  }
+
+  .flat-auctions .wrap-box {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .flat-edit-profile .form-upload-profile .option-profile {
+    display: block;
+  }
+  .flat-edit-profile .form-upload-profile .option-profile form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .form-infor {
+    display: block;
+  }
+  .flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social,
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account {
+    width: unset;
+  }
+  .flat-edit-profile .form-upload-profile .button-social {
+    margin-right: -29px;
+    margin-bottom: 30px;
+  }
+  .flat-edit-profile .form-upload-profile .button-social a:nth-child(n+4) {
+    margin-bottom: 20px !important;
+    margin-right: 29px !important;
+  }
+
+  .flat-edit-profile .form-upload-profile .option-profile .flat-edit-profile .form-upload-profile .title-two {
+    margin-bottom: 20px;
+  }
+
+  .flat-connect-wallet {
+    padding-bottom: 50px;
   }
 }
 @media only screen and (max-width: 520px) {

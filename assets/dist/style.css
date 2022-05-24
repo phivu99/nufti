@@ -1107,6 +1107,7 @@ a:hover, a:focus {
   --primary-color7: #fff;
   --primary-color8: #706C83;
   --primary-color9: #130518;
+  --primary-color10: #fff;
 }
 
 .is_dark {
@@ -1119,6 +1120,7 @@ a:hover, a:focus {
   --primary-color7: #13051808;
   --primary-color8: #fff;
   --primary-color9: #706C83;
+  --primary-color10: #FFFFFF08;
 }
 
 /* Header
@@ -1501,7 +1503,7 @@ header {
   position: relative;
 }
 .search-form .search-field {
-  background: var(--primary-color5);
+  background: var(--primary-color10);
   color: #fff;
   width: 100%;
   border: 1px solid var(--primary-color6);
@@ -1639,18 +1641,11 @@ header {
 .header_1.is-fixed #main-nav > ul > li > a {
   color: var(--primary-color2);
 }
-.header_1.is-fixed .mode_switcher {
-  display: none;
-}
 
 .is_dark .header_1.header_2.style.is-fixed,
 .is_dark .header_1.is-fixed {
   background: #14141F;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-.header_1.is-fixed .mode_switcher {
-  display: none;
 }
 
 .header_1.header_2.is-fixed .mode_switcher {

@@ -138,6 +138,9 @@
     .flat-auctions-details .post .button-social .sc-button {
       margin-bottom: 12px;
     }
+    .flat-edit-profile .form-upload-profile {
+      padding: 0;
+    }
 
   
   }
@@ -162,7 +165,7 @@
   }
   
   @media only screen and (max-width: 991px) {
-    
+   
     .themes-container2 {
       &.themes-slider {
           width: 750px;
@@ -210,6 +213,10 @@
     .slider.style-home2 .mark-page3,
     .mode_switcher {
       display: none;
+    }
+
+    .flat-connect-wallet {
+      padding-bottom: 70px;
     }
 
     .flat-top-seller.home2 .wrap-seller {
@@ -458,15 +465,12 @@
     .flat-about .post {
       padding: 0;
     }
-
+    .flat-about2 .flat-tabs .provenance p,
     .flat-about .post .title-text {
       margin-bottom: 20px;
     }
     .flat-about .post .sub-title {
       margin-bottom: 12px;
-    }
-    .flat-about2 .flat-tabs .provenance p {
-      margin-bottom: 20px;
     }
 
     .flat-author-profile {
@@ -494,15 +498,32 @@
         }
       }
     }
+
+    .flat-edit-profile .author-profile {
+      margin-bottom: 50px;
+    }
+
+    .flat-edit-profile .form-upload-profile .text-social {
+      margin-bottom: 25px;
+    }
+    .flat-edit-profile .form-upload-profile .button-social .sc-button {
+      margin-bottom: 20px;
+    }
+
+    .flat-connect-wallet .wrap-connect { 
+      padding: 50px 32px 43px;
+    }
    
   }
   
 
   @media only screen and (max-width: 767px) {
-    .flat-auctions .wrap-box {
-      flex-direction: column-reverse;
-      align-items: flex-start;
-    }
+    
+    // .flat-edit-profile .form-upload-profile .button-social .sc-button.style-2,
+    // .flat-edit-profile .form-upload-profile .button-social .sc-button {
+    //   margin-right: 15px;
+    // }
+    
     .seclect-box.style-2 {
       margin-left: 0;
       margin-bottom: 15px;
@@ -510,6 +531,9 @@
       .title-item {
         margin: auto 15px auto 0;
       }
+    }
+    .flat-edit-profile .form-upload-profile .option-profile .img-box {
+      width: 100%;
     }
     .seclect-box.style-1 {
       flex-wrap: wrap;
@@ -538,7 +562,7 @@
     .flat-auctions.dark-style {
       padding-bottom: 0;
     }
-  
+    .flat-edit-profile.flat-auctions-details,
     .flat-auctions.live-auctions {
       padding-bottom: 80px;
     }
@@ -906,40 +930,83 @@
     .flat-author-profile .tab-author .author-profile {
       padding: 35px 15px 35px 15px;
       display: block;
-  }
-  .flat-author-profile .tab-author .author-profile .feature-profile .infor {
-    padding-top: 10%;
-}
-.flat-author-profile .tab-author .author-profile .feature-profile {
-  margin-bottom: 21px;
-}
-.flat-author-profile .tab-author .author-profile .button-profile {
-  padding-top: 0;
-  margin-left: 0;
-  justify-content: center;
-  h3 {
-    width: 25%;
-    line-height: 20px;
-  }
-   a.style-1 {
-    padding: 10px 20px;
-  }
-  a.style-2 {
-    padding: 10px 15px;
-  }
- 
-}
-.flat-author-profile .tab-author .tab-title {
-  padding-left: 0;
-  justify-content: center;
-  li {
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 0;
     }
-  }
-}
+    .flat-author-profile .tab-author .author-profile .feature-profile .infor {
+      padding-top: 10%;
+    }
+    .flat-author-profile .tab-author .author-profile .feature-profile {
+      margin-bottom: 21px;
+    }
+    .flat-author-profile .tab-author .author-profile .button-profile {
+      padding-top: 0;
+      margin-left: 0;
+      justify-content: center;
+      h3 {
+        width: 25%;
+        line-height: 20px;
+      }
+      a.style-1 {
+        padding: 10px 20px;
+      }
+      a.style-2 {
+        padding: 10px 15px;
+      }
+    
+    }
+    .flat-author-profile .tab-author .tab-title {
+      padding-left: 0;
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
 
+    .flat-auctions .wrap-box {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .flat-edit-profile {
+      .form-upload-profile {
+        .option-profile {
+          display: block;
+          form {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+        }
+        .form-profile {
+          .form-infor-profile {
+            .form-infor {
+              display: block;
+            }
+            .info-social,
+            .info-account {
+                  width: unset;
+            }
+          }
+        }
+        .button-social{
+          margin-right: -29px;
+          margin-bottom: 30px;
+          a:nth-child(n+4){
+            margin-bottom: 20px !important;
+            margin-right: 29px !important;
+          }
+        }
+      }
+    }
+
+    .flat-edit-profile .form-upload-profile .option-profile 
+    .flat-edit-profile .form-upload-profile .title-two {
+      margin-bottom: 20px;
+    }
+
+    .flat-connect-wallet {
+      padding-bottom: 50px;
+    }
      
   
   }

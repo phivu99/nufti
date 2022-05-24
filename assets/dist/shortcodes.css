@@ -1840,7 +1840,7 @@
   border: unset;
   margin-right: 8px;
 }
-.flat-auctions-details .post .button-social .sc-button.style-2:hover, .flat-auctions-details .post .button-social .sc-button.style-3:hover, .flat-auctions-details .post .button-social .sc-button.style-4:hover, .flat-auctions-details .post .button-social .sc-button:hover {
+.flat-auctions-details .post .button-social .sc-button.style-5:hover, .flat-auctions-details .post .button-social .sc-button.style-2:hover, .flat-auctions-details .post .button-social .sc-button.style-3:hover, .flat-auctions-details .post .button-social .sc-button.style-4:hover, .flat-auctions-details .post .button-social .sc-button:hover {
   border: unset;
   background: var(--primary-color3);
   -webkit-transition: all 0.3s ease;
@@ -2168,8 +2168,13 @@
   padding: 0;
 }
 
+.flat-edit-profile.flat-auctions-details {
+  padding-bottom: 122px;
+  margin: 0;
+}
 .flat-edit-profile .author-profile .feature-profile {
-  padding: 50px 29px;
+  padding: 50px 29px 39px;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.031372549);
   border: 1px solid var(--primary-color6);
 }
@@ -2186,25 +2191,103 @@
   right: 18.5%;
   position: absolute;
 }
-.flat-edit-profile .form-profile {
+.flat-edit-profile .form-upload-profile {
   padding-left: 100px;
 }
-.flat-edit-profile .form-profile h3 {
+.flat-edit-profile .form-upload-profile .title-one {
   margin-bottom: 27px;
 }
-.flat-edit-profile .form-profile .option-profile {
+.flat-edit-profile .form-upload-profile .title-two {
+  margin-bottom: 8px;
+}
+.flat-edit-profile .form-upload-profile .title-three {
+  margin-bottom: 8px;
+}
+.flat-edit-profile .form-upload-profile .text-social {
+  margin-bottom: 3px;
+}
+.flat-edit-profile .form-upload-profile .option-profile {
   margin-bottom: 48px;
 }
-.flat-edit-profile .form-profile .option-profile form {
+.flat-edit-profile .form-upload-profile .option-profile form {
   width: 48%;
   margin-right: 30px;
 }
-.flat-edit-profile .form-profile .option-profile .img-box {
+.flat-edit-profile .form-upload-profile .option-profile .img-box {
   width: 48%;
 }
-.flat-edit-profile .form-profile .option-profile .img-box img {
+.flat-edit-profile .form-upload-profile .option-profile .img-box img {
   height: 110px;
   width: 100%;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile {
+  margin-bottom: 50px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .form-infor {
+  margin-left: -30px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social,
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account {
+  width: calc(50% - 30px);
+  margin-left: 30px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social .title-infor-account,
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account .title-infor-account {
+  margin-bottom: 4px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social fieldset,
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account fieldset {
+  margin-bottom: 11.2px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social fieldset input,
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account fieldset input {
+  background: var(--primary-color10);
+  padding: 9px 15px 10px 18.5px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social fieldset input::placeholder,
+.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account fieldset input::placeholder {
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+.flat-edit-profile .form-upload-profile .form-profile .message p {
+  margin-bottom: 4px;
+}
+.flat-edit-profile .form-upload-profile .form-profile .message textarea {
+  background: var(--primary-color10);
+  padding: 9px 15px 17px 18.5px;
+}
+.flat-edit-profile .form-upload-profile .button-social {
+  margin-bottom: 38px;
+}
+.flat-edit-profile .form-upload-profile .button-social .sc-button {
+  padding: 3px 0 0 0 !important;
+  border: unset;
+  margin-right: 29px;
+  margin-bottom: 21px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.flat-edit-profile .form-upload-profile .button-social .sc-button.style-2 {
+  margin-right: 27px;
+}
+.flat-edit-profile .form-upload-profile .button-social .sc-button.style-5 {
+  background: #00A6E4;
+}
+.flat-edit-profile .form-upload-profile .button-social .sc-button i {
+  font-size: 14px;
+  margin-right: 6px;
+}
+.flat-edit-profile .form-upload-profile .tf-button-submit {
+  width: 100%;
+  padding: 19px;
+  border: unset;
+  box-shadow: 0px 14px 14px rgba(119, 89, 243, 0.15);
+}
+.flat-edit-profile .form-upload-profile .tf-button-submit:hover {
+  background: #8E2AC3;
+  border: unset;
 }
 
 .btn-upload {
@@ -2270,7 +2353,7 @@
   font-size: 14px;
   line-height: 100px;
   overflow: hidden;
-  padding: 31px 0 27px 80px;
+  padding: 31px 0 27px 3px;
   position: relative;
   resize: none;
   cursor: pointer;
@@ -2285,6 +2368,11 @@
   padding: 0 0;
   border: none;
   border-radius: 8px;
+  margin: auto;
+}
+
+.uploadFile input[type=file]:hover::after {
+  color: #fff;
 }
 
 .uploadFile .inputfile:hover::before {
@@ -2306,7 +2394,7 @@
   content: "Upload Your Photo";
   display: inline-block;
   background: rgba(119, 89, 243, 0.0705882353);
-  color: #fff;
+  color: var(--primary-color8);
   text-align: center;
   border-radius: 8px;
   font-family: "Open Sans";
@@ -2327,10 +2415,50 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #fff;
+  color: var(--primary-color8);
   position: absolute;
   top: 11px;
   left: 27px;
+}
+
+.flat-connect-wallet {
+  padding-bottom: 90px;
+}
+.flat-connect-wallet .wrap-connect {
+  background-color: var(--primary-color10);
+  border: 1px solid var(--primary-color6);
+  padding: 50px 32px 38px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.flat-connect-wallet .wrap-connect .image {
+  margin-bottom: 28px;
+}
+.flat-connect-wallet .wrap-connect .image img {
+  transition: all 0.8s ease;
+}
+.flat-connect-wallet .wrap-connect .content h3 {
+  margin-bottom: 19px;
+}
+.flat-connect-wallet .wrap-connect:hover img {
+  transform: rotateY(360deg);
+}
+.flat-connect-wallet .wrap-connect .popular {
+  top: 17px;
+  right: -25px;
+  background-color: var(--primary-color3);
+  width: 110px;
+  transform: rotate(44deg);
+  padding: 3px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-connect-wallet .wrap-connect .popular h3 {
+  color: #fff;
 }
 
 /* Modal Popup  ----------
