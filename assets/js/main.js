@@ -390,8 +390,8 @@
             $(this).closest('.flat-alert').remove();
             e.preventDefault();
         })
-
     };
+
 
     // Dom Ready
     $(function () {

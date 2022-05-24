@@ -488,6 +488,7 @@
             alert('copy completed !');
         });
     }
+
     $("#profileimg").click(function (e) {
         $("#tf-upload-img").click();
     });
@@ -502,6 +503,13 @@
     $("#tf-upload-img").change(function () {
         fasterPreview(this);
     });
+
+    var delete_img = function(e) {
+        $('#tf-remove-img').on('click',function(e) {
+            $('#profileimg').attr('src',"assets/images/box-item/edit-profile.jpg");
+            e.preventDefault();
+        });
+    }
 
     // Dom Ready
     $(function () {
@@ -539,7 +547,10 @@
         copycode();
         swiper_tab();
         viewShop();
+        delete_img();
         Preloader();
     });
 
 })(jQuery);
+
+

@@ -129,6 +129,7 @@
     border: 1px solid var(--primary-color6);
 }
 
+.sc-button.btn-6.tf-style,
 .is_dark .sc-button.btn-6 {
     background-color: #FFFFFF1A;
     border: 1px solid var(--primary-color6);
@@ -138,6 +139,7 @@
     color: var(--primary-color8);
 }
 
+.sc-button.btn-6.tf-style span,
 .sc-button.btn-6:hover span {
     color: #fff;
 }
@@ -2344,13 +2346,11 @@
             .feature-profile {
                 margin-bottom: -109px;
                 .img-box {
-                    position: relative;
                     .avatar {
                         border-radius: 50%;
                     }
                     .check {
-                        bottom: 5px;
-                        right: 18.5%;
+                        @include absolute-check;
                     }
                 }             
                 .infor {
@@ -2383,7 +2383,7 @@
         }
         .tab-title {
             padding-left: 25.7%;
-            padding-top: 2.65%;
+            padding-top: 31px;
             margin-bottom: 46px;
             li {
                 margin-right: 48.5px;
@@ -2398,6 +2398,200 @@
         }
     }  
 }
+
+.flat-edit-profile {
+    .author-profile {
+        .feature-profile {
+            padding: 50px 29px;
+            background: #FFFFFF08;
+            border: 1px solid var(--primary-color6);
+            .wrap-img {
+                margin-bottom: 30px;
+                .avatar {
+                    border-radius: 50%;
+                    width: 210px;
+                    height: 210px
+                }
+                .check {
+                    @include absolute-check;
+                }
+            }
+        }
+    }
+    .form-profile {
+        padding-left: 100px;
+        h3 {
+            margin-bottom: 27px;
+        }
+        
+        .option-profile form{
+            width: 48%;
+            margin-right: 30px;
+        }
+        .box-img {
+
+        }
+    }
+}
+
+// 
+
+.btn-upload {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    background: var(--primary-color3);
+    margin-bottom: 10px;
+    padding-top: 3px;
+    font-family: 'Open Sans';
+    &::before {
+        content: '\f0ee';
+        font-family: "Font Awesome 5 Pro";
+        font-size: 18px;
+        @include transition3;
+        color: #fff;
+        margin-right: 9px;
+        margin-top: -7px;
+    }
+}
+
+.btn-upload.btn-delete {
+    background: #F3597E;
+    color: #fff;
+    &::before {
+        display: none;
+    }
+}
+
+#upload-profile #tf-upload-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+// 
+.uploadFile {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(138, 138, 160, 0.3);
+    border-radius: 8px;
+    color: var(--primary-color4);
+    font-size: 14px;
+    line-height: 100px;
+    overflow: hidden;
+    padding: 31px 0 27px 80px;
+    position: relative;
+    resize: none;
+    cursor: pointer;
+    margin-bottom: 22px;
+}
+
+.uploadFile input[type=file] {
+    cursor: pointer;
+    width: 210px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0;
+    border: none;
+    border-radius: 8px;
+}
+.uploadFile .inputfile:hover,
+.uploadFile .inputfile:hover::before {
+    background-color: #8E2AC3;
+    color: #fff;
+}
+
+.uploadFile .form-control {
+    // background: transparent;
+    background-color: #8E2AC3 !important;
+    color: #fff;
+}
+.uploadFile input[type=file]:before {
+    width: 210px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    content: 'Upload Your Photo';
+    display: inline-block;
+    background: #7759F312;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    @include transition3;
+    padding-left: 29px;
+}
+
+.uploadFile input[type=file]::after {
+    content: '\f0ee';
+    font-family: "Font Awesome 5 Pro";
+    font-size: 18px;
+    @include transition3;
+    color: #fff;
+    position: absolute;
+    top: 11px;
+    left: 27px;
+}
+
+
+// .option-profile{
+//     display: flex;
+//     display: -webkit-box;  
+//     display: -moz-box;      
+//     display: -ms-flexbox;   
+//     display: -webkit-flex; 
+//     align-items: center;
+//     margin-bottom: 37px;
+// }
+
+// .form-upload-profile .uploadFile,
+// .form-upload-profile form{
+//     height: 100%;
+// }
+
+// .form-upload-profile .option-profile form{
+//     width: 32%;
+//     margin-right: 17px;
+// }
+
+// .form-upload-profile .uploadFile{
+//     padding: 8% 5%;
+//     display: flex;
+//     display: -webkit-box;  
+//     display: -moz-box;      
+//     display: -ms-flexbox;   
+//     display: -webkit-flex; 
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 0;
+// }
+
+// .form-upload-profile .uploadFile input[type=file]{
+//     transform: translateY(0);
+//     position: relative;
+//     left: 0;
+//     top: 0;
+// }
+
 
 /* Modal Popup  ----------
 -------------------------*/

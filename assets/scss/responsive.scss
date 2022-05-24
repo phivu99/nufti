@@ -469,8 +469,31 @@
       margin-bottom: 20px;
     }
 
-
-
+    .flat-author-profile {
+      .tab-author {
+        .author-profile {
+          padding: 35px 15px 0px 15px;
+          .feature-profile {
+            margin-bottom: -20px;
+            .infor {
+              width: 100%;
+              padding-left: 10px;
+              padding-top: 30px;
+            }
+          }
+          .button-profile {
+            padding-top: 30px;
+            margin-left: -120px;
+            h3 {
+              margin-right: 10px;
+            }
+            a.style-1 {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
    
   }
   
@@ -879,6 +902,44 @@
       word-wrap: break-word;
       margin-bottom: 10px;
     }
+
+    .flat-author-profile .tab-author .author-profile {
+      padding: 35px 15px 35px 15px;
+      display: block;
+  }
+  .flat-author-profile .tab-author .author-profile .feature-profile .infor {
+    padding-top: 10%;
+}
+.flat-author-profile .tab-author .author-profile .feature-profile {
+  margin-bottom: 21px;
+}
+.flat-author-profile .tab-author .author-profile .button-profile {
+  padding-top: 0;
+  margin-left: 0;
+  justify-content: center;
+  h3 {
+    width: 25%;
+    line-height: 20px;
+  }
+   a.style-1 {
+    padding: 10px 20px;
+  }
+  a.style-2 {
+    padding: 10px 15px;
+  }
+ 
+}
+.flat-author-profile .tab-author .tab-title {
+  padding-left: 0;
+  justify-content: center;
+  li {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
      
   
   }
@@ -895,7 +956,6 @@
       }
     }
 
-    
   }
   
   @media only screen and (max-width: 360px) {
@@ -928,13 +988,34 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    .flat-author-profile .tab-author .author-profile .feature-profile .infor h3 {
+      font-size: 22px;
+      line-height: 27px;
+    }
   
+  }
+  @media only screen and (max-width: 330px) {
+
+    .flat-author-profile .tab-author .author-profile .button-profile {
+      h3 {
+        font-size: 14px;
+      }
+       a.style-1 {
+        padding: 10px 12px;
+      }
+      a.style-2 {
+        padding: 10px 10px;
+      }
+    }
   }
 
   @media only screen and (max-width: 310px) {
     .slider .wrap-heading .content h1 {
         font-size: 54px;
         line-height: 66px;
+    }
+    .flat-author-profile .tab-author .tab-title li {
+      margin-right: 12px;
     }
     
   }

@@ -752,10 +752,6 @@ label.error {
   content: "\f060";
 }
 
-.pst-re {
-  position: relative;
-}
-
 .flex {
   display: -webkit-box;
   display: -moz-box;
@@ -787,6 +783,14 @@ label.error {
 
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.j-content {
+  justify-content: center;
 }
 
 .text-t {

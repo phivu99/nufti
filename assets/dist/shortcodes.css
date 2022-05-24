@@ -138,6 +138,7 @@
   border: 1px solid var(--primary-color6);
 }
 
+.sc-button.btn-6.tf-style,
 .is_dark .sc-button.btn-6 {
   background-color: rgba(255, 255, 255, 0.1019607843);
   border: 1px solid var(--primary-color6);
@@ -147,6 +148,7 @@
   color: var(--primary-color8);
 }
 
+.sc-button.btn-6.tf-style span,
 .sc-button.btn-6:hover span {
   color: #fff;
 }
@@ -2116,15 +2118,13 @@
 .flat-author-profile .tab-author .author-profile .feature-profile {
   margin-bottom: -109px;
 }
-.flat-author-profile .tab-author .author-profile .feature-profile .img-box {
-  position: relative;
-}
 .flat-author-profile .tab-author .author-profile .feature-profile .img-box .avatar {
   border-radius: 50%;
 }
 .flat-author-profile .tab-author .author-profile .feature-profile .img-box .check {
   bottom: 5px;
   right: 18.5%;
+  position: absolute;
 }
 .flat-author-profile .tab-author .author-profile .feature-profile .infor {
   padding-top: 56px;
@@ -2154,7 +2154,7 @@
 }
 .flat-author-profile .tab-author .tab-title {
   padding-left: 25.7%;
-  padding-top: 2.65%;
+  padding-top: 31px;
   margin-bottom: 46px;
 }
 .flat-author-profile .tab-author .tab-title li {
@@ -2166,6 +2166,162 @@
 .flat-author-profile .tab-author .content .meta-info {
   border: unset;
   padding: 0;
+}
+
+.flat-edit-profile .author-profile .feature-profile {
+  padding: 50px 29px;
+  background: rgba(255, 255, 255, 0.031372549);
+  border: 1px solid var(--primary-color6);
+}
+.flat-edit-profile .author-profile .feature-profile .wrap-img {
+  margin-bottom: 30px;
+}
+.flat-edit-profile .author-profile .feature-profile .wrap-img .avatar {
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+}
+.flat-edit-profile .author-profile .feature-profile .wrap-img .check {
+  bottom: 5px;
+  right: 18.5%;
+  position: absolute;
+}
+.flat-edit-profile .form-profile {
+  padding-left: 100px;
+}
+.flat-edit-profile .form-profile h3 {
+  margin-bottom: 27px;
+}
+.flat-edit-profile .form-profile .option-profile form {
+  width: 48%;
+  margin-right: 30px;
+}
+.btn-upload {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  background: var(--primary-color3);
+  margin-bottom: 10px;
+  padding-top: 3px;
+  font-family: "Open Sans";
+}
+.btn-upload::before {
+  content: "\f0ee";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  margin-right: 9px;
+  margin-top: -7px;
+}
+
+.btn-upload.btn-delete {
+  background: #F3597E;
+  color: #fff;
+}
+.btn-upload.btn-delete::before {
+  display: none;
+}
+
+#upload-profile #tf-upload-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.uploadFile {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(138, 138, 160, 0.3);
+  border-radius: 8px;
+  color: var(--primary-color4);
+  font-size: 14px;
+  line-height: 100px;
+  overflow: hidden;
+  padding: 31px 0 27px 80px;
+  position: relative;
+  resize: none;
+  cursor: pointer;
+  margin-bottom: 22px;
+}
+
+.uploadFile input[type=file] {
+  cursor: pointer;
+  width: 210px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.uploadFile .inputfile:hover,
+.uploadFile .inputfile:hover::before {
+  background-color: #8E2AC3;
+  color: #fff;
+}
+
+.uploadFile .form-control {
+  background-color: #8E2AC3 !important;
+  color: #fff;
+}
+
+.uploadFile input[type=file]:before {
+  width: 210px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+  content: "Upload Your Photo";
+  display: inline-block;
+  background: rgba(119, 89, 243, 0.0705882353);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 29px;
+}
+
+.uploadFile input[type=file]::after {
+  content: "\f0ee";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  position: absolute;
+  top: 11px;
+  left: 27px;
 }
 
 /* Modal Popup  ----------
