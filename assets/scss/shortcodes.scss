@@ -2424,13 +2424,21 @@
             margin-bottom: 27px;
         }
         
-        .option-profile form{
-            width: 48%;
-            margin-right: 30px;
+        .option-profile {
+            margin-bottom: 48px;
+            form{
+                width: 48%;
+                margin-right: 30px;
+            }
+            .img-box {
+                width: 48%;
+                img {
+                    height: 110px;
+                    width: 100%;
+                }
+            }
         }
-        .box-img {
-
-        }
+        
     }
 }
 
@@ -2500,7 +2508,6 @@
     position: relative;
     resize: none;
     cursor: pointer;
-    margin-bottom: 22px;
 }
 
 .uploadFile input[type=file] {
@@ -2513,17 +2520,17 @@
     border: none;
     border-radius: 8px;
 }
-.uploadFile .inputfile:hover,
+
 .uploadFile .inputfile:hover::before {
     background-color: #8E2AC3;
     color: #fff;
 }
 
 .uploadFile .form-control {
-    // background: transparent;
-    background-color: #8E2AC3 !important;
+    background: #7759F312 !important;
     color: #fff;
 }
+
 .uploadFile input[type=file]:before {
     width: 210px;
     height: 50px;

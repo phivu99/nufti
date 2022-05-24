@@ -511,6 +511,24 @@
         });
     }
 
+    // img style 2
+    var UpImg = function() {
+    $("#editimg").click(function (e) {
+        $("#upload-img2").click();
+    });
+    
+    function fasterPreview(uploader) {
+        if (uploader.files && uploader.files[0]) {
+            $('#editimg').attr('src',
+                window.URL.createObjectURL(uploader.files[0]));
+        }
+    }
+    
+    $("#upload-img2").change(function () {
+        fasterPreview(this);
+    });
+    }
+
     // Dom Ready
     $(function () {
         goTop();
@@ -548,6 +566,7 @@
         swiper_tab();
         viewShop();
         delete_img();
+        UpImg();
         Preloader();
     });
 
