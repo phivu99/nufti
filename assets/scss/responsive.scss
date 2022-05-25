@@ -189,7 +189,7 @@
     .flat-about {
       padding-bottom: 85px;
     }
-
+    .flat-edit-profile.flat-auctions-details,
     .pb-120,
     .flat-collection.home2,
     .flat-auctions.live-auctions {
@@ -499,30 +499,28 @@
       }
     }
 
-    .flat-edit-profile .author-profile {
-      margin-bottom: 50px;
-    }
-
     .flat-edit-profile .form-upload-profile .text-social {
       margin-bottom: 25px;
     }
-    .flat-edit-profile .form-upload-profile .button-social .sc-button {
+    .flat-edit-profile .form-upload-profile .box-button .button-social .sc-button {
       margin-bottom: 20px;
     }
 
     .flat-connect-wallet .wrap-connect { 
       padding: 50px 32px 43px;
     }
+    .flat-edit-profile .form-upload-profile .option-profile {
+      margin-bottom: 35px;
+    }
+    .flat-edit-profile .author-profile,
+    .flat-create-item .sc-card-product {
+      margin-bottom: 40px;
+    }
    
   }
   
 
   @media only screen and (max-width: 767px) {
-    
-    // .flat-edit-profile .form-upload-profile .button-social .sc-button.style-2,
-    // .flat-edit-profile .form-upload-profile .button-social .sc-button {
-    //   margin-right: 15px;
-    // }
     
     .seclect-box.style-2 {
       margin-left: 0;
@@ -988,12 +986,14 @@
             }
           }
         }
-        .button-social{
-          margin-right: -29px;
-          margin-bottom: 30px;
-          a:nth-child(n+4){
-            margin-bottom: 20px !important;
-            margin-right: 29px !important;
+        .box-button {
+          .button-social{
+            margin-right: -29px;
+            margin-bottom: 30px;
+            a:nth-child(n+4){
+              margin-bottom: 20px !important;
+              margin-right: 29px !important;
+            }
           }
         }
       }
@@ -1007,20 +1007,46 @@
     .flat-connect-wallet {
       padding-bottom: 50px;
     }
+
+    .flat-create-item.flat-auctions-details {
+      padding-bottom: 70px;
+    }
+    .flat-auctions.live-auctions.nft-style {
+      padding-top: 70px;
+    }
+
+    .flat-create-item .form-tab {
+      display: block;
+    }
+    .flat-create-item .tab-create-item .info-title {
+      width: 100%;
+      margin-bottom: 11.2px;
+    }
      
-  
+
   }
   @media only screen and (max-width: 520px) {
-    .seclect-box.style-2 {
-    }
+   
     .seclect-box.style-2 .title-item {
       margin:0 15px 15px 0;
     }
+
     .dropdown {
       margin-bottom: 15px;
       &:last-child {
         margin: 0;
       }
+    }
+
+    .flat-create-item .tab-create-item .tab-title {
+      display: block;
+    }
+    .flat-create-item .tab-create-item .tab-title .item-title {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .flat-create-item .text-tag {
+      margin-bottom: 5px;
     }
 
   }

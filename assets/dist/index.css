@@ -4160,7 +4160,7 @@ header {
   font-size: 16px;
 }
 
-.flat-tabs {
+.flat-tabs.themesflat-tabs {
   margin-bottom: 4px;
 }
 .flat-tabs .tab-title {
@@ -4523,10 +4523,10 @@ header {
   background: var(--primary-color10);
   padding: 9px 15px 17px 18.5px;
 }
-.flat-edit-profile .form-upload-profile .button-social {
+.flat-edit-profile .form-upload-profile .box-button .button-social {
   margin-bottom: 38px;
 }
-.flat-edit-profile .form-upload-profile .button-social .sc-button {
+.flat-edit-profile .form-upload-profile .box-button .button-social .sc-button {
   padding: 3px 0 0 0 !important;
   border: unset;
   margin-right: 29px;
@@ -4536,13 +4536,13 @@ header {
   line-height: 50px;
   text-align: center;
 }
-.flat-edit-profile .form-upload-profile .button-social .sc-button.style-2 {
+.flat-edit-profile .form-upload-profile .box-button .button-social .sc-button.style-2 {
   margin-right: 27px;
 }
-.flat-edit-profile .form-upload-profile .button-social .sc-button.style-5 {
+.flat-edit-profile .form-upload-profile .box-button .button-social .sc-button.style-5 {
   background: #00A6E4;
 }
-.flat-edit-profile .form-upload-profile .button-social .sc-button i {
+.flat-edit-profile .form-upload-profile .box-button .button-social .sc-button i {
   font-size: 14px;
   margin-right: 6px;
 }
@@ -4555,6 +4555,103 @@ header {
 .flat-edit-profile .form-upload-profile .tf-button-submit:hover {
   background: #8E2AC3;
   border: unset;
+}
+
+.flat-create-item .form-upload-profile .form-profile .form-infor-profile {
+  margin-bottom: 30px;
+}
+.flat-create-item .text-tag {
+  margin-bottom: -3px;
+}
+.flat-create-item .tab-create-item {
+  margin-bottom: 30px;
+}
+.flat-create-item .tab-create-item .tab-title {
+  margin-bottom: 3px;
+}
+.flat-create-item .tab-create-item .tab-title .item-title:hover,
+.flat-create-item .tab-create-item .tab-title .item-title.active {
+  background-color: var(--primary-color3);
+}
+.flat-create-item .tab-create-item .tab-title .item-title:hover .inner,
+.flat-create-item .tab-create-item .tab-title .item-title:hover i,
+.flat-create-item .tab-create-item .tab-title .item-title.active .inner,
+.flat-create-item .tab-create-item .tab-title .item-title.active i {
+  color: #fff;
+}
+.flat-create-item .tab-create-item .tab-title .item-title {
+  width: 30.9%;
+  background: var(--primary-color10);
+  border: 1px solid var(--primary-color6);
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  padding: 14.5px 0 14.5px 31px;
+}
+.flat-create-item .tab-create-item .tab-title .item-title .inner {
+  font-size: 14px;
+  color: var(--primary-color8);
+}
+.flat-create-item .tab-create-item .tab-title .item-title i {
+  font-size: 12px;
+  margin-right: 8px;
+  color: var(--primary-color3);
+}
+.flat-create-item .tab-create-item .tab-title .item-title img {
+  margin-right: 8px;
+}
+.flat-create-item .tab-create-item fieldset {
+  margin-bottom: 11.2px;
+}
+.flat-create-item .tab-create-item fieldset.style {
+  margin-bottom: -2px !important;
+}
+.flat-create-item .tab-create-item fieldset input {
+  padding: 9px 15px 10px 18.5px;
+  background: var(--primary-color10);
+}
+.flat-create-item .tab-create-item fieldset input::placeholder {
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+.flat-create-item .tab-create-item .info-title {
+  width: 30.9%;
+}
+.flat-create-item .tab-create-item .info-title p {
+  margin-bottom: 4px;
+}
+.flat-create-item .tab-create-item .info-title.info-royalties {
+  width: 100%;
+}
+.flat-create-item .tab-create-item .dropdown > a {
+  font-size: 12px;
+  padding: 13px 18px 11px;
+  min-width: 100%;
+}
+.flat-create-item .tab-create-item .dropdown > a::after {
+  content: "\f107";
+  right: 20px;
+}
+.flat-create-item .button-social .sc-button.style-4 {
+  padding: 18px 30px 17px 25px !important;
+}
+.flat-create-item .button-social .sc-button.style-4 i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.wrap-login {
+  padding: 0 100px;
+}
+.wrap-login .box-login {
+  background: url(../images/backgroup-secsion/login-1.png) no-repeat center;
+  background-size: cover;
+  mix-blend-mode: normal;
+  border: 1px solid var(--primary-color6);
+  padding: 100px 100px 300px;
 }
 
 .btn-upload {
@@ -4613,7 +4710,7 @@ header {
 
 .uploadFile {
   width: 100%;
-  background-color: transparent;
+  background-color: var(--primary-color10);
   border: 1px solid rgba(138, 138, 160, 0.3);
   border-radius: 8px;
   color: var(--primary-color4);
@@ -4726,6 +4823,40 @@ header {
 }
 .flat-connect-wallet .wrap-connect .popular h3 {
   color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.number-wrapper {
+  position: relative;
+}
+
+.number-wrapper:after,
+.number-wrapper:before {
+  position: absolute;
+  right: 5px;
+  width: 1.6em;
+  height: 0.9em;
+  font-size: 14px;
+  pointer-events: none;
+  background: transparent;
+}
+
+.number-wrapper:after {
+  color: var(--primary-color3);
+  content: "\f106";
+  font-family: "Font Awesome 5 Pro";
+  top: 12px;
+}
+
+.number-wrapper:before {
+  color: var(--primary-color3);
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  bottom: 12px;
 }
 
 /* Modal Popup  ----------
