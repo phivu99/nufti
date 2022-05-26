@@ -553,14 +553,7 @@
         dropdown('#item_category');
         dropdown('#view');
         dropdown('#new-items');
-        dropdown('#artworks');
-        dropdown('#sort-by');
-        dropdown('#sort-by2');
-        dropdown('#sort-by3');
-        dropdown('#sort-by4');
         dropdown('#item-create');
-        dropdown('#item-create2');
-        dropdown('#item-create3');
         flcustominput();
         copycode();
         swiper_tab();

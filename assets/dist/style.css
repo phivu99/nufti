@@ -216,6 +216,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+.text-p,
 p {
   font-weight: 400;
   font-size: 14px;
@@ -458,8 +459,8 @@ input[type=submit] {
 input[type=checkbox],
 input[type=radio] {
   padding: 0;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   margin-right: 11px;
   cursor: pointer;
   vertical-align: sub;
@@ -648,9 +649,9 @@ input[type=reset]:hover,
 input[type=submit]:focus,
 input[type=submit]:hover {
   outline: 0;
-  border: 1px solid var(--primary-color2);
-  background-color: var(--primary-color2);
-  color: var(--primary-color3);
+  background: #8E2AC3;
+  color: #fff;
+  border: 1px solid #8E2AC3;
 }
 
 /* Placeholder color */
@@ -1092,6 +1093,10 @@ a:hover, a:focus {
 
 .text-color-6 {
   color: var(--primary-color2) !important;
+}
+
+.text-color-7 {
+  color: #B6B3BF;
 }
 
 /* Root

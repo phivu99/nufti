@@ -133,6 +133,13 @@
   .flat-edit-profile .form-upload-profile {
     padding: 0;
   }
+
+  .flat-login .wrap-login {
+    padding: 0 0px;
+  }
+  .flat-login .wrap-login .box-login {
+    padding: 100px 50px;
+  }
 }
 @media (max-width: 991px) and (min-width: 767px) {
   .flat-blog.home3 .sc-card-article.blog-article {
@@ -490,6 +497,22 @@
 .flat-create-item .sc-card-product {
     margin-bottom: 40px;
   }
+
+  .flat-login {
+    padding-bottom: 100px;
+  }
+  .flat-login .wrap-login .box-login {
+    padding: 100px 30px;
+  }
+  .flat-login .wrap-login .box-login .heading-login {
+    margin-bottom: 30px;
+  }
+  .flat-login .wrap-login .box-login .box-button {
+    border: unset;
+  }
+  .flat-login .wrap-login .box-login .box-button::before {
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   .seclect-box.style-2 {
@@ -573,7 +596,11 @@
     margin-bottom: 20px;
   }
 
-  .slider.style-home3 .flat-wrap .wrap-heading .img-slider,
+  .mark-login3,
+.mark-login1,
+.mark-login2,
+.mark-page3,
+.slider.style-home3 .flat-wrap .wrap-heading .img-slider,
 .flat-friendly ul li::after,
 .slider .wrap-heading .image {
     display: none;
@@ -974,6 +1001,26 @@
     width: 100%;
     margin-bottom: 11.2px;
   }
+
+  .flat-login .wrap-login .box-login {
+    padding: 80px 15px 60px;
+  }
+  .flat-login .wrap-login .box-login .heading-login {
+    margin-bottom: 25px;
+  }
+  .flat-login .wrap-login .box-login .form-login {
+    display: block;
+  }
+  .flat-login .wrap-login .box-login .form-login .info-login {
+    width: 100%;
+  }
+  .flat-login .wrap-login .box-login .form-login .row-form {
+    margin-bottom: 30px;
+  }
+  .flat-login .wrap-login .box-login .form-login .box-button {
+    width: 100%;
+    text-align: unset;
+  }
 }
 @media only screen and (max-width: 520px) {
   .seclect-box.style-2 .title-item {
@@ -1032,6 +1079,10 @@
     font-size: 22px;
     line-height: 27px;
   }
+
+  .flat-login .wrap-login .box-login .box-button .sc-button {
+    width: 240px;
+  }
 }
 @media only screen and (max-width: 330px) {
   .flat-author-profile .tab-author .author-profile .button-profile h3 {
@@ -1052,6 +1103,15 @@
 
   .flat-author-profile .tab-author .tab-title li {
     margin-right: 12px;
+  }
+
+  .flat-login .wrap-login .box-login .box-button .sc-button {
+    width: 220px;
+    padding-left: 20px;
+  }
+
+  .flat-login .wrap-login .box-login {
+    padding: 80px 10px 60px;
   }
 }
 /* @media only screen and (max-width: 360px) {

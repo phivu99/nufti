@@ -220,6 +220,7 @@ img {
     -ms-interpolation-mode: bicubic
 }
 
+.text-p,
 p {
     font-weight: 400;
     font-size: 14px;
@@ -470,8 +471,8 @@ input[type="submit"] {
 input[type="checkbox"],
 input[type="radio"] {
     padding: 0;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     margin-right: 11px;
     cursor: pointer;
     vertical-align: sub;
@@ -494,13 +495,11 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-
 /* Remove chrome yellow autofill */
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset
 }
-
 
 /* Reset search styling */
 
@@ -514,7 +513,6 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none
 }
-
 
 /* Contact Form 7 */
 
@@ -534,7 +532,6 @@ select {
 .select {
     position: relative;
     overflow: hidden;
-
     ::after {
         font-family: 'Font Awesome 5 Pro';
         content: '\f078';
@@ -658,9 +655,9 @@ input[type="submit"] {
     &:focus,
     &:hover {
         outline: 0;
-        border: 1px solid var(--primary-color2);
-        background-color: var(--primary-color2);
-        color: var(--primary-color3);
+        background: #8E2AC3;
+        color: #fff;           
+        border: 1px solid #8E2AC3;
     }
 }
 
@@ -764,7 +761,6 @@ label.error {
 .swiper-button-prev:after {
     content: "\f060";
 }
-
 
 
 .flex {
@@ -1077,6 +1073,10 @@ a {
 
 .text-color-6 {
     color: var(--primary-color2) !important;
+}
+
+.text-color-7 {
+    color: #B6B3BF;
 }
 
 /* Root

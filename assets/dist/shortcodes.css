@@ -1567,7 +1567,6 @@
   line-height: 24px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   color: var(--primary-color4);
-  font-weight: 400;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -2231,24 +2230,6 @@
   width: calc(50% - 30px);
   margin-left: 30px;
 }
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social .title-infor-account,
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account .title-infor-account {
-  margin-bottom: 4px;
-}
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social fieldset,
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account fieldset {
-  margin-bottom: 11.2px;
-}
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social fieldset input,
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account fieldset input {
-  background: var(--primary-color10);
-  padding: 9px 15px 10px 18.5px;
-}
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-social fieldset input::placeholder,
-.flat-edit-profile .form-upload-profile .form-profile .form-infor-profile .info-account fieldset input::placeholder {
-  font-size: 12px;
-  font-family: "Open Sans";
-}
 .flat-edit-profile .form-upload-profile .form-profile .message p {
   margin-bottom: 4px;
 }
@@ -2275,6 +2256,9 @@
 .flat-edit-profile .form-upload-profile .box-button .button-social .sc-button.style-5 {
   background: #00A6E4;
 }
+.flat-edit-profile .form-upload-profile .box-button .button-social .sc-button.style-5:hover {
+  background: var(--primary-color3);
+}
 .flat-edit-profile .form-upload-profile .box-button .button-social .sc-button i {
   font-size: 14px;
   margin-right: 6px;
@@ -2284,10 +2268,6 @@
   padding: 19px;
   border: unset;
   box-shadow: 0px 14px 14px rgba(119, 89, 243, 0.15);
-}
-.flat-edit-profile .form-upload-profile .tf-button-submit:hover {
-  background: #8E2AC3;
-  border: unset;
 }
 
 .flat-create-item .form-upload-profile .form-profile .form-infor-profile {
@@ -2336,25 +2316,8 @@
 .flat-create-item .tab-create-item .tab-title .item-title img {
   margin-right: 8px;
 }
-.flat-create-item .tab-create-item fieldset {
-  margin-bottom: 11.2px;
-}
-.flat-create-item .tab-create-item fieldset.style {
-  margin-bottom: -2px !important;
-}
-.flat-create-item .tab-create-item fieldset input {
-  padding: 9px 15px 10px 18.5px;
-  background: var(--primary-color10);
-}
-.flat-create-item .tab-create-item fieldset input::placeholder {
-  font-size: 12px;
-  font-family: "Open Sans";
-}
 .flat-create-item .tab-create-item .info-title {
   width: 30.9%;
-}
-.flat-create-item .tab-create-item .info-title p {
-  margin-bottom: 4px;
 }
 .flat-create-item .tab-create-item .info-title.info-royalties {
   width: 100%;
@@ -2376,15 +2339,180 @@
   margin-right: 5px;
 }
 
-.wrap-login {
+.flat-form .title-infor-account {
+  margin-bottom: 4px;
+}
+.flat-form fieldset {
+  margin-bottom: 11.2px;
+}
+.flat-form fieldset.style {
+  margin-bottom: -2px !important;
+}
+.flat-form fieldset input {
+  padding: 9px 15px 10px 18.5px;
+  background: var(--primary-color10);
+}
+.flat-form fieldset input::placeholder {
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+
+.flat-login {
+  padding-bottom: 120px;
+  margin: 0;
+}
+.flat-login .wrap-login {
   padding: 0 100px;
 }
-.wrap-login .box-login {
-  background: url(../images/backgroup-secsion/login-1.png) no-repeat center;
-  background-size: cover;
+.flat-login .wrap-login .box-login {
   mix-blend-mode: normal;
   border: 1px solid var(--primary-color6);
-  padding: 100px 100px 300px;
+  padding: 117px 100px 120px;
+  background-color: var(--primary-color10);
+  position: relative;
+  z-index: 1;
+}
+.flat-login .wrap-login .box-login .mark-login {
+  right: -4%;
+  top: -4.5%;
+  opacity: 0.15;
+}
+.flat-login .wrap-login .box-login .mark-login1 {
+  top: 8%;
+  left: 3%;
+  animation: move5 8s infinite linear;
+}
+.flat-login .wrap-login .box-login .mark-login2 {
+  right: 33%;
+  top: 11.5%;
+}
+.flat-login .wrap-login .box-login .mark-login3 {
+  right: 7.5%;
+  top: 23.5%;
+}
+.flat-login .wrap-login .box-login .mark-page3 {
+  right: 7% !important;
+  top: 10.7% !important;
+  left: unset;
+  z-index: 5;
+}
+.flat-login .wrap-login .box-login .heading-login {
+  margin-bottom: 41px;
+}
+.flat-login .wrap-login .box-login .heading-login a {
+  margin-left: 4px;
+}
+.flat-login .wrap-login .box-login .heading-login h2 {
+  margin-bottom: 16px;
+  margin-left: -1px;
+}
+.flat-login .wrap-login .box-login .form-login {
+  position: relative;
+}
+.flat-login .wrap-login .box-login .form-login .info-login {
+  width: 48.2%;
+}
+.flat-login .wrap-login .box-login .form-login .row-form {
+  margin-bottom: 43px;
+}
+.flat-login .wrap-login .box-login .form-login .row-form label {
+  position: relative;
+  cursor: pointer;
+}
+.flat-login .wrap-login .box-login .form-login .button-login {
+  width: 100%;
+  padding: 18px;
+}
+.flat-login .wrap-login .box-login .box-button {
+  width: 43.5%;
+  text-align: end;
+  padding-top: 33px;
+  z-index: 10;
+  position: relative;
+  border-left: 1px solid var(--primary-color6);
+}
+.flat-login .wrap-login .box-login .box-button::before {
+  content: "OR";
+  position: absolute;
+  top: 49.6%;
+  left: -10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color4);
+}
+.flat-login .wrap-login .box-login .box-button .sc-button {
+  width: 270px;
+  height: 50px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding: 18px 10px 17px 31px;
+  text-align: left;
+}
+.flat-login .wrap-login .box-login .box-button .sc-button.style-4 {
+  background: linear-gradient(268.96deg, #ED4C42 28.47%, #8841C0 73.65%);
+}
+.flat-login .wrap-login .box-login .box-button .sc-button.style-4:hover {
+  background: var(--primary-color3);
+}
+
+.flat-login .btn-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--primary-color6);
+  background-color: var(--primary-color5);
+  border-radius: 4px;
+  justify-content: center;
+  margin-right: 10px;
+}
+.flat-login .btn-checkbox:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  display: none;
+}
+.flat-login label input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.flat-login label input:checked ~ .btn-checkbox {
+  background-color: var(--primary-color3);
+  border: 1px solid var(--primary-color3);
+}
+.flat-login label input:checked ~ .btn-checkbox:after {
+  display: block;
+}
+.flat-login .style-pass {
+  margin-bottom: 14px;
+}
+
+.flat-register .wrap-login .box-login .heading-login {
+  margin-bottom: 42px;
+}
+.flat-register .wrap-login .box-login .flat-form fieldset {
+  margin-bottom: 12px;
+}
+.flat-register .wrap-login .box-login .style-pass {
+  margin-bottom: 14px !important;
+}
+.flat-register .wrap-login .box-login .mark-login {
+  top: 0%;
+}
+.flat-register .wrap-login .box-login .mark-login1 {
+  top: 12.5%;
+}
+.flat-register .wrap-login .box-login .mark-login2 {
+  top: 13.5%;
+}
+.flat-register .wrap-login .box-login .mark-page3 {
+  right: 6% !important;
+  top: 3.5% !important;
 }
 
 .btn-upload {
@@ -2622,11 +2750,11 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 22px;
   padding: 10px 20px;
   background-color: #5142FC !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   outline: none;
   border: none;
 }
