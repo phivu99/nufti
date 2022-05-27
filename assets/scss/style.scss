@@ -946,6 +946,10 @@ label.error {
     font-weight: 400;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -1091,8 +1095,6 @@ a {
     --primary-color5: #13051808;
     --primary-color6: #13051812;
     --primary-color7: #fff;
-    // --bg-section: #fff;
-    // --bg-section2: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
     --primary-color8: #706C83;
     --primary-color9: #130518;
     --primary-color10: #fff;
@@ -1106,8 +1108,6 @@ a {
     --primary-color5: #FFFFFF08;
     --primary-color6: #FFFFFF12;
     --primary-color7: #13051808;
-    // --bg-section: #14141F;
-    // --bg-section2: linear-gradient(79.57deg, rgba(31, 17, 85, 0) 10.75%, #130518 50.17%, rgba(31, 17, 85, 0) 106.55%);
     --primary-color8: #fff;
     --primary-color9: #706C83;
     --primary-color10: #FFFFFF08;
@@ -1578,12 +1578,11 @@ header {
             line-height: 19px;
             font-size: 14px;
         }
-
         &:focus {
-            background: transparent;
+            background: var(--primary-color);
             color: var(--primary-color2);
             width: 100%;
-            border: 1px solid #FFFFFF12;
+            border: 1px solid var(--primary-color6);
             border-radius: 5px;
             line-height: 24px;
             padding: 12px 50px 11px 19px;
@@ -1734,9 +1733,6 @@ header {
         #main-nav > ul > li > a {
             color: var(--primary-color2);
         }
-        // .mode_switcher {
-        //     display: none;
-        // }
     }
 }
 
@@ -1745,10 +1741,6 @@ header {
     background: #14141F;
     box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 50%);
 }
-
-// .header_1.is-fixed .mode_switcher {
-//     display: none;
-// }
 
 .header_1.header_2.is-fixed .mode_switcher {
     display: inline-flex;
@@ -1775,6 +1767,7 @@ header {
 .header_1.is-fixed .search-form .search-field {
     background-color: #ffffff;
     box-shadow: 0px 2px 6px 0px rgb(47 47 47 / 30%);
+    color: #000;
 }
 
 
@@ -2384,6 +2377,126 @@ header {
     color: var(--primary-color);
 }
 
+// up load 01
+.btn-upload {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    background: var(--primary-color3);
+    margin-bottom: 10px;
+    padding-top: 3px;
+    font-family: 'Open Sans';
+    &::before {
+        content: '\f0ee';
+        font-family: "Font Awesome 5 Pro";
+        font-size: 18px;
+        @include transition3;
+        color: #fff;
+        margin-right: 9px;
+        margin-top: -7px;
+    }
+}
+
+.btn-upload.btn-delete {
+    background: #F3597E;
+    color: #fff;
+    &::before {
+        display: none;
+    }
+}
+
+#upload-profile #tf-upload-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+// upload 02
+.uploadFile {
+    width: 100%;
+    background-color: var(--primary-color10);
+    border: 1px solid rgba(138, 138, 160, 0.3);
+    border-radius: 8px;
+    color: var(--primary-color4);
+    font-size: 14px;
+    line-height: 100px;
+    overflow: hidden;
+    padding: 31px 0 27px 3px;
+    position: relative;
+    resize: none;
+    cursor: pointer;
+}
+
+.uploadFile input[type=file] {
+    cursor: pointer;
+    width: 210px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0;
+    border: none;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.uploadFile input[type=file]:hover::after {
+    color: #fff;
+}
+.uploadFile .inputfile:hover::before {
+    background-color: #8E2AC3;
+    color: #fff;
+}
+
+.uploadFile .form-control {
+    background: #7759F312 !important;
+    color: #fff;
+}
+
+.uploadFile input[type=file]:before {
+    width: 210px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    content: 'Upload Your Photo';
+    display: inline-block;
+    background: #7759F312;
+    color: var(--primary-color8);
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    @include transition3;
+    padding-left: 29px;
+}
+
+.uploadFile input[type=file]::after {
+    content: '\f0ee';
+    font-family: "Font Awesome 5 Pro";
+    font-size: 18px;
+    @include transition3;
+    color: var(--primary-color8);
+    position: absolute;
+    top: 11px;
+    left: 27px;
+}
+
 // heading 
 .heading-section {
     padding: 0 25%;
@@ -2422,6 +2535,7 @@ header {
         margin-left: 1px;
     }
 }
+
 
 // hover 
 .flat-blog .sc-card-article:hover,

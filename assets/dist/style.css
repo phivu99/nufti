@@ -936,6 +936,10 @@ label.error {
   font-weight: 400;
 }
 
+.fs-20 {
+  font-size: 20px;
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -1522,10 +1526,10 @@ header {
   font-size: 14px;
 }
 .search-form .search-field:focus {
-  background: transparent;
+  background: var(--primary-color);
   color: var(--primary-color2);
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.0705882353);
+  border: 1px solid var(--primary-color6);
   border-radius: 5px;
   line-height: 24px;
   padding: 12px 50px 11px 19px;
@@ -1682,6 +1686,7 @@ header {
 .header_1.is-fixed .search-form .search-field {
   background-color: #ffffff;
   box-shadow: 0px 2px 6px 0px rgba(47, 47, 47, 0.3);
+  color: #000;
 }
 
 /* Pagination
@@ -2193,6 +2198,137 @@ header {
 .widget.widget-categories li.active .number {
   background-color: var(--primary-color2);
   color: var(--primary-color);
+}
+
+.btn-upload {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  background: var(--primary-color3);
+  margin-bottom: 10px;
+  padding-top: 3px;
+  font-family: "Open Sans";
+}
+.btn-upload::before {
+  content: "\f0ee";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  margin-right: 9px;
+  margin-top: -7px;
+}
+
+.btn-upload.btn-delete {
+  background: #F3597E;
+  color: #fff;
+}
+.btn-upload.btn-delete::before {
+  display: none;
+}
+
+#upload-profile #tf-upload-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.uploadFile {
+  width: 100%;
+  background-color: var(--primary-color10);
+  border: 1px solid rgba(138, 138, 160, 0.3);
+  border-radius: 8px;
+  color: var(--primary-color4);
+  font-size: 14px;
+  line-height: 100px;
+  overflow: hidden;
+  padding: 31px 0 27px 3px;
+  position: relative;
+  resize: none;
+  cursor: pointer;
+}
+
+.uploadFile input[type=file] {
+  cursor: pointer;
+  width: 210px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0;
+  border: none;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.uploadFile input[type=file]:hover::after {
+  color: #fff;
+}
+
+.uploadFile .inputfile:hover::before {
+  background-color: #8E2AC3;
+  color: #fff;
+}
+
+.uploadFile .form-control {
+  background: rgba(119, 89, 243, 0.0705882353) !important;
+  color: #fff;
+}
+
+.uploadFile input[type=file]:before {
+  width: 210px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+  content: "Upload Your Photo";
+  display: inline-block;
+  background: rgba(119, 89, 243, 0.0705882353);
+  color: var(--primary-color8);
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 29px;
+}
+
+.uploadFile input[type=file]::after {
+  content: "\f0ee";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: var(--primary-color8);
+  position: absolute;
+  top: 11px;
+  left: 27px;
 }
 
 .heading-section {

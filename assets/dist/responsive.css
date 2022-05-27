@@ -140,6 +140,15 @@
   .flat-login .wrap-login .box-login {
     padding: 100px 50px;
   }
+
+  .tf-map .box-adderss {
+    padding: 35px 30px 45px 30px;
+    margin: -70px 30px 0;
+  }
+
+  .flat-contact .wrap-contact {
+    padding: 0 100px;
+  }
 }
 @media (max-width: 991px) and (min-width: 767px) {
   .flat-blog.home3 .sc-card-article.blog-article {
@@ -161,6 +170,21 @@
   }
 }
 @media only screen and (max-width: 991px) {
+  .tf-map .post {
+    display: block;
+  }
+  .tf-map .post .content {
+    margin: 12px 0 0 0;
+  }
+  .tf-map .post .content.style p,
+.tf-map .post .content p {
+    margin-bottom: 5px;
+  }
+
+  .flat-faq .flat-tabs .content-tab {
+    width: 63.5%;
+  }
+
   .themes-container2.themes-slider {
     width: 750px;
   }
@@ -181,11 +205,13 @@
     padding: 100px 0;
   }
 
-  .flat-about {
+  .tf-map,
+.flat-about {
     padding-bottom: 85px;
   }
 
-  .flat-edit-profile.flat-auctions-details,
+  .flat-contact,
+.flat-edit-profile.flat-auctions-details,
 .pb-120,
 .flat-collection.home2,
 .flat-auctions.live-auctions {
@@ -513,8 +539,29 @@
   .flat-login .wrap-login .box-login .box-button::before {
     display: none;
   }
+
+  .flat-faq .flat-tabs .tab-title .item-title {
+    margin-bottom: 30px;
+  }
+
+  .flat-contact .wrap-contact {
+    padding: 0 30px;
+  }
+
+  .tf-map .box-adderss {
+    padding: 35px 30px 35px 30px;
+    margin: -70px 15px 0;
+  }
+
+  .tf-map .map-content {
+    height: 600px;
+  }
 }
 @media only screen and (max-width: 767px) {
+  .tf-map .map-content {
+    height: 500px;
+  }
+
   .seclect-box.style-2 {
     margin-left: 0;
     margin-bottom: 15px;
@@ -555,7 +602,8 @@
     padding-bottom: 0;
   }
 
-  .flat-edit-profile.flat-auctions-details,
+  .flat-contact,
+.flat-edit-profile.flat-auctions-details,
 .flat-auctions.live-auctions {
     padding-bottom: 80px;
   }
@@ -584,6 +632,10 @@
 .mb-44,
 .flat-blog-details .post .infor-row {
     margin-bottom: 35px;
+  }
+
+  .flat-contact .form-upload-profile .form-infor-profile {
+    margin-bottom: 50px !important;
   }
 
   .mb-60,
@@ -725,7 +777,8 @@
     border: unset;
   }
 
-  .flat-cetagories2.home2.home3,
+  .flat-contact .wrap-contact,
+.flat-cetagories2.home2.home3,
 .themes-container2.themes-slider,
 #comments .comment-form .text-call,
 #comments .comment-form .phone-wrap,
@@ -808,7 +861,8 @@
     width: calc(100% - 30px);
   }
 
-  .flat-about,
+  .tf-map,
+.flat-about,
 .flat-cetagories.style {
     padding-bottom: 70px;
   }
@@ -1021,6 +1075,41 @@
     width: 100%;
     text-align: unset;
   }
+
+  .flat-faq .flat-tabs {
+    display: block;
+  }
+  .flat-faq .flat-tabs .content-tab,
+.flat-faq .flat-tabs .tab-title {
+    width: 100%;
+  }
+
+  .flat-faq .flat-accordion .toggle-content {
+    display: none;
+    padding: 0px 15px 25px 15px;
+  }
+
+  .flat-faq .flat-accordion h3 {
+    line-height: 24px;
+    padding: 14.25px 15px 14.25px 15px;
+  }
+
+  .tf-map .post {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .tf-map .post:last-child {
+    margin: 0;
+  }
+  .tf-map .post .content {
+    margin: auto 0 auto 15px;
+  }
+  .tf-map .inner-box {
+    display: block;
+  }
+  .tf-map .box-adderss {
+    padding: 35px 15px 35px 15px;
+  }
 }
 @media only screen and (max-width: 520px) {
   .seclect-box.style-2 .title-item {
@@ -1037,12 +1126,10 @@
   .flat-create-item .tab-create-item .tab-title {
     display: block;
   }
-
   .flat-create-item .tab-create-item .tab-title .item-title {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .flat-create-item .text-tag {
     margin-bottom: 5px;
   }
@@ -1060,6 +1147,17 @@
   .slider .wrap-heading .content .sc-button.style-1 {
     margin-left: 0;
     margin-bottom: 12px;
+  }
+
+  .tf-map .post {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .tf-map .post .content {
+    margin: 10px 0 0 0px;
+  }
+  .tf-map .inner-box {
+    display: block;
   }
 
   .flat-friendly ul li img {
@@ -1114,11 +1212,5 @@
     padding: 80px 10px 60px;
   }
 }
-/* @media only screen and (max-width: 360px) {
-  .flat-blog-details .post .infor-row .tags div a {
-    padding: 14px 9px;
-    margin-right: 8px;
-  }
-} */
 
 /*# sourceMappingURL=responsive.css.map */
