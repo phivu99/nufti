@@ -1,6 +1,5 @@
 @use './abstracts/' as *;
 
-@import "ntfs.css";
 @import "shortcodes.css";
 @import "responsive.css";
 @import "animate.css";
@@ -8,7 +7,6 @@
 @import "font-awesome.css";
 @import "swiper-bundle.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 @import "bootstrap.css";
 
 html,
@@ -585,7 +583,7 @@ input[type="color"] {
     border-radius: 4px;
     padding: 6px 15px 7px 19px;
     width: 100%;
-    background-color: var(--primary-color5);
+    background-color: var(--primary-color10);
     color: var(--primary-color4);
 }
 
@@ -1462,7 +1460,7 @@ header {
 }
 
 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+    background: var(--primary-color3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1490,26 +1488,6 @@ header {
     #main-nav-mobi {
         background-color: #14141F;
         box-shadow: 0px 3px 16px rgb(47 83 109 / 20%);
-
-        ul {
-            >li {
-                &.current-menu-item {
-                    >a {
-                        background: linear-gradient(91.5deg, #7759F3 41.52%, #8E2AC3 96.58%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-
-                >a {
-                    &:hover {
-                        background: linear-gradient(91.5deg, #7759F3 41.52%, #8E2AC3 96.58%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -1982,9 +1960,6 @@ header {
     // color: #1305184D;
     color: #706C83;
 }
-// .is_dark .widget-social.style-1 ul li a {
-//     color: #FFFFFF4D;
-// }
 
 /* widget style blog */
 .widget-social.style-1.icon-blog {
@@ -2003,7 +1978,7 @@ header {
 
 // syle 2
 .widget-social.style-2 ul li a {
-    border: 1px solid #FFFFFF12;
+    border: 1px solid var(--primary-color6);
     padding: 10px 12px;
     color: #D2CABB;
     font-size: 19px;
@@ -2077,7 +2052,6 @@ header {
             width: 100%;
             padding: 20px 50px 20px 29px;
             font-size: 14px;
-            // border: 1px solid rgba(138, 138, 160, 0.3);
             border: 1px solid var(--primary-color6);
 
             &:focus {
@@ -2089,7 +2063,6 @@ header {
                 white-space: nowrap;
                 max-width: 70%;
                 overflow: hidden;
-                // color: var(--primary-color4);
                 color: #1305184D;
             }
         }
@@ -2268,7 +2241,7 @@ header {
         padding: 9px 14.5px;
 
         &:hover {
-            background: var(--primary-color2);
+            background: #fff;
         }
 
         &.search-icon::after {
@@ -2287,19 +2260,18 @@ header {
         }
     }
 }
-// dd
+
 /* side bar */
 .side-bar {
     .widget {
-        background-color: var(--primary-color5);
+        background-color: var(--primary-color10);
         padding: 48px 50px 51px 49px;
         border-radius: 10px;
-        border: 1px solid #FFFFFF12;
+        border: 1px solid var(--primary-color6);
         margin-bottom: 30px;
-
         .widget-title {
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.1px;
 
             &.title-search {
@@ -2318,15 +2290,12 @@ header {
                 margin-bottom: 24px;
             }
         }
-
         &.style {
             padding-bottom: 46px;
         }
-
         &.style2 {
             padding: 48px 48px 60px 50px;
         }
-
         .sc-card-article {
             border-bottom: 1px solid #FFFFFF12;
             padding-bottom: 27px;
@@ -2345,6 +2314,10 @@ header {
         }
     }
 }
+
+.is_dark .side-bar .widget .widget-title {
+    font-weight: 500;
+} 
 
 /*widget categories */
 .widget {

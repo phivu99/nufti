@@ -24,6 +24,7 @@
   * copycode
   * fasterPreview
   * viewShop
+  * imgUpload
 */
 
 ; (function ($) {
@@ -489,6 +490,7 @@
         });
     }
 
+    // img upload style 1
     $("#profileimg").click(function (e) {
         $("#tf-upload-img").click();
     });
@@ -511,7 +513,7 @@
         });
     }
 
-    // img style 2
+    // img upload style 2
     var UpImg = function() {
     $("#editimg").click(function (e) {
         $("#upload-img2").click();
@@ -553,7 +555,8 @@
         dropdown('#item_category');
         dropdown('#view');
         dropdown('#new-items');
-        dropdown('#item-create');
+        dropdown('#item-create1');
+        dropdown('#item-create2');
         flcustominput();
         copycode();
         swiper_tab();

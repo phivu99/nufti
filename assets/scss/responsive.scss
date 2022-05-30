@@ -154,8 +154,6 @@
     .flat-contact .wrap-contact {
       padding: 0 100px;
     }
-   
-  
   }
   
   @media (max-width: 991px) and (min-width: 767px) {
@@ -175,10 +173,16 @@
     .flat-auctions-details .post .button-social .sc-button {
       margin-bottom: 0px;
     }
-    
   }
   
   @media only screen and (max-width: 991px) {
+    .mode_switcher {
+      right: 55px;
+       a{
+        width : 35px;
+        height: 35px;
+      }
+    }
    .tf-map .post {
       display: block;
       .content {
@@ -242,8 +246,7 @@
     .slider .mark-page4,
     .col-mobi,
     .flat-friendly.home2 .img,
-    .slider.style-home2 .mark-page3,
-    .mode_switcher {
+    .slider.style-home2 .mark-page3 {
       display: none;
     }
 
@@ -638,6 +641,7 @@
       padding-bottom: 50px;
     }
 
+    .flat-blog.home3 .sc-card-article.blog-article,
     .heading-section2.style,
     .side-bar .widget .widget-title.title-icon,
     #comments .comment-form .text-call,
@@ -1080,6 +1084,7 @@
       margin-bottom: 20px;
     }
 
+    .flat-blog.home3,
     .flat-connect-wallet {
       padding-bottom: 50px;
     }

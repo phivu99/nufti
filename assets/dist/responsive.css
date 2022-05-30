@@ -150,6 +150,7 @@
     padding: 0 100px;
   }
 }
+
 @media (max-width: 991px) and (min-width: 767px) {
   .flat-blog.home3 .sc-card-article.blog-article {
     padding: 20px 10px 25px;
@@ -169,7 +170,16 @@
     margin-bottom: 0px;
   }
 }
+
 @media only screen and (max-width: 991px) {
+  .mode_switcher {
+    right: 55px;
+  }
+  /* .mode_switcher a {
+    width: 35px;
+    height: 35px;
+  } */
+
   .tf-map .post {
     display: block;
   }
@@ -233,8 +243,7 @@
 .slider .mark-page4,
 .col-mobi,
 .flat-friendly.home2 .img,
-.slider.style-home2 .mark-page3,
-.mode_switcher {
+.slider.style-home2 .mark-page3 {
     display: none;
   }
 
@@ -613,7 +622,8 @@
     padding-bottom: 50px;
   }
 
-  .heading-section2.style,
+  .flat-blog.home3 .sc-card-article.blog-article,
+.heading-section2.style,
 .side-bar .widget .widget-title.title-icon,
 #comments .comment-form .text-call,
 .flat-blog-details .post .sc-card-article,
@@ -1035,7 +1045,8 @@
     margin-bottom: 20px;
   }
 
-  .flat-connect-wallet {
+  .flat-blog.home3,
+.flat-connect-wallet {
     padding-bottom: 50px;
   }
 
