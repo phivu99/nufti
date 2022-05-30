@@ -1789,7 +1789,7 @@ header {
                 font-size: 14px;
                 font-weight: 600;
                 color: #706C83;
-                background: rgba(255, 255, 255, 0.03);
+                background: var(--primary-color10);
                 text-align: center;
                 width: 50px;
                 height: 40px;
@@ -2130,10 +2130,22 @@ header {
             }
         }
     }
+    &.home3 {
+        .form-subcribe {
+            input {
+                background: #13051808;
+                border: 1px solid transparent;
+            }
+        }
+    }
 }
 
 .is_dark .widget-subcribe.home2 .form-subcribe input {
     background: #FFFFFF08;
+}
+
+.is_dark .widget-subcribe.home3 .form-subcribe input {
+    background: var(--primary-color5);
 }
 
 .is_dark {
@@ -2275,7 +2287,7 @@ header {
         }
     }
 }
-
+// dd
 /* side bar */
 .side-bar {
     .widget {

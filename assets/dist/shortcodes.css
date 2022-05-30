@@ -390,7 +390,7 @@
 }
 .flat-help.home3 .style-container {
   border: 1px solid var(--primary-color6);
-  background: unset;
+  background: var(--primary-color10);
 }
 .flat-help.page {
   background: unset;
@@ -447,7 +447,7 @@
   box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
   -webkit-transition: all 0.3s ease-in-out;
   background: #fff;
-  border: 1px solid rgba(19, 5, 24, 0.0705882353);
+  border: 1px solid var(--primary-color6);
 }
 
 .is_dark .seller.style2 .swiper-button-next.btn-slide-next,
@@ -1538,7 +1538,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--primary-color6);
   color: var(--primary-color4);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1686,7 +1686,7 @@
 }
 
 .flat-auctions .search-form .search-field {
-  background: var(--primary-color5);
+  background: var(--primary-color10);
   color: #fff;
   width: 100%;
   border: 1px solid var(--primary-color6);
@@ -1702,7 +1702,7 @@
 .flat-auctions .search .search-submit {
   top: 3px;
   right: 15px;
-  color: #fff;
+  color: var(--primary-color2);
   padding: 9px 14.5px;
 }
 .flat-auctions .search .search-submit:hover {

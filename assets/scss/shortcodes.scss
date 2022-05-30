@@ -406,7 +406,7 @@
     &.home3 {
         .style-container {
             border: 1px solid var(--primary-color6);
-            background: unset;
+            background: var(--primary-color10);
         }
     }
     &.page {
@@ -468,7 +468,7 @@
     box-shadow: 0px 3px 16px rgb(47 83 109 / 12%);
     -webkit-transition: all 0.3s ease-in-out;
     background: #fff;
-    border: 1px solid #13051812;
+    border: 1px solid var(--primary-color6);
 }
 
 .is_dark .seller.style2 .swiper-button-next.btn-slide-next ,
@@ -1743,7 +1743,7 @@
     font-size            : 14px;
     font-weight          : 400;
     line-height          : 24px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid var(--primary-color6);
     color                : var(--primary-color4);
     @include transition3;
     z-index              : 10;
@@ -1869,7 +1869,7 @@
 
 // page explore & auctions
 .flat-auctions .search-form .search-field {
-    background: var(--primary-color5);
+    background: var(--primary-color10);
     color: #fff;
     width: 100%;
     border: 1px solid var(--primary-color6);
@@ -1887,7 +1887,7 @@
         .search-submit {
             top: 3px;
             right: 15px;
-            color: #fff;
+            color: var(--primary-color2);
             padding: 9px 14.5px;
             &:hover {
                 background: unset;
@@ -2110,7 +2110,7 @@
     }
 }   
 
-
+// gg
 // flat about
 .flat-about {
     padding-bottom: 107px;
