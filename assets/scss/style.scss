@@ -1295,6 +1295,10 @@ header {
     }
 }
 
+#main-nav > ul > .current-menu-item > a {
+    color: var(--primary-color3);
+}
+
 #main-nav li:hover .sub-menu {
     opacity: 1;
     visibility: visible;
@@ -1550,7 +1554,9 @@ header {
         border-radius: 5px;
         line-height: 24px;
         padding: 12px 50px 11px 19px;
-
+        &.style {
+            background: var(--primary-color5);
+        }
         &::placeholder {
             color: #706C83;
             line-height: 19px;

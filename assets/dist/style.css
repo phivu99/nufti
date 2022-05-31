@@ -1287,6 +1287,10 @@ header {
   right: 0;
 }
 
+#main-nav > ul > .current-menu-item > a {
+  color: var(--primary-color3);
+}
+
 #main-nav li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
@@ -1507,6 +1511,9 @@ header {
   border-radius: 5px;
   line-height: 24px;
   padding: 12px 50px 11px 19px;
+}
+.search-form .search-field.style {
+  background: var(--primary-color5);
 }
 .search-form .search-field::placeholder {
   color: #706C83;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "shortcodes.css";
 @import "responsive.css";
 @import "animate.css";
@@ -1288,6 +1287,10 @@ header {
   right: 0;
 }
 
+#main-nav > ul > .current-menu-item > a {
+  color: var(--primary-color3);
+}
+
 #main-nav li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
@@ -1508,6 +1511,9 @@ header {
   border-radius: 5px;
   line-height: 24px;
   padding: 12px 50px 11px 19px;
+}
+.search-form .search-field.style {
+  background: var(--primary-color5);
 }
 .search-form .search-field::placeholder {
   color: #706C83;
@@ -2525,6 +2531,7 @@ header {
 .sc-button.fl-button:hover span,
 .sc-button.fl-button.active span {
   color: var(--primary-color3);
+  z-index: 40;
 }
 
 .sc-button.btn-2 span {
@@ -2998,6 +3005,7 @@ header {
   padding-left: 12.05%;
 }
 .slider .wrap-heading .content h1 {
+  cursor: text;
   text-transform: capitalize;
   line-height: 87px;
   margin-bottom: 7px;
@@ -3006,7 +3014,6 @@ header {
 .slider .wrap-heading .content h1 .s1 {
   background: linear-gradient(91.5deg, #7759F3 41.52%, #8E2AC3 96.58%);
   color: var(--primary-color);
-  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-stroke: 3px transparent;
 }
@@ -3032,12 +3039,11 @@ header {
   left: 0;
   z-index: -1;
   margin: -2px;
-  /* !importanté */
   border-radius: inherit;
-  /* !importanté */
   background: linear-gradient(180deg, #7759F3 0%, #3AFCC2 100%);
 }
 .slider .wrap-heading .content p {
+  cursor: text;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
@@ -3536,6 +3542,10 @@ header {
   border-right: 5px solid var(--primary-color3);
   border-bottom: 5px solid var(--primary-color3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.flat-cetagories2.home2 .wrap-cetagories:hover .icon-cetagories {
+  transform: rotateY(360deg);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is_dark .flat-cetagories2.home2 .wrap-cetagories .img-cetagories {
@@ -5133,11 +5143,9 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
   font-size: 18px;
 }
-
 .modal-body .quantity {
   color: var(--color-1);
 }
-
 .modal-body .btn.btn-primary {
   width: 100%;
   border-radius: 20px;
@@ -5191,10 +5199,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .is_dark .modal-content .close {
   background-color: var(--primary-color3);
-}
-
-.is_dark .modal-content .close span {
-  color: #fff;
 }
 
 .modal-body h2 {

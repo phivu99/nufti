@@ -141,7 +141,7 @@
         $(".dark").removeClass("is_active")
 
         document.getElementById("logo_header").src = "assets/images/logo/logo.png";
-        document.getElementById("logo_footer").src = "assets/images/logo/logo2.png";
+        document.getElementById("logo_footer").src = "assets/images/logo/logo.png";
     });
 
     // Header Connect
@@ -237,7 +237,7 @@
     // Mobile Navigation
     var mobileNav = function () {
         var mobile = window.matchMedia("(max-width: 991px)");
-        var wrapMenu = $("#site-header-inner .wrap-inner");
+        var wrapMenu = $("#site-header-inner .wrap-box");
         var navExtw = $(".nav-extend.active");
         var navExt = $(".nav-extend.active").children();
     
