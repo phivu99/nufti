@@ -1,4 +1,38 @@
 
+/* 
+   * Button 
+   * page title
+   * card article 
+   * Help
+   * Swiper button
+   * Slider
+   * blog page
+   * flat cetagories
+   * flat auctions
+   * flat top seller
+   * flat explore
+   * flat friendly
+   * flat collection
+   * flat brand 
+   * flat featured
+   * dropdown
+   * live auctions details
+   * flat about
+   * flat counter
+   * flat video
+   * flat author profile
+   * flat edit profile
+   * flat create item
+   * flat login
+   * flat register
+   * flat connect wallet
+   * flat faq
+   * flat map
+   * flat contact
+   * modal Popup
+   * switch mode 
+*/
+
 @use './abstracts/' as *;
 
 .themes-container {
@@ -3050,7 +3084,7 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 500px;
     margin: 1.75rem auto;
 }
-.modal.fade.popup.show{
+.modal.fade.popup.show {
     padding-right: 0 !important;
 }
 
@@ -3076,24 +3110,12 @@ input[type=number]::-webkit-outer-spin-button {
         align-items: center;
         &.is_active {
             background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
-            // background: linear-gradient(360deg, #3AFCC2 0%, #7759F3 100%);
         }
         i {
             margin-right: 5px;
         }
       }
   }
-
-//   .mode_switcher h6 {
-//       line-height: 1.2;
-//       width: 85px;
-//       text-align: center;
-//       color: #fff;
-//   }
-//   .mode_switcher h6 strong{
-//     font-size: 18px;
-//     font-weight: bold;
-//   }
 
 
 
