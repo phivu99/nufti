@@ -158,7 +158,7 @@
             $(this).addClass('active');
         });
     }; 
-      
+    
 
     var swClick = function () {
         function activeLayout() {
@@ -173,6 +173,7 @@
                 $('body').removeClass('home-boxed');
                 $('body').css({ 'background': '#fff' });
                 return false;
+                
             })
         }
 
@@ -530,13 +531,6 @@
         fasterPreview(this);
     });
     }
-
-    function myFunction() {
-        var copyText = document.getElementById("myInput");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
 
     // Dom Ready
     $(function () {

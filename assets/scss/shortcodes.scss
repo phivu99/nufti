@@ -228,7 +228,6 @@
 .mark-page2 {
     left    : 3.7%;
     bottom  : 38.3%;
-    // animation: move4 5s infinite linear;
 }
 
 .mark-page3 {
@@ -519,7 +518,6 @@
 
 .is_dark .seller.style2 .swiper-button-next.btn-slide-next:after ,
 .is_dark .seller.style2 .swiper-button-prev.btn-slide-prev:after {
-    // color: #FFFFFF33;
     color: #fff;
 }
 
@@ -576,6 +574,40 @@
 .slider-style {
     margin-bottom: 30px;
 }
+
+// swiper slider home
+.slider .seller.style2 .swiper-button-next.btn-slide-next,
+.slider .seller.style2 .swiper-button-prev.btn-slide-prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    top  : 50%;
+    z-index: 99;
+    opacity: 0;
+    @include transition3;
+}
+
+.slider .seller.style2 .swiper-button-next.btn-slide-next {
+    right: 30px; 
+    left : unset; 
+}
+.slider .seller.style2 .swiper-button-prev.btn-slide-prev {
+    right: unset; 
+    left : 30px; 
+}
+
+.slider:hover .seller.style2 .swiper-button-next.btn-slide-next,
+.slider:hover .seller.style2 .swiper-button-prev.btn-slide-prev {
+    opacity: 1;
+    @include transition3;
+}
+
+.slider .swiper-button-next.btn-slide-next.swiper-button-disabled,
+.slider .swiper-button-prev.btn-slide-prev.swiper-button-disabled {
+    display: none;
+}
+
+
 
 // slider home 01
 .slider {
@@ -635,7 +667,7 @@
 }
 
 .slider {
-    cursor:e-resize;
+    // cursor:e-resize;
     position: relative;
     overflow: hidden;
     background: linear-gradient(79.57deg, rgba(19, 5, 24, 0.07) 10.75%, rgba(119, 89, 243, 0.07) 53.13%, rgba(19, 5, 24, 0.07) 106.55%);
@@ -748,6 +780,9 @@
                             background: #AAADEC;
                         }   
                     }
+                    p {
+                        color: #706C83;
+                    }
                     .sc-button {   
                         z-index: 99999;             
                         &.style-1 {
@@ -819,6 +854,9 @@
                             background: #edeaf6;
                         }
                     }
+                    p {
+                        color: var(--primary-color4);
+                    }
                 }
                 .img-slider {
                     margin-top: 0;
@@ -854,6 +892,9 @@
         .mark-page8 {
             bottom: -13%;
             left: -5.2%;
+        }
+        .mark-page5 {
+            z-index: 0;
         }
     }
 }
@@ -1544,7 +1585,7 @@
                 margin-right: 122px;
                 width: 100%;
                 position: relative;
-                // &:nth-child(3)
+
                 &:last-child {
                     margin: 0;
                     &::after {
@@ -1684,6 +1725,10 @@
             margin: 0;
         }
     }
+}
+
+.flat-collection .flat-tabs .tab-title {
+    display: unset;
 }
 
 // flat brand 
@@ -1942,21 +1987,13 @@
 }
 
 // live auctions details
-.is_dark {
-    .flat-auctions-details {
-        .wrap-img {
-            .img-detail {
-                background: #FFFFFF08;
-            }
-        }
-    }
-}
+
 .flat-auctions-details {
     padding-bottom: 0;
     margin-bottom: -4px;
     .wrap-img {
         .img-detail {
-            background   : #fff;
+            background   : var(--primary-color10);
             border       : 1px solid var(--primary-color6);
             padding      : 20px;
             border-radius: 5px;
@@ -3108,14 +3145,23 @@ input[type=number]::-webkit-outer-spin-button {
         display: flex;
         justify-content: center;
         align-items: center;
-        &.is_active {
-            background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
-        }
+    
         i {
             margin-right: 5px;
         }
       }
   }
+  .mode_switcher .light {
+    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+  }
+  .is_dark .mode_switcher .dark{
+    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+  }
+  .is_dark .mode_switcher .light {
+    background: #343444;
+  }
+
+
 
 
 

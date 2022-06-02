@@ -251,7 +251,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #706C83;
+  color: var(--primary-color4);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -1118,7 +1118,7 @@ a:hover, a:focus {
 }
 
 .text-color-4 {
-  color: #706C83 !important;
+  color: var(--primary-color4) !important;
 }
 
 .text-color-5 {
@@ -1153,7 +1153,7 @@ a:hover, a:focus {
   --primary-color: #130518;
   --primary-color2: #fff;
   --primary-color3: #7759F3;
-  --primary-color4: #706C83;
+  --primary-color4: #9c9aa5;
   --primary-color5: #FFFFFF08;
   --primary-color6: #FFFFFF12;
   --primary-color7: #13051808;
@@ -1546,7 +1546,7 @@ header {
   background: var(--primary-color5);
 }
 .search-form .search-field::placeholder {
-  color: #706C83;
+  color: var(--primary-color4);
   line-height: 19px;
   font-size: 14px;
 }
@@ -1666,6 +1666,7 @@ header {
   background: #edeaf6;
   border: none;
   opacity: 0;
+  height: 90px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -1674,6 +1675,14 @@ header {
 }
 .header_1.is-fixed #main-nav > ul > li > a {
   color: var(--primary-color2);
+}
+.header_1.is-fixed #site-logo {
+  height: 90px;
+}
+.header_1.is-fixed .flat-search-btn {
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .is_dark .header_1.header_2.style.is-fixed,
@@ -2199,6 +2208,42 @@ header {
 
 .is_dark .side-bar .widget .widget-title {
   font-weight: 500;
+}
+
+/*widget categories */
+.widget.widget-categories li {
+  position: relative;
+  margin-bottom: 34px;
+}
+.widget.widget-categories li:last-child {
+  margin-bottom: 0;
+}
+.widget.widget-categories li a {
+  color: var(--primary-color4);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.widget.widget-categories li a::before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color4);
+  margin-right: 7px;
+}
+
+.widget.widget-categories li:hover a::before,
+.widget.widget-categories li.active a::before,
+.widget.widget-categories li:hover a,
+.widget.widget-categories li.active a {
+  color: var(--primary-color3);
+}
+
+.widget.widget-categories li:hover .number,
+.widget.widget-categories li.active .number {
+  background-color: var(--primary-color2);
+  color: var(--primary-color);
 }
 
 .btn-upload {

@@ -124,8 +124,9 @@
     };
 
     // Dark Light Mode
-    $(".dark").on('click', function (e) {
+    $(".dark").on('click' ,function (e) {
         e.preventDefault();
+        onclick="switchTheme()"
         $(".body").addClass("is_dark")
         $(".light").removeClass("is_active")
         $(".dark").addClass("is_active")

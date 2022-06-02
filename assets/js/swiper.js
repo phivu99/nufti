@@ -1,19 +1,34 @@
 var swiper =  new Swiper(".mainslider", {
-    autoplay: {
-    delay: 8000,
-    disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 10000,
+    //     disableOnInteraction: false,
+    //     },
     slidesPerView: 1,
-    speed: 500,
+    speed: 2000,
     effect: "fade",
     fadeEffect: {
         crossFade: true,
     },
+    loop:false,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 });
+
+// var swiper =  new Swiper(".mainslider", {
+//     slidesPerView: 1,
+//     loop: true,
+//     speed: 500,
+//     effect: "fade",
+//     fadeEffect: {
+//         crossFade: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 var swiper =  new Swiper(".carousel", {
     // autoplay: {

@@ -27,7 +27,7 @@
 
 </head>
 
-<body class="body header-fixed is_dark">
+<body class="body header-fixed">
 
     <!-- preloade -->
     <div class="preload preload-container">
@@ -107,7 +107,7 @@
                                         <div class="header-search flat-show-search" >
                                             <div class="top-search">
                                                 <form action="#" method="get" role="search" class="search-form">
-                                                    <input type="search" id="s" class="search-field" placeholder="Search Hare..." value="" name="s" title="Search for" required="">
+                                                    <input type="search" id="s" class="search-field" placeholder="Search Here..." value="" name="s" title="Search for" required="">
                                                     <button class="search search-submit" type="submit" title="Search">
                                                         <i class="far fa-search"></i>
                                                     </button>
@@ -127,10 +127,10 @@
                 </div>
                 
                 <div class="mode_switcher">
-                    <a href="#" class="light d-flex align-items-center">
+                    <a href="#" onclick="switchTheme()" class="light d-flex align-items-center">
                         <img src="assets/images/icon/sun.png" alt="">
                     </a>
-                    <a href="#" class="dark d-flex align-items-center is_active">
+                    <a href="#" onclick="switchTheme()" class="dark d-flex align-items-center is_active">
                         <img src="assets/images/icon/moon.png" alt="">
                     </a>
                 </div>
@@ -171,7 +171,7 @@
                                                     <img src="assets/images/avatar/avt-01.png" alt="">
                                                 </div>
                                                 <div class="info">
-                                                    <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                    <h5> By<a class="text-color-3" href="author-profile.html"> Themesflat</a> </h5>
                                                     <div class="date"> Date <span> 04/10/2022</span></div>                                           
                                                 </div>
                                             </div>                                  
@@ -405,7 +405,7 @@
                                                         <img src="assets/images/avatar/avt-01.png" alt="">
                                                     </div>
                                                     <div class="info">
-                                                        <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                        <h5> By<a class="text-color-3" href="author-profile.html"> Themesflat</a> </h5>
                                                         <div class="date"> Date <span> 04/10/2022</span></div>                                           
                                                     </div>
                                                 </div>                                  
@@ -419,7 +419,7 @@
                                                         <img src="assets/images/avatar/avt-02.png" alt="">
                                                     </div>
                                                     <div class="info">
-                                                        <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                        <h5> By<a class="text-color-3" href="author-profile.html"> Themesflat</a> </h5>
                                                         <div class="date"> Date <span> 04/10/2022</span></div>                                           
                                                     </div>
                                                 </div>                                  
@@ -433,7 +433,7 @@
                                                         <img src="assets/images/avatar/avt-03.png" alt="">
                                                     </div>
                                                     <div class="info">
-                                                        <h5> By<a class="text-color-3" href="author-profile.html"> Creativemela</a> </h5>
+                                                        <h5> By<a class="text-color-3" href="author-profile.html"> Themesflat</a> </h5>
                                                         <div class="date"> Date <span> 04/10/2022</span></div>                                           
                                                     </div>
                                                 </div>                                  
@@ -594,6 +594,7 @@
 
     <script src="assets/js/shortcodes.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/switchmode.js"></script>
 
 </body>
 
